@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface text-navy-900 font-body antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  /* Carte KPI — barre latérale ambre (signature visuelle) */
+  .kpi-card {
+    @apply relative bg-white rounded-xl shadow-sm border border-surface-muted overflow-hidden;
+  }
+  .kpi-card::before {
+    content: "";
+    @apply absolute left-0 top-0 bottom-0 w-1 bg-amber-postal;
+  }
+
+  /* Bouton principal */
+  .btn-primary {
+    @apply bg-postal text-white font-medium px-4 py-2 rounded-lg
+           hover:bg-postal-dark transition-colors duration-150
+           focus:outline-none focus:ring-2 focus:ring-postal focus:ring-offset-2;
+  }
+
+  /* Badge rôle */
+  .role-badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+}
