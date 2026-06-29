@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.env
+
+# Node
+node_modules/
+dist/
+.DS_Store
+
+# Docker
+.docker/
+
+# IDE
+.vscode/
+.idea/
+
+# Données sensibles
+*.key
