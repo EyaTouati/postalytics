@@ -1,164 +1,297 @@
 """
-Modèles SQLAlchemy — schéma en étoile La Poste Tunisienne.
+Générateur de données fictives — La Poste Tunisienne.
+Quand les vraies données arrivent : remplacer par le script ETL réel.
 
-Table de faits : fait_colis
-Dimensions    : dim_client, dim_destination, dim_service, dim_temps, dim_origine
-Utilisateurs  : users (authentification applicative)
-
-NOTE : les noms de colonnes ici sont ceux du Data Warehouse (après ETL).
-Quand les vraies données arrivent, seul le script ETL change — pas ces modèles.
+Usage :
+    python -m app.db.seed
 """
-import enum
-from datetime import date, datetime
 
-from sqlalchemy import (
-    Boolean, Column, Date, DateTime, Enum, Float, ForeignKey,
-    Integer, String, Text,
+import random
+from datetime import date, timedelta
+
+from faker import Faker
+from sqlalchemy.orm import Session
+
+from app.core.security import get_password_hash
+from app.db.session import SessionLocal, engine
+from app.models.models import (
+    Base, DimBureau, DimDestination, DimService, DimTemps,
+    FaitColis, NatureColis, Portee, TypeService, User, UserRole,
 )
-from sqlalchemy.orm import relationship
 
-from app.db.session import Base
+fake = Faker("fr_FR")
+random.seed(42)
 
+# ── Référentiels ──────────────────────────────────────────────────────────────
 
-# ── Enums métier ────────────────────────────────────────────────────────────────
+VILLES_PAR_GOUVERNORAT = {
+    "Tunis":    ["Tunis", "La Marsa", "Le Bardo"],
+    "Sfax":     ["Sfax", "Sakiet Ezzit", "Chihia"],
+    "Sousse":   ["Sousse", "Hammam Sousse", "Msaken"],
+    "Bizerte":  ["Bizerte", "Menzel Bourguiba", "Mateur"],
+    "Gabès":    ["Gabès", "El Hamma", "Matmata"],
+    "Ariana":   ["Ariana", "La Soukra", "Raoued"],
+    "Gafsa":    ["Gafsa", "Métlaoui", "El Ksar"],
+    "Kairouan": ["Kairouan", "Sbikha", "Haffouz"],
+    "Monastir": ["Monastir", "Ksar Hellal", "Jemmal"],
+    "Nabeul":   ["Nabeul", "Hammamet", "Kelibia"],
+}
 
-class NatureColis(str, enum.Enum):
-    MARCHANDISE = "Marchandise"
-    DOCUMENT = "Document"
+DESTINATIONS_INTL = [
+    {"pays_dest": "France",              "ville_dest": "Paris",      "code_iso_pays": "FR"},
+    {"pays_dest": "France",              "ville_dest": "Marseille",  "code_iso_pays": "FR"},
+    {"pays_dest": "Allemagne",           "ville_dest": "Munich",     "code_iso_pays": "DE"},
+    {"pays_dest": "Italie",              "ville_dest": "Milan",      "code_iso_pays": "IT"},
+    {"pays_dest": "Espagne",             "ville_dest": "Barcelone",  "code_iso_pays": "ES"},
+    {"pays_dest": "Belgique",            "ville_dest": "Bruxelles",  "code_iso_pays": "BE"},
+    {"pays_dest": "Canada",              "ville_dest": "Montréal",   "code_iso_pays": "CA"},
+    {"pays_dest": "Maroc",               "ville_dest": "Casablanca", "code_iso_pays": "MA"},
+    {"pays_dest": "Algérie",             "ville_dest": "Alger",      "code_iso_pays": "DZ"},
+    {"pays_dest": "Arabie Saoudite",     "ville_dest": "Riyad",      "code_iso_pays": "SA"},
+    {"pays_dest": "Émirats Arabes Unis", "ville_dest": "Dubaï",      "code_iso_pays": "AE"},
+    {"pays_dest": "Sénégal",             "ville_dest": "Dakar",      "code_iso_pays": "SN"},
+]
 
+SERVICES_DATA = [
+    {
+        "code_service": "NOR",
+        "type_service": TypeService.NORMAL,
+        "portee": Portee.NATIONAL,
+        "label": "Normal",
+        "tarif_base": 3.5,
+        "delai_standard": 5,
+    },
+    {
+        "code_service": "EMS-N",
+        "type_service": TypeService.EXPRESS_NORMAL,
+        "portee": Portee.NATIONAL,
+        "label": "Express normal",
+        "tarif_base": 7.0,
+        "delai_standard": 2,
+    },
+    {
+        "code_service": "EMS-I",
+        "type_service": TypeService.EXPRESS_PERSONNALISE,
+        "portee": Portee.INTERNATIONAL,
+        "label": "Express personnalisé international",
+        "tarif_base": 12.0,
+        "delai_standard": 3,
+    },
+    {
+        "code_service": "RPP-I",
+        "type_service": TypeService.EXPRESS_PERSONNALISE,
+        "portee": Portee.INTERNATIONAL,
+        "label": "Remise contre preuve international",
+        "tarif_base": 10.0,
+        "delai_standard": 4,
+    },
+]
 
-class TypeService(str, enum.Enum):
-    NORMAL = "Normal"
-    EXPRESS_NORMAL = "Express normal"
-    EXPRESS_PERSONNALISE = "Express personnalisé"
-
-
-class Portee(str, enum.Enum):
-    NATIONAL = "National"
-    INTERNATIONAL = "International"
-
-
-class UserRole(str, enum.Enum):
-    ADMIN = "admin"
-    RESPONSABLE = "responsable"
-    AGENT_REGIONAL = "agent_regional"
-
-
-# ── Dimension : Temps ────────────────────────────────────────────────────────────
-
-class DimTemps(Base):
-    __tablename__ = "dim_temps"
-
-    id = Column(Integer, primary_key=True, index=True)
-    date_complete = Column(Date, unique=True, nullable=False, index=True)
-    jour = Column(Integer, nullable=False)
-    mois = Column(Integer, nullable=False)
-    trimestre = Column(Integer, nullable=False)
-    annee = Column(Integer, nullable=False, index=True)
-    semaine = Column(Integer, nullable=False)
-    jour_semaine = Column(String(20), nullable=False)  # "Lundi", "Mardi"…
-    est_weekend = Column(Boolean, default=False)
-
-    colis = relationship("FaitColis", back_populates="dim_temps")
-
-
-# ── Dimension : Client ────────────────────────────────────────────────────────────
-
-class DimClient(Base):
-    __tablename__ = "dim_client"
-
-    id = Column(Integer, primary_key=True, index=True)
-    nom = Column(String(200), nullable=False)
-    ville = Column(String(100), nullable=True)
-    # Segment calculé par la Phase 3 (ML) — null jusqu'à l'exécution du notebook
-    segment = Column(String(50), nullable=True)
-
-    envois = relationship("FaitColis", foreign_keys="FaitColis.expediteur_id", back_populates="expediteur")
-    receptions = relationship("FaitColis", foreign_keys="FaitColis.destinataire_id", back_populates="destinataire")
-
-
-# ── Dimension : Origine ─────────────────────────────────────────────────────────
-
-class DimOrigine(Base):
-    __tablename__ = "dim_origine"
-
-    id = Column(Integer, primary_key=True, index=True)
-    ville = Column(String(100), nullable=False)
-    region = Column(String(100), nullable=False, index=True)
-    pays = Column(String(100), nullable=False, default="Tunisie")
-
-    colis = relationship("FaitColis", back_populates="dim_origine")
+JOURS_FR = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
 
 
-# ── Dimension : Destination ─────────────────────────────────────────────────────
-
-class DimDestination(Base):
-    __tablename__ = "dim_destination"
-
-    id = Column(Integer, primary_key=True, index=True)
-    pays = Column(String(100), nullable=False, index=True)
-    region = Column(String(100), nullable=True)
-    portee = Column(Enum(Portee), nullable=False, index=True)
-
-    colis = relationship("FaitColis", back_populates="dim_destination")
+def _get_saison(mois: int) -> str:
+    if mois in (3, 4, 5):   return "Printemps"
+    elif mois in (6, 7, 8): return "Été"
+    elif mois in (9, 10, 11): return "Automne"
+    else:                     return "Hiver"
 
 
-# ── Dimension : Service ─────────────────────────────────────────────────────────
-
-class DimService(Base):
-    __tablename__ = "dim_service"
-
-    id = Column(Integer, primary_key=True, index=True)
-    type_service = Column(Enum(TypeService), nullable=False, unique=True)
-    tarif_base = Column(Float, nullable=False)
-    delai_standard = Column(Integer, nullable=False)  # en jours
-
-    colis = relationship("FaitColis", back_populates="dim_service")
+def _montant_from_service(type_service: TypeService, poids: float) -> float:
+    tarifs = {
+        TypeService.NORMAL: 3.5,
+        TypeService.EXPRESS_NORMAL: 7.0,
+        TypeService.EXPRESS_PERSONNALISE: 12.0,
+    }
+    return round(tarifs[type_service] * max(1.0, poids), 2)
 
 
-# ── Table de faits : Colis ──────────────────────────────────────────────────────
-
-class FaitColis(Base):
-    __tablename__ = "fait_colis"
-
-    id = Column(Integer, primary_key=True, index=True)
-    num_colis = Column(String(50), unique=True, nullable=False, index=True)
-    poids = Column(Float, nullable=False)
-    montant = Column(Float, nullable=False)
-    nature = Column(Enum(NatureColis), nullable=False, index=True)
-
-    # Clés étrangères vers les dimensions
-    temps_id = Column(Integer, ForeignKey("dim_temps.id"), nullable=False, index=True)
-    service_id = Column(Integer, ForeignKey("dim_service.id"), nullable=False)
-    expediteur_id = Column(Integer, ForeignKey("dim_client.id"), nullable=False, index=True)
-    destinataire_id = Column(Integer, ForeignKey("dim_client.id"), nullable=False)
-    origine_id = Column(Integer, ForeignKey("dim_origine.id"), nullable=False, index=True)
-    destination_id = Column(Integer, ForeignKey("dim_destination.id"), nullable=False, index=True)
-
-    # Indicateur anomalie (Phase 3 ML) — null jusqu'à exécution du notebook
-    est_anomalie = Column(Boolean, nullable=True, default=None)
-
-    # Relations
-    dim_temps = relationship("DimTemps", back_populates="colis")
-    dim_service = relationship("DimService", back_populates="colis")
-    expediteur = relationship("DimClient", foreign_keys=[expediteur_id], back_populates="envois")
-    destinataire = relationship("DimClient", foreign_keys=[destinataire_id], back_populates="receptions")
-    dim_origine = relationship("DimOrigine", back_populates="colis")
-    dim_destination = relationship("DimDestination", back_populates="colis")
+def _date_range(start: date, end: date):
+    current = start
+    while current <= end:
+        yield current
+        current += timedelta(days=1)
 
 
-# ── Utilisateurs applicatifs (RBAC) ─────────────────────────────────────────────
+# ── Seed principal ────────────────────────────────────────────────────────────
 
-class User(Base):
-    __tablename__ = "users"
+def seed_mock_data(n_colis: int = 3000):
+    db: Session = SessionLocal()
+    try:
+        print("Création du schéma…")
+        Base.metadata.create_all(bind=engine)
 
-    id = Column(Integer, primary_key=True, index=True)
-    username = Column(String(100), unique=True, nullable=False, index=True)
-    email = Column(String(200), unique=True, nullable=False)
-    hashed_password = Column(String(200), nullable=False)
-    role = Column(Enum(UserRole), nullable=False)
-    # Pour les agents régionaux : région assignée (null pour admin/responsable)
-    region_assignee = Column(String(100), nullable=True)
-    est_actif = Column(Boolean, default=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
-    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+        # Vérifier si déjà seedé
+        if db.query(User).count() > 0:
+            print("Base déjà initialisée — seed ignoré.")
+            return
+
+        # ── 1. Services ───────────────────────────────────────────────────────
+        services = []
+        for s in SERVICES_DATA:
+            svc = DimService(**s)
+            db.add(svc)
+            services.append(svc)
+        db.flush()
+
+        # ── 2. Bureaux ────────────────────────────────────────────────────────
+        bureaux = []
+        compteur = 1
+        for gouvernorat, villes in VILLES_PAR_GOUVERNORAT.items():
+            for ville in villes:
+                bureau = DimBureau(
+                    id_bureau_src=f"BUR{str(compteur).zfill(3)}",
+                    code_postal=f"{random.randint(1000, 9999)}",
+                    cite=ville,
+                    ville=ville,
+                    gouvernorat=gouvernorat,
+                )
+                db.add(bureau)
+                bureaux.append(bureau)
+                compteur += 1
+        db.flush()
+
+        # ── 3. Destinations ───────────────────────────────────────────────────
+        destinations = []
+        for gouvernorat, villes in VILLES_PAR_GOUVERNORAT.items():
+            for ville in villes:
+                dest = DimDestination(
+                    code_iso_pays="TN",
+                    pays_dest="Tunisie",
+                    ville_dest=ville,
+                    cite_dest=ville,
+                    code_postal_dest=f"{random.randint(1000, 9999)}",
+                    portee=Portee.NATIONAL,
+                )
+                db.add(dest)
+                destinations.append(dest)
+
+        for d in DESTINATIONS_INTL:
+            dest = DimDestination(
+                code_iso_pays=d["code_iso_pays"],
+                pays_dest=d["pays_dest"],
+                ville_dest=d["ville_dest"],
+                cite_dest=d["ville_dest"],
+                code_postal_dest=None,
+                portee=Portee.INTERNATIONAL,
+            )
+            db.add(dest)
+            destinations.append(dest)
+        db.flush()
+
+        # ── 4. Dimension Temps (2023-2026) ────────────────────────────────────
+        start_date = date(2023, 1, 1)
+        end_date = date(2026, 6, 30)
+        temps_map: dict[date, DimTemps] = {}
+
+        for d in _date_range(start_date, end_date):
+            t = DimTemps(
+                date_complete=d,
+                jour=d.day,
+                mois=d.month,
+                trimestre=(d.month - 1) // 3 + 1,
+                annee=d.year,
+                semaine=d.isocalendar()[1],
+                jour_semaine=JOURS_FR[d.weekday()],
+                saison=_get_saison(d.month),
+                est_weekend=d.weekday() >= 5,
+            )
+            db.add(t)
+            temps_map[d] = t
+        db.flush()
+
+        # ── 5. Faits Colis ────────────────────────────────────────────────────
+        all_dates = list(temps_map.keys())
+        weights = [
+            3.0 if d.month in (11, 12, 7, 8)
+            else 1.5 if d.month in (3, 4, 5, 6)
+            else 1.0
+            for d in all_dates
+        ]
+        dest_nationales = [d for d in destinations if d.portee == Portee.NATIONAL]
+        dest_intl = [d for d in destinations if d.portee == Portee.INTERNATIONAL]
+        dest_weights = [
+            0.7 / len(dest_nationales) if d.portee == Portee.NATIONAL
+            else 0.3 / len(dest_intl)
+            for d in destinations
+        ]
+
+        for i in range(n_colis):
+            chosen_date = random.choices(all_dates, weights=weights, k=1)[0]
+            service = random.choices(
+                services,
+                weights=[0.5, 0.2, 0.2, 0.1],
+                k=1,
+            )[0]
+            destination = random.choices(destinations, weights=dest_weights, k=1)[0]
+            poids = round(random.uniform(0.1, 25.0), 2)
+
+            colis = FaitColis(
+                num_colis=f"TN{str(i + 1).zfill(7)}",
+                id_bordereau=random.randint(100000, 999999),
+                poids=poids,
+                montant=_montant_from_service(service.type_service, poids),
+                nature=None,
+                ref_paiement=random.choice(["C", "P", None]),
+                type_source="normal" if service.code_service == "NOR" else "express",
+                est_anomalie=None,
+                temps_id=temps_map[chosen_date].id,
+                service_id=service.id,
+                bureau_id=random.choice(bureaux).id,
+                destination_id=destination.id,
+            )
+            db.add(colis)
+        db.flush()
+
+        # ── 6. Utilisateurs ───────────────────────────────────────────────────
+        seed_users = [
+            User(
+                username="admin",
+                email="admin@poste.tn",
+                hashed_password=get_password_hash("Admin@2024"),
+                role=UserRole.ADMIN,
+                region_assignee=None,
+            ),
+            User(
+                username="responsable",
+                email="responsable@poste.tn",
+                hashed_password=get_password_hash("Responsable@2024"),
+                role=UserRole.RESPONSABLE,
+                region_assignee=None,
+            ),
+            User(
+                username="agent_tunis",
+                email="agent.tunis@poste.tn",
+                hashed_password=get_password_hash("Agent@2024"),
+                role=UserRole.AGENT_REGIONAL,
+                region_assignee="Tunis",
+            ),
+            User(
+                username="agent_sfax",
+                email="agent.sfax@poste.tn",
+                hashed_password=get_password_hash("Agent@2024"),
+                role=UserRole.AGENT_REGIONAL,
+                region_assignee="Sfax",
+            ),
+        ]
+        for u in seed_users:
+            db.add(u)
+
+        db.commit()
+        print(f"✅ Seed terminé — {n_colis} colis + {len(seed_users)} utilisateurs créés.")
+        print("\nComptes de test :")
+        print("  admin        / Admin@2024")
+        print("  responsable  / Responsable@2024")
+        print("  agent_tunis  / Agent@2024  (gouvernorat : Tunis)")
+        print("  agent_sfax   / Agent@2024  (gouvernorat : Sfax)")
+
+    except Exception as e:
+        db.rollback()
+        print(f"❌ Erreur seed : {e}")
+        raise
+    finally:
+        db.close()
+
+
+if __name__ == "__main__":
+    seed_mock_data()

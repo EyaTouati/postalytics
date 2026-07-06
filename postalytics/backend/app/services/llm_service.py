@@ -20,45 +20,44 @@ from app.schemas.schemas import ChatMessage, ChatResponse
 
 # Schéma du Data Warehouse injecté dans le system prompt du LLM
 DW_SCHEMA = """
-Schéma PostgreSQL du Data Warehouse de La Poste Tunisienne :
-
 TABLE fait_colis (
   id SERIAL PRIMARY KEY,
   num_colis VARCHAR(50),
+  id_bordereau INTEGER,
   poids FLOAT,
   montant FLOAT,
-  nature VARCHAR(20),       -- 'Marchandise' | 'Document'
+  nature VARCHAR(20),
+  ref_paiement VARCHAR(5),
+  type_source VARCHAR(20),   -- 'normal' | 'express'
   est_anomalie BOOLEAN,
   temps_id INT REFERENCES dim_temps(id),
   service_id INT REFERENCES dim_service(id),
-  expediteur_id INT REFERENCES dim_client(id),
-  destinataire_id INT REFERENCES dim_client(id),
-  origine_id INT REFERENCES dim_origine(id),
+  bureau_id INT REFERENCES dim_bureau(id),
   destination_id INT REFERENCES dim_destination(id)
 );
 
 TABLE dim_temps (
   id, date_complete DATE, jour INT, mois INT, trimestre INT,
-  annee INT, semaine INT, jour_semaine VARCHAR, est_weekend BOOL
+  annee INT, semaine INT, saison VARCHAR, est_weekend BOOL
 );
 
-TABLE dim_client (id, nom VARCHAR, ville VARCHAR, segment VARCHAR);
-
-TABLE dim_origine (id, ville VARCHAR, region VARCHAR, pays VARCHAR);
+TABLE dim_bureau (
+  id, id_bureau_src VARCHAR, code_postal VARCHAR,
+  cite VARCHAR, ville VARCHAR, gouvernorat VARCHAR
+);
 
 TABLE dim_destination (
-  id, pays VARCHAR, region VARCHAR,
-  portee VARCHAR   -- 'National' | 'International'
+  id, code_iso_pays VARCHAR, pays_dest VARCHAR,
+  ville_dest VARCHAR, cite_dest VARCHAR,
+  code_postal_dest VARCHAR, portee VARCHAR
 );
 
 TABLE dim_service (
-  id,
-  type_service VARCHAR,  -- 'Normal' | 'Express normal' | 'Express personnalisé'
-  tarif_base FLOAT,
-  delai_standard INT
+  id, code_service VARCHAR, type_service VARCHAR,
+  portee VARCHAR, label VARCHAR,
+  tarif_base FLOAT, delai_standard INT
 );
 """
-
 SYSTEM_PROMPT = f"""Tu es un assistant analytique expert en SQL pour La Poste Tunisienne.
 Tu as accès au Data Warehouse suivant :
 
