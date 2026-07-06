@@ -41,11 +41,11 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./backend:/app   # hot reload en développement
+      - ./backend:/app # hot reload en développement
     command: >
       sh -c "
-        uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload &&
-        python -m app.db.seed
+        python -m app.db.seed &&
+        uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
       "
 
   # ── Frontend React (dev) ───────────────────────────────────────────────────────

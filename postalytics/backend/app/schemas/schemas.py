@@ -56,7 +56,7 @@ TokenResponse.model_rebuild()
 # ── KPIs Dashboard ──────────────────────────────────────────────────────────────
 
 class VolumeParRegion(BaseModel):
-    region: str
+    region: str          # garde le même nom → le frontend ne change pas
     portee: str
     total_colis: int
     total_montant: float
