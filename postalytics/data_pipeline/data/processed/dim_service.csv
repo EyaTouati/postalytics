@@ -1,0 +1,8 @@
+id,code_service,type_service,label,portee,description,tarif_base,delai_standard
+1,CP,Normal,Colis Postal,National,Envoi standard de colis,,5
+2,UP,Normal,Paquet Universel,National,Paquet léger inférieur à 2kg,,5
+3,RR,Normal,Recommandé,National,Envoi recommandé avec accusé,,5
+4,NOR,Normal,Normal,National,Colis normal,,5
+5,EMS-N,Express normal,Express National,National,Express Mail Service National,,2
+6,EMS-I,Express personnalisé,Express International,International,Express Mail Service International,,3
+7,RPP-I,Express personnalisé,Remise Contre Preuve International,International,Livré par DHL Express,,4

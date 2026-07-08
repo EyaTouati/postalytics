@@ -1,0 +1,1413 @@
+id,date_complete,jour,mois,trimestre,annee,semaine,num_semaine_mois,jour_semaine,saison,est_weekend,est_ferie,mois_islamique,num_mois_islamique,annee_hijri,evenement_islamique,impact_islamique
+1,2023-01-01,1,1,1,2023,52,1,Dimanche,Hiver,True,True,Inconnu,0,0,Période normale,normal
+2,2023-01-02,2,1,1,2023,1,1,Lundi,Hiver,False,False,Inconnu,0,0,Période normale,normal
+3,2023-01-03,3,1,1,2023,1,1,Mardi,Hiver,False,False,Inconnu,0,0,Période normale,normal
+4,2023-01-04,4,1,1,2023,1,1,Mercredi,Hiver,False,False,Inconnu,0,0,Période normale,normal
+5,2023-01-05,5,1,1,2023,1,1,Jeudi,Hiver,False,False,Inconnu,0,0,Période normale,normal
+6,2023-01-06,6,1,1,2023,1,1,Vendredi,Hiver,False,False,Inconnu,0,0,Période normale,normal
+7,2023-01-07,7,1,1,2023,1,1,Samedi,Hiver,True,False,Inconnu,0,0,Période normale,normal
+8,2023-01-08,8,1,1,2023,1,2,Dimanche,Hiver,True,False,Inconnu,0,0,Période normale,normal
+9,2023-01-09,9,1,1,2023,2,2,Lundi,Hiver,False,False,Inconnu,0,0,Période normale,normal
+10,2023-01-10,10,1,1,2023,2,2,Mardi,Hiver,False,False,Inconnu,0,0,Période normale,normal
+11,2023-01-11,11,1,1,2023,2,2,Mercredi,Hiver,False,False,Inconnu,0,0,Période normale,normal
+12,2023-01-12,12,1,1,2023,2,2,Jeudi,Hiver,False,False,Inconnu,0,0,Période normale,normal
+13,2023-01-13,13,1,1,2023,2,2,Vendredi,Hiver,False,False,Inconnu,0,0,Période normale,normal
+14,2023-01-14,14,1,1,2023,2,2,Samedi,Hiver,True,False,Rajab,7,1444,Période normale,normal
+15,2023-01-15,15,1,1,2023,2,3,Dimanche,Hiver,True,False,Rajab,7,1444,Période normale,normal
+16,2023-01-16,16,1,1,2023,3,3,Lundi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+17,2023-01-17,17,1,1,2023,3,3,Mardi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+18,2023-01-18,18,1,1,2023,3,3,Mercredi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+19,2023-01-19,19,1,1,2023,3,3,Jeudi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+20,2023-01-20,20,1,1,2023,3,3,Vendredi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+21,2023-01-21,21,1,1,2023,3,3,Samedi,Hiver,True,False,Rajab,7,1444,Période normale,normal
+22,2023-01-22,22,1,1,2023,3,4,Dimanche,Hiver,True,False,Rajab,7,1444,Période normale,normal
+23,2023-01-23,23,1,1,2023,4,4,Lundi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+24,2023-01-24,24,1,1,2023,4,4,Mardi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+25,2023-01-25,25,1,1,2023,4,4,Mercredi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+26,2023-01-26,26,1,1,2023,4,4,Jeudi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+27,2023-01-27,27,1,1,2023,4,4,Vendredi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+28,2023-01-28,28,1,1,2023,4,4,Samedi,Hiver,True,False,Rajab,7,1444,Période normale,normal
+29,2023-01-29,29,1,1,2023,4,5,Dimanche,Hiver,True,False,Rajab,7,1444,Période normale,normal
+30,2023-01-30,30,1,1,2023,5,5,Lundi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+31,2023-01-31,31,1,1,2023,5,5,Mardi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+32,2023-02-01,1,2,1,2023,5,1,Mercredi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+33,2023-02-02,2,2,1,2023,5,1,Jeudi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+34,2023-02-03,3,2,1,2023,5,1,Vendredi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+35,2023-02-04,4,2,1,2023,5,1,Samedi,Hiver,True,False,Rajab,7,1444,Période normale,normal
+36,2023-02-05,5,2,1,2023,5,1,Dimanche,Hiver,True,False,Rajab,7,1444,Période normale,normal
+37,2023-02-06,6,2,1,2023,6,1,Lundi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+38,2023-02-07,7,2,1,2023,6,1,Mardi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+39,2023-02-08,8,2,1,2023,6,2,Mercredi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+40,2023-02-09,9,2,1,2023,6,2,Jeudi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+41,2023-02-10,10,2,1,2023,6,2,Vendredi,Hiver,False,False,Rajab,7,1444,Période normale,normal
+42,2023-02-11,11,2,1,2023,6,2,Samedi,Hiver,True,False,Rajab,7,1444,Période normale,normal
+43,2023-02-12,12,2,1,2023,6,2,Dimanche,Hiver,True,False,Chaabane,8,1444,Période normale,normal
+44,2023-02-13,13,2,1,2023,7,2,Lundi,Hiver,False,False,Chaabane,8,1444,Période normale,normal
+45,2023-02-14,14,2,1,2023,7,2,Mardi,Hiver,False,False,Chaabane,8,1444,Période normale,normal
+46,2023-02-15,15,2,1,2023,7,3,Mercredi,Hiver,False,False,Chaabane,8,1444,Période normale,normal
+47,2023-02-16,16,2,1,2023,7,3,Jeudi,Hiver,False,False,Chaabane,8,1444,Période normale,normal
+48,2023-02-17,17,2,1,2023,7,3,Vendredi,Hiver,False,False,Chaabane,8,1444,Période normale,normal
+49,2023-02-18,18,2,1,2023,7,3,Samedi,Hiver,True,False,Chaabane,8,1444,Période normale,normal
+50,2023-02-19,19,2,1,2023,7,3,Dimanche,Hiver,True,False,Chaabane,8,1444,Période normale,normal
+51,2023-02-20,20,2,1,2023,8,3,Lundi,Hiver,False,False,Chaabane,8,1444,Période normale,normal
+52,2023-02-21,21,2,1,2023,8,3,Mardi,Hiver,False,False,Chaabane,8,1444,Période normale,normal
+53,2023-02-22,22,2,1,2023,8,4,Mercredi,Hiver,False,False,Chaabane,8,1444,Période normale,normal
+54,2023-02-23,23,2,1,2023,8,4,Jeudi,Hiver,False,False,Chaabane,8,1444,Période normale,normal
+55,2023-02-24,24,2,1,2023,8,4,Vendredi,Hiver,False,False,Chaabane,8,1444,Période normale,normal
+56,2023-02-25,25,2,1,2023,8,4,Samedi,Hiver,True,False,Chaabane,8,1444,Période normale,normal
+57,2023-02-26,26,2,1,2023,8,4,Dimanche,Hiver,True,False,Chaabane,8,1444,Période normale,normal
+58,2023-02-27,27,2,1,2023,9,4,Lundi,Hiver,False,False,Chaabane,8,1444,Période normale,normal
+59,2023-02-28,28,2,1,2023,9,4,Mardi,Hiver,False,False,Chaabane,8,1444,Période normale,normal
+60,2023-03-01,1,3,1,2023,9,1,Mercredi,Printemps,False,False,Chaabane,8,1444,Période normale,normal
+61,2023-03-02,2,3,1,2023,9,1,Jeudi,Printemps,False,False,Chaabane,8,1444,Période normale,normal
+62,2023-03-03,3,3,1,2023,9,1,Vendredi,Printemps,False,False,Chaabane,8,1444,Période normale,normal
+63,2023-03-04,4,3,1,2023,9,1,Samedi,Printemps,True,False,Chaabane,8,1444,Période normale,normal
+64,2023-03-05,5,3,1,2023,9,1,Dimanche,Printemps,True,False,Chaabane,8,1444,Période normale,normal
+65,2023-03-06,6,3,1,2023,10,1,Lundi,Printemps,False,False,Chaabane,8,1444,Période normale,normal
+66,2023-03-07,7,3,1,2023,10,1,Mardi,Printemps,False,False,Chaabane,8,1444,Période normale,normal
+67,2023-03-08,8,3,1,2023,10,2,Mercredi,Printemps,False,False,Chaabane,8,1444,Période normale,normal
+68,2023-03-09,9,3,1,2023,10,2,Jeudi,Printemps,False,False,Chaabane,8,1444,Période normale,normal
+69,2023-03-10,10,3,1,2023,10,2,Vendredi,Printemps,False,False,Chaabane,8,1444,Période normale,normal
+70,2023-03-11,11,3,1,2023,10,2,Samedi,Printemps,True,False,Chaabane,8,1444,Période normale,normal
+71,2023-03-12,12,3,1,2023,10,2,Dimanche,Printemps,True,False,Chaabane,8,1444,Période normale,normal
+72,2023-03-13,13,3,1,2023,11,2,Lundi,Printemps,False,False,Chaabane,8,1444,Période normale,normal
+73,2023-03-14,14,3,1,2023,11,2,Mardi,Printemps,False,False,Ramadan,9,1444,Période normale,normal
+74,2023-03-15,15,3,1,2023,11,3,Mercredi,Printemps,False,False,Ramadan,9,1444,Période normale,normal
+75,2023-03-16,16,3,1,2023,11,3,Jeudi,Printemps,False,False,Ramadan,9,1444,Pré-Ramadan,fort
+76,2023-03-17,17,3,1,2023,11,3,Vendredi,Printemps,False,False,Ramadan,9,1444,Pré-Ramadan,fort
+77,2023-03-18,18,3,1,2023,11,3,Samedi,Printemps,True,False,Ramadan,9,1444,Pré-Ramadan,fort
+78,2023-03-19,19,3,1,2023,11,3,Dimanche,Printemps,True,False,Ramadan,9,1444,Pré-Ramadan,fort
+79,2023-03-20,20,3,1,2023,12,3,Lundi,Printemps,False,True,Ramadan,9,1444,Pré-Ramadan,fort
+80,2023-03-21,21,3,1,2023,12,3,Mardi,Printemps,False,False,Ramadan,9,1444,Pré-Ramadan,fort
+81,2023-03-22,22,3,1,2023,12,4,Mercredi,Printemps,False,False,Ramadan,9,1444,Pré-Ramadan,fort
+82,2023-03-23,23,3,1,2023,12,4,Jeudi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+83,2023-03-24,24,3,1,2023,12,4,Vendredi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+84,2023-03-25,25,3,1,2023,12,4,Samedi,Printemps,True,False,Ramadan,9,1444,Ramadan,moyen
+85,2023-03-26,26,3,1,2023,12,4,Dimanche,Printemps,True,False,Ramadan,9,1444,Ramadan,moyen
+86,2023-03-27,27,3,1,2023,13,4,Lundi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+87,2023-03-28,28,3,1,2023,13,4,Mardi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+88,2023-03-29,29,3,1,2023,13,5,Mercredi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+89,2023-03-30,30,3,1,2023,13,5,Jeudi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+90,2023-03-31,31,3,1,2023,13,5,Vendredi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+91,2023-04-01,1,4,2,2023,13,1,Samedi,Printemps,True,False,Ramadan,9,1444,Ramadan,moyen
+92,2023-04-02,2,4,2,2023,13,1,Dimanche,Printemps,True,False,Ramadan,9,1444,Ramadan,moyen
+93,2023-04-03,3,4,2,2023,14,1,Lundi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+94,2023-04-04,4,4,2,2023,14,1,Mardi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+95,2023-04-05,5,4,2,2023,14,1,Mercredi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+96,2023-04-06,6,4,2,2023,14,1,Jeudi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+97,2023-04-07,7,4,2,2023,14,1,Vendredi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+98,2023-04-08,8,4,2,2023,14,2,Samedi,Printemps,True,False,Ramadan,9,1444,Ramadan,moyen
+99,2023-04-09,9,4,2,2023,14,2,Dimanche,Printemps,True,True,Ramadan,9,1444,Ramadan,moyen
+100,2023-04-10,10,4,2,2023,15,2,Lundi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+101,2023-04-11,11,4,2,2023,15,2,Mardi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+102,2023-04-12,12,4,2,2023,15,2,Mercredi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+103,2023-04-13,13,4,2,2023,15,2,Jeudi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+104,2023-04-14,14,4,2,2023,15,2,Vendredi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+105,2023-04-15,15,4,2,2023,15,3,Samedi,Printemps,True,False,Ramadan,9,1444,Ramadan,moyen
+106,2023-04-16,16,4,2,2023,15,3,Dimanche,Printemps,True,False,Ramadan,9,1444,Ramadan,moyen
+107,2023-04-17,17,4,2,2023,16,3,Lundi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+108,2023-04-18,18,4,2,2023,16,3,Mardi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+109,2023-04-19,19,4,2,2023,16,3,Mercredi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+110,2023-04-20,20,4,2,2023,16,3,Jeudi,Printemps,False,False,Ramadan,9,1444,Ramadan,moyen
+111,2023-04-21,21,4,2,2023,16,3,Vendredi,Printemps,False,False,Chawwal,10,1444,Aïd el-Fitr,très fort
+112,2023-04-22,22,4,2,2023,16,4,Samedi,Printemps,True,False,Chawwal,10,1444,Aïd el-Fitr,très fort
+113,2023-04-23,23,4,2,2023,16,4,Dimanche,Printemps,True,False,Chawwal,10,1444,Aïd el-Fitr,très fort
+114,2023-04-24,24,4,2,2023,17,4,Lundi,Printemps,False,False,Chawwal,10,1444,Période normale,normal
+115,2023-04-25,25,4,2,2023,17,4,Mardi,Printemps,False,False,Chawwal,10,1444,Période normale,normal
+116,2023-04-26,26,4,2,2023,17,4,Mercredi,Printemps,False,False,Chawwal,10,1444,Période normale,normal
+117,2023-04-27,27,4,2,2023,17,4,Jeudi,Printemps,False,False,Chawwal,10,1444,Période normale,normal
+118,2023-04-28,28,4,2,2023,17,4,Vendredi,Printemps,False,False,Chawwal,10,1444,Période normale,normal
+119,2023-04-29,29,4,2,2023,17,5,Samedi,Printemps,True,False,Chawwal,10,1444,Période normale,normal
+120,2023-04-30,30,4,2,2023,17,5,Dimanche,Printemps,True,False,Chawwal,10,1444,Période normale,normal
+121,2023-05-01,1,5,2,2023,18,1,Lundi,Printemps,False,True,Chawwal,10,1444,Période normale,normal
+122,2023-05-02,2,5,2,2023,18,1,Mardi,Printemps,False,False,Chawwal,10,1444,Période normale,normal
+123,2023-05-03,3,5,2,2023,18,1,Mercredi,Printemps,False,False,Chawwal,10,1444,Période normale,normal
+124,2023-05-04,4,5,2,2023,18,1,Jeudi,Printemps,False,False,Chawwal,10,1444,Période normale,normal
+125,2023-05-05,5,5,2,2023,18,1,Vendredi,Printemps,False,False,Chawwal,10,1444,Période normale,normal
+126,2023-05-06,6,5,2,2023,18,1,Samedi,Printemps,True,False,Chawwal,10,1444,Période normale,normal
+127,2023-05-07,7,5,2,2023,18,1,Dimanche,Printemps,True,False,Chawwal,10,1444,Période normale,normal
+128,2023-05-08,8,5,2,2023,19,2,Lundi,Printemps,False,False,Chawwal,10,1444,Période normale,normal
+129,2023-05-09,9,5,2,2023,19,2,Mardi,Printemps,False,False,Chawwal,10,1444,Période normale,normal
+130,2023-05-10,10,5,2,2023,19,2,Mercredi,Printemps,False,False,Chawwal,10,1444,Période normale,normal
+131,2023-05-11,11,5,2,2023,19,2,Jeudi,Printemps,False,False,Chawwal,10,1444,Période normale,normal
+132,2023-05-12,12,5,2,2023,19,2,Vendredi,Printemps,False,False,Chawwal,10,1444,Période normale,normal
+133,2023-05-13,13,5,2,2023,19,2,Samedi,Printemps,True,False,Chawwal,10,1444,Période normale,normal
+134,2023-05-14,14,5,2,2023,19,2,Dimanche,Printemps,True,False,Chawwal,10,1444,Période normale,normal
+135,2023-05-15,15,5,2,2023,20,3,Lundi,Printemps,False,False,Chawwal,10,1444,Période normale,normal
+136,2023-05-16,16,5,2,2023,20,3,Mardi,Printemps,False,False,Chawwal,10,1444,Période normale,normal
+137,2023-05-17,17,5,2,2023,20,3,Mercredi,Printemps,False,False,Chawwal,10,1444,Période normale,normal
+138,2023-05-18,18,5,2,2023,20,3,Jeudi,Printemps,False,False,Chawwal,10,1444,Période normale,normal
+139,2023-05-19,19,5,2,2023,20,3,Vendredi,Printemps,False,False,Chawwal,10,1444,Période normale,normal
+140,2023-05-20,20,5,2,2023,20,3,Samedi,Printemps,True,False,Dhou al-Qi'da,11,1444,Période normale,normal
+141,2023-05-21,21,5,2,2023,20,3,Dimanche,Printemps,True,False,Dhou al-Qi'da,11,1444,Période normale,normal
+142,2023-05-22,22,5,2,2023,21,4,Lundi,Printemps,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+143,2023-05-23,23,5,2,2023,21,4,Mardi,Printemps,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+144,2023-05-24,24,5,2,2023,21,4,Mercredi,Printemps,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+145,2023-05-25,25,5,2,2023,21,4,Jeudi,Printemps,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+146,2023-05-26,26,5,2,2023,21,4,Vendredi,Printemps,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+147,2023-05-27,27,5,2,2023,21,4,Samedi,Printemps,True,False,Dhou al-Qi'da,11,1444,Période normale,normal
+148,2023-05-28,28,5,2,2023,21,4,Dimanche,Printemps,True,False,Dhou al-Qi'da,11,1444,Période normale,normal
+149,2023-05-29,29,5,2,2023,22,5,Lundi,Printemps,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+150,2023-05-30,30,5,2,2023,22,5,Mardi,Printemps,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+151,2023-05-31,31,5,2,2023,22,5,Mercredi,Printemps,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+152,2023-06-01,1,6,2,2023,22,1,Jeudi,Été,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+153,2023-06-02,2,6,2,2023,22,1,Vendredi,Été,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+154,2023-06-03,3,6,2,2023,22,1,Samedi,Été,True,False,Dhou al-Qi'da,11,1444,Période normale,normal
+155,2023-06-04,4,6,2,2023,22,1,Dimanche,Été,True,False,Dhou al-Qi'da,11,1444,Période normale,normal
+156,2023-06-05,5,6,2,2023,23,1,Lundi,Été,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+157,2023-06-06,6,6,2,2023,23,1,Mardi,Été,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+158,2023-06-07,7,6,2,2023,23,1,Mercredi,Été,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+159,2023-06-08,8,6,2,2023,23,2,Jeudi,Été,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+160,2023-06-09,9,6,2,2023,23,2,Vendredi,Été,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+161,2023-06-10,10,6,2,2023,23,2,Samedi,Été,True,False,Dhou al-Qi'da,11,1444,Période normale,normal
+162,2023-06-11,11,6,2,2023,23,2,Dimanche,Été,True,False,Dhou al-Qi'da,11,1444,Période normale,normal
+163,2023-06-12,12,6,2,2023,24,2,Lundi,Été,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+164,2023-06-13,13,6,2,2023,24,2,Mardi,Été,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+165,2023-06-14,14,6,2,2023,24,2,Mercredi,Été,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+166,2023-06-15,15,6,2,2023,24,3,Jeudi,Été,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+167,2023-06-16,16,6,2,2023,24,3,Vendredi,Été,False,False,Dhou al-Qi'da,11,1444,Période normale,normal
+168,2023-06-17,17,6,2,2023,24,3,Samedi,Été,True,False,Dhou al-Qi'da,11,1444,Période normale,normal
+169,2023-06-18,18,6,2,2023,24,3,Dimanche,Été,True,False,Dhou al-Hijja,12,1444,Période normale,normal
+170,2023-06-19,19,6,2,2023,25,3,Lundi,Été,False,False,Dhou al-Hijja,12,1444,Période normale,normal
+171,2023-06-20,20,6,2,2023,25,3,Mardi,Été,False,False,Dhou al-Hijja,12,1444,Période normale,normal
+172,2023-06-21,21,6,2,2023,25,3,Mercredi,Été,False,False,Dhou al-Hijja,12,1444,Aïd el-Adha,très fort
+173,2023-06-22,22,6,2,2023,25,4,Jeudi,Été,False,False,Dhou al-Hijja,12,1444,Aïd el-Adha,très fort
+174,2023-06-23,23,6,2,2023,25,4,Vendredi,Été,False,False,Dhou al-Hijja,12,1444,Aïd el-Adha,très fort
+175,2023-06-24,24,6,2,2023,25,4,Samedi,Été,True,False,Dhou al-Hijja,12,1444,Aïd el-Adha,très fort
+176,2023-06-25,25,6,2,2023,25,4,Dimanche,Été,True,False,Dhou al-Hijja,12,1444,Aïd el-Adha,très fort
+177,2023-06-26,26,6,2,2023,26,4,Lundi,Été,False,False,Dhou al-Hijja,12,1444,Aïd el-Adha,très fort
+178,2023-06-27,27,6,2,2023,26,4,Mardi,Été,False,False,Dhou al-Hijja,12,1444,Aïd el-Adha,très fort
+179,2023-06-28,28,6,2,2023,26,4,Mercredi,Été,False,False,Dhou al-Hijja,12,1444,Aïd el-Adha,très fort
+180,2023-06-29,29,6,2,2023,26,5,Jeudi,Été,False,False,Dhou al-Hijja,12,1444,Aïd el-Adha,très fort
+181,2023-06-30,30,6,2,2023,26,5,Vendredi,Été,False,False,Dhou al-Hijja,12,1444,Aïd el-Adha,très fort
+182,2023-07-01,1,7,3,2023,26,1,Samedi,Été,True,False,Dhou al-Hijja,12,1444,Période normale,normal
+183,2023-07-02,2,7,3,2023,26,1,Dimanche,Été,True,False,Dhou al-Hijja,12,1444,Période normale,normal
+184,2023-07-03,3,7,3,2023,27,1,Lundi,Été,False,False,Dhou al-Hijja,12,1444,Période normale,normal
+185,2023-07-04,4,7,3,2023,27,1,Mardi,Été,False,False,Dhou al-Hijja,12,1444,Période normale,normal
+186,2023-07-05,5,7,3,2023,27,1,Mercredi,Été,False,False,Dhou al-Hijja,12,1444,Période normale,normal
+187,2023-07-06,6,7,3,2023,27,1,Jeudi,Été,False,False,Dhou al-Hijja,12,1444,Période normale,normal
+188,2023-07-07,7,7,3,2023,27,1,Vendredi,Été,False,False,Dhou al-Hijja,12,1444,Période normale,normal
+189,2023-07-08,8,7,3,2023,27,2,Samedi,Été,True,False,Dhou al-Hijja,12,1444,Période normale,normal
+190,2023-07-09,9,7,3,2023,27,2,Dimanche,Été,True,False,Dhou al-Hijja,12,1444,Période normale,normal
+191,2023-07-10,10,7,3,2023,28,2,Lundi,Été,False,False,Dhou al-Hijja,12,1444,Période normale,normal
+192,2023-07-11,11,7,3,2023,28,2,Mardi,Été,False,False,Dhou al-Hijja,12,1444,Période normale,normal
+193,2023-07-12,12,7,3,2023,28,2,Mercredi,Été,False,False,Dhou al-Hijja,12,1444,Période normale,normal
+194,2023-07-13,13,7,3,2023,28,2,Jeudi,Été,False,False,Dhou al-Hijja,12,1444,Période normale,normal
+195,2023-07-14,14,7,3,2023,28,2,Vendredi,Été,False,False,Dhou al-Hijja,12,1444,Période normale,normal
+196,2023-07-15,15,7,3,2023,28,3,Samedi,Été,True,False,Dhou al-Hijja,12,1444,Période normale,normal
+197,2023-07-16,16,7,3,2023,28,3,Dimanche,Été,True,False,Dhou al-Hijja,12,1444,Période normale,normal
+198,2023-07-17,17,7,3,2023,29,3,Lundi,Été,False,False,Dhou al-Hijja,12,1444,Période normale,normal
+199,2023-07-18,18,7,3,2023,29,3,Mardi,Été,False,False,Mouharram,1,1445,Période normale,normal
+200,2023-07-19,19,7,3,2023,29,3,Mercredi,Été,False,False,Mouharram,1,1445,Nouvel An Islamique,faible
+201,2023-07-20,20,7,3,2023,29,3,Jeudi,Été,False,False,Mouharram,1,1445,Période normale,normal
+202,2023-07-21,21,7,3,2023,29,3,Vendredi,Été,False,False,Mouharram,1,1445,Période normale,normal
+203,2023-07-22,22,7,3,2023,29,4,Samedi,Été,True,False,Mouharram,1,1445,Période normale,normal
+204,2023-07-23,23,7,3,2023,29,4,Dimanche,Été,True,False,Mouharram,1,1445,Période normale,normal
+205,2023-07-24,24,7,3,2023,30,4,Lundi,Été,False,False,Mouharram,1,1445,Période normale,normal
+206,2023-07-25,25,7,3,2023,30,4,Mardi,Été,False,True,Mouharram,1,1445,Période normale,normal
+207,2023-07-26,26,7,3,2023,30,4,Mercredi,Été,False,False,Mouharram,1,1445,Période normale,normal
+208,2023-07-27,27,7,3,2023,30,4,Jeudi,Été,False,False,Mouharram,1,1445,Période normale,normal
+209,2023-07-28,28,7,3,2023,30,4,Vendredi,Été,False,False,Mouharram,1,1445,Période normale,normal
+210,2023-07-29,29,7,3,2023,30,5,Samedi,Été,True,False,Mouharram,1,1445,Période normale,normal
+211,2023-07-30,30,7,3,2023,30,5,Dimanche,Été,True,False,Mouharram,1,1445,Période normale,normal
+212,2023-07-31,31,7,3,2023,31,5,Lundi,Été,False,False,Mouharram,1,1445,Période normale,normal
+213,2023-08-01,1,8,3,2023,31,1,Mardi,Été,False,False,Mouharram,1,1445,Période normale,normal
+214,2023-08-02,2,8,3,2023,31,1,Mercredi,Été,False,False,Mouharram,1,1445,Période normale,normal
+215,2023-08-03,3,8,3,2023,31,1,Jeudi,Été,False,False,Mouharram,1,1445,Période normale,normal
+216,2023-08-04,4,8,3,2023,31,1,Vendredi,Été,False,False,Mouharram,1,1445,Période normale,normal
+217,2023-08-05,5,8,3,2023,31,1,Samedi,Été,True,False,Mouharram,1,1445,Période normale,normal
+218,2023-08-06,6,8,3,2023,31,1,Dimanche,Été,True,False,Mouharram,1,1445,Période normale,normal
+219,2023-08-07,7,8,3,2023,32,1,Lundi,Été,False,False,Mouharram,1,1445,Période normale,normal
+220,2023-08-08,8,8,3,2023,32,2,Mardi,Été,False,False,Mouharram,1,1445,Période normale,normal
+221,2023-08-09,9,8,3,2023,32,2,Mercredi,Été,False,False,Mouharram,1,1445,Période normale,normal
+222,2023-08-10,10,8,3,2023,32,2,Jeudi,Été,False,False,Mouharram,1,1445,Période normale,normal
+223,2023-08-11,11,8,3,2023,32,2,Vendredi,Été,False,False,Mouharram,1,1445,Période normale,normal
+224,2023-08-12,12,8,3,2023,32,2,Samedi,Été,True,False,Mouharram,1,1445,Période normale,normal
+225,2023-08-13,13,8,3,2023,32,2,Dimanche,Été,True,True,Mouharram,1,1445,Période normale,normal
+226,2023-08-14,14,8,3,2023,33,2,Lundi,Été,False,False,Mouharram,1,1445,Période normale,normal
+227,2023-08-15,15,8,3,2023,33,3,Mardi,Été,False,False,Mouharram,1,1445,Période normale,normal
+228,2023-08-16,16,8,3,2023,33,3,Mercredi,Été,False,False,Safar,2,1445,Période normale,normal
+229,2023-08-17,17,8,3,2023,33,3,Jeudi,Été,False,False,Safar,2,1445,Période normale,normal
+230,2023-08-18,18,8,3,2023,33,3,Vendredi,Été,False,False,Safar,2,1445,Période normale,normal
+231,2023-08-19,19,8,3,2023,33,3,Samedi,Été,True,False,Safar,2,1445,Période normale,normal
+232,2023-08-20,20,8,3,2023,33,3,Dimanche,Été,True,False,Safar,2,1445,Période normale,normal
+233,2023-08-21,21,8,3,2023,34,3,Lundi,Été,False,False,Safar,2,1445,Période normale,normal
+234,2023-08-22,22,8,3,2023,34,4,Mardi,Été,False,False,Safar,2,1445,Période normale,normal
+235,2023-08-23,23,8,3,2023,34,4,Mercredi,Été,False,False,Safar,2,1445,Période normale,normal
+236,2023-08-24,24,8,3,2023,34,4,Jeudi,Été,False,False,Safar,2,1445,Période normale,normal
+237,2023-08-25,25,8,3,2023,34,4,Vendredi,Été,False,False,Safar,2,1445,Période normale,normal
+238,2023-08-26,26,8,3,2023,34,4,Samedi,Été,True,False,Safar,2,1445,Période normale,normal
+239,2023-08-27,27,8,3,2023,34,4,Dimanche,Été,True,False,Safar,2,1445,Période normale,normal
+240,2023-08-28,28,8,3,2023,35,4,Lundi,Été,False,False,Safar,2,1445,Période normale,normal
+241,2023-08-29,29,8,3,2023,35,5,Mardi,Été,False,False,Safar,2,1445,Période normale,normal
+242,2023-08-30,30,8,3,2023,35,5,Mercredi,Été,False,False,Safar,2,1445,Période normale,normal
+243,2023-08-31,31,8,3,2023,35,5,Jeudi,Été,False,False,Safar,2,1445,Période normale,normal
+244,2023-09-01,1,9,3,2023,35,1,Vendredi,Automne,False,False,Safar,2,1445,Période normale,normal
+245,2023-09-02,2,9,3,2023,35,1,Samedi,Automne,True,False,Safar,2,1445,Période normale,normal
+246,2023-09-03,3,9,3,2023,35,1,Dimanche,Automne,True,False,Safar,2,1445,Période normale,normal
+247,2023-09-04,4,9,3,2023,36,1,Lundi,Automne,False,False,Safar,2,1445,Période normale,normal
+248,2023-09-05,5,9,3,2023,36,1,Mardi,Automne,False,False,Safar,2,1445,Période normale,normal
+249,2023-09-06,6,9,3,2023,36,1,Mercredi,Automne,False,False,Safar,2,1445,Période normale,normal
+250,2023-09-07,7,9,3,2023,36,1,Jeudi,Automne,False,False,Safar,2,1445,Période normale,normal
+251,2023-09-08,8,9,3,2023,36,2,Vendredi,Automne,False,False,Safar,2,1445,Période normale,normal
+252,2023-09-09,9,9,3,2023,36,2,Samedi,Automne,True,False,Safar,2,1445,Période normale,normal
+253,2023-09-10,10,9,3,2023,36,2,Dimanche,Automne,True,False,Safar,2,1445,Période normale,normal
+254,2023-09-11,11,9,3,2023,37,2,Lundi,Automne,False,False,Safar,2,1445,Période normale,normal
+255,2023-09-12,12,9,3,2023,37,2,Mardi,Automne,False,False,Safar,2,1445,Période normale,normal
+256,2023-09-13,13,9,3,2023,37,2,Mercredi,Automne,False,False,Safar,2,1445,Période normale,normal
+257,2023-09-14,14,9,3,2023,37,2,Jeudi,Automne,False,False,Safar,2,1445,Période normale,normal
+258,2023-09-15,15,9,3,2023,37,3,Vendredi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+259,2023-09-16,16,9,3,2023,37,3,Samedi,Automne,True,False,Rabi al-Awwal,3,1445,Période normale,normal
+260,2023-09-17,17,9,3,2023,37,3,Dimanche,Automne,True,False,Rabi al-Awwal,3,1445,Période normale,normal
+261,2023-09-18,18,9,3,2023,38,3,Lundi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+262,2023-09-19,19,9,3,2023,38,3,Mardi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+263,2023-09-20,20,9,3,2023,38,3,Mercredi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+264,2023-09-21,21,9,3,2023,38,3,Jeudi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+265,2023-09-22,22,9,3,2023,38,4,Vendredi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+266,2023-09-23,23,9,3,2023,38,4,Samedi,Automne,True,False,Rabi al-Awwal,3,1445,Période normale,normal
+267,2023-09-24,24,9,3,2023,38,4,Dimanche,Automne,True,False,Rabi al-Awwal,3,1445,Période normale,normal
+268,2023-09-25,25,9,3,2023,39,4,Lundi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+269,2023-09-26,26,9,3,2023,39,4,Mardi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+270,2023-09-27,27,9,3,2023,39,4,Mercredi,Automne,False,False,Rabi al-Awwal,3,1445,Mawlid,faible
+271,2023-09-28,28,9,3,2023,39,4,Jeudi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+272,2023-09-29,29,9,3,2023,39,5,Vendredi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+273,2023-09-30,30,9,3,2023,39,5,Samedi,Automne,True,False,Rabi al-Awwal,3,1445,Période normale,normal
+274,2023-10-01,1,10,4,2023,39,1,Dimanche,Automne,True,False,Rabi al-Awwal,3,1445,Période normale,normal
+275,2023-10-02,2,10,4,2023,40,1,Lundi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+276,2023-10-03,3,10,4,2023,40,1,Mardi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+277,2023-10-04,4,10,4,2023,40,1,Mercredi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+278,2023-10-05,5,10,4,2023,40,1,Jeudi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+279,2023-10-06,6,10,4,2023,40,1,Vendredi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+280,2023-10-07,7,10,4,2023,40,1,Samedi,Automne,True,False,Rabi al-Awwal,3,1445,Période normale,normal
+281,2023-10-08,8,10,4,2023,40,2,Dimanche,Automne,True,False,Rabi al-Awwal,3,1445,Période normale,normal
+282,2023-10-09,9,10,4,2023,41,2,Lundi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+283,2023-10-10,10,10,4,2023,41,2,Mardi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+284,2023-10-11,11,10,4,2023,41,2,Mercredi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+285,2023-10-12,12,10,4,2023,41,2,Jeudi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+286,2023-10-13,13,10,4,2023,41,2,Vendredi,Automne,False,False,Rabi al-Awwal,3,1445,Période normale,normal
+287,2023-10-14,14,10,4,2023,41,2,Samedi,Automne,True,False,Rabi al-Awwal,3,1445,Période normale,normal
+288,2023-10-15,15,10,4,2023,41,3,Dimanche,Automne,True,True,Rabi al-Thani,4,1445,Période normale,normal
+289,2023-10-16,16,10,4,2023,42,3,Lundi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+290,2023-10-17,17,10,4,2023,42,3,Mardi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+291,2023-10-18,18,10,4,2023,42,3,Mercredi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+292,2023-10-19,19,10,4,2023,42,3,Jeudi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+293,2023-10-20,20,10,4,2023,42,3,Vendredi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+294,2023-10-21,21,10,4,2023,42,3,Samedi,Automne,True,False,Rabi al-Thani,4,1445,Période normale,normal
+295,2023-10-22,22,10,4,2023,42,4,Dimanche,Automne,True,False,Rabi al-Thani,4,1445,Période normale,normal
+296,2023-10-23,23,10,4,2023,43,4,Lundi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+297,2023-10-24,24,10,4,2023,43,4,Mardi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+298,2023-10-25,25,10,4,2023,43,4,Mercredi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+299,2023-10-26,26,10,4,2023,43,4,Jeudi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+300,2023-10-27,27,10,4,2023,43,4,Vendredi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+301,2023-10-28,28,10,4,2023,43,4,Samedi,Automne,True,False,Rabi al-Thani,4,1445,Période normale,normal
+302,2023-10-29,29,10,4,2023,43,5,Dimanche,Automne,True,False,Rabi al-Thani,4,1445,Période normale,normal
+303,2023-10-30,30,10,4,2023,44,5,Lundi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+304,2023-10-31,31,10,4,2023,44,5,Mardi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+305,2023-11-01,1,11,4,2023,44,1,Mercredi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+306,2023-11-02,2,11,4,2023,44,1,Jeudi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+307,2023-11-03,3,11,4,2023,44,1,Vendredi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+308,2023-11-04,4,11,4,2023,44,1,Samedi,Automne,True,False,Rabi al-Thani,4,1445,Période normale,normal
+309,2023-11-05,5,11,4,2023,44,1,Dimanche,Automne,True,False,Rabi al-Thani,4,1445,Période normale,normal
+310,2023-11-06,6,11,4,2023,45,1,Lundi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+311,2023-11-07,7,11,4,2023,45,1,Mardi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+312,2023-11-08,8,11,4,2023,45,2,Mercredi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+313,2023-11-09,9,11,4,2023,45,2,Jeudi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+314,2023-11-10,10,11,4,2023,45,2,Vendredi,Automne,False,False,Rabi al-Thani,4,1445,Période normale,normal
+315,2023-11-11,11,11,4,2023,45,2,Samedi,Automne,True,False,Rabi al-Thani,4,1445,Période normale,normal
+316,2023-11-12,12,11,4,2023,45,2,Dimanche,Automne,True,False,Rabi al-Thani,4,1445,Période normale,normal
+317,2023-11-13,13,11,4,2023,46,2,Lundi,Automne,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+318,2023-11-14,14,11,4,2023,46,2,Mardi,Automne,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+319,2023-11-15,15,11,4,2023,46,3,Mercredi,Automne,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+320,2023-11-16,16,11,4,2023,46,3,Jeudi,Automne,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+321,2023-11-17,17,11,4,2023,46,3,Vendredi,Automne,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+322,2023-11-18,18,11,4,2023,46,3,Samedi,Automne,True,False,Joumada al-Awwal,5,1445,Période normale,normal
+323,2023-11-19,19,11,4,2023,46,3,Dimanche,Automne,True,False,Joumada al-Awwal,5,1445,Période normale,normal
+324,2023-11-20,20,11,4,2023,47,3,Lundi,Automne,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+325,2023-11-21,21,11,4,2023,47,3,Mardi,Automne,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+326,2023-11-22,22,11,4,2023,47,4,Mercredi,Automne,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+327,2023-11-23,23,11,4,2023,47,4,Jeudi,Automne,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+328,2023-11-24,24,11,4,2023,47,4,Vendredi,Automne,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+329,2023-11-25,25,11,4,2023,47,4,Samedi,Automne,True,False,Joumada al-Awwal,5,1445,Période normale,normal
+330,2023-11-26,26,11,4,2023,47,4,Dimanche,Automne,True,False,Joumada al-Awwal,5,1445,Période normale,normal
+331,2023-11-27,27,11,4,2023,48,4,Lundi,Automne,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+332,2023-11-28,28,11,4,2023,48,4,Mardi,Automne,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+333,2023-11-29,29,11,4,2023,48,5,Mercredi,Automne,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+334,2023-11-30,30,11,4,2023,48,5,Jeudi,Automne,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+335,2023-12-01,1,12,4,2023,48,1,Vendredi,Hiver,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+336,2023-12-02,2,12,4,2023,48,1,Samedi,Hiver,True,False,Joumada al-Awwal,5,1445,Période normale,normal
+337,2023-12-03,3,12,4,2023,48,1,Dimanche,Hiver,True,False,Joumada al-Awwal,5,1445,Période normale,normal
+338,2023-12-04,4,12,4,2023,49,1,Lundi,Hiver,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+339,2023-12-05,5,12,4,2023,49,1,Mardi,Hiver,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+340,2023-12-06,6,12,4,2023,49,1,Mercredi,Hiver,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+341,2023-12-07,7,12,4,2023,49,1,Jeudi,Hiver,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+342,2023-12-08,8,12,4,2023,49,2,Vendredi,Hiver,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+343,2023-12-09,9,12,4,2023,49,2,Samedi,Hiver,True,False,Joumada al-Awwal,5,1445,Période normale,normal
+344,2023-12-10,10,12,4,2023,49,2,Dimanche,Hiver,True,False,Joumada al-Awwal,5,1445,Période normale,normal
+345,2023-12-11,11,12,4,2023,50,2,Lundi,Hiver,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+346,2023-12-12,12,12,4,2023,50,2,Mardi,Hiver,False,False,Joumada al-Awwal,5,1445,Période normale,normal
+347,2023-12-13,13,12,4,2023,50,2,Mercredi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+348,2023-12-14,14,12,4,2023,50,2,Jeudi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+349,2023-12-15,15,12,4,2023,50,3,Vendredi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+350,2023-12-16,16,12,4,2023,50,3,Samedi,Hiver,True,False,Joumada al-Thani,6,1445,Période normale,normal
+351,2023-12-17,17,12,4,2023,50,3,Dimanche,Hiver,True,False,Joumada al-Thani,6,1445,Période normale,normal
+352,2023-12-18,18,12,4,2023,51,3,Lundi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+353,2023-12-19,19,12,4,2023,51,3,Mardi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+354,2023-12-20,20,12,4,2023,51,3,Mercredi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+355,2023-12-21,21,12,4,2023,51,3,Jeudi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+356,2023-12-22,22,12,4,2023,51,4,Vendredi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+357,2023-12-23,23,12,4,2023,51,4,Samedi,Hiver,True,False,Joumada al-Thani,6,1445,Période normale,normal
+358,2023-12-24,24,12,4,2023,51,4,Dimanche,Hiver,True,False,Joumada al-Thani,6,1445,Période normale,normal
+359,2023-12-25,25,12,4,2023,52,4,Lundi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+360,2023-12-26,26,12,4,2023,52,4,Mardi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+361,2023-12-27,27,12,4,2023,52,4,Mercredi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+362,2023-12-28,28,12,4,2023,52,4,Jeudi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+363,2023-12-29,29,12,4,2023,52,5,Vendredi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+364,2023-12-30,30,12,4,2023,52,5,Samedi,Hiver,True,False,Joumada al-Thani,6,1445,Période normale,normal
+365,2023-12-31,31,12,4,2023,52,5,Dimanche,Hiver,True,False,Joumada al-Thani,6,1445,Période normale,normal
+366,2024-01-01,1,1,1,2024,1,1,Lundi,Hiver,False,True,Joumada al-Thani,6,1445,Période normale,normal
+367,2024-01-02,2,1,1,2024,1,1,Mardi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+368,2024-01-03,3,1,1,2024,1,1,Mercredi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+369,2024-01-04,4,1,1,2024,1,1,Jeudi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+370,2024-01-05,5,1,1,2024,1,1,Vendredi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+371,2024-01-06,6,1,1,2024,1,1,Samedi,Hiver,True,False,Joumada al-Thani,6,1445,Période normale,normal
+372,2024-01-07,7,1,1,2024,1,1,Dimanche,Hiver,True,False,Joumada al-Thani,6,1445,Période normale,normal
+373,2024-01-08,8,1,1,2024,2,2,Lundi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+374,2024-01-09,9,1,1,2024,2,2,Mardi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+375,2024-01-10,10,1,1,2024,2,2,Mercredi,Hiver,False,False,Joumada al-Thani,6,1445,Période normale,normal
+376,2024-01-11,11,1,1,2024,2,2,Jeudi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+377,2024-01-12,12,1,1,2024,2,2,Vendredi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+378,2024-01-13,13,1,1,2024,2,2,Samedi,Hiver,True,False,Rajab,7,1445,Période normale,normal
+379,2024-01-14,14,1,1,2024,2,2,Dimanche,Hiver,True,False,Rajab,7,1445,Période normale,normal
+380,2024-01-15,15,1,1,2024,3,3,Lundi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+381,2024-01-16,16,1,1,2024,3,3,Mardi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+382,2024-01-17,17,1,1,2024,3,3,Mercredi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+383,2024-01-18,18,1,1,2024,3,3,Jeudi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+384,2024-01-19,19,1,1,2024,3,3,Vendredi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+385,2024-01-20,20,1,1,2024,3,3,Samedi,Hiver,True,False,Rajab,7,1445,Période normale,normal
+386,2024-01-21,21,1,1,2024,3,3,Dimanche,Hiver,True,False,Rajab,7,1445,Période normale,normal
+387,2024-01-22,22,1,1,2024,4,4,Lundi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+388,2024-01-23,23,1,1,2024,4,4,Mardi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+389,2024-01-24,24,1,1,2024,4,4,Mercredi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+390,2024-01-25,25,1,1,2024,4,4,Jeudi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+391,2024-01-26,26,1,1,2024,4,4,Vendredi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+392,2024-01-27,27,1,1,2024,4,4,Samedi,Hiver,True,False,Rajab,7,1445,Période normale,normal
+393,2024-01-28,28,1,1,2024,4,4,Dimanche,Hiver,True,False,Rajab,7,1445,Période normale,normal
+394,2024-01-29,29,1,1,2024,5,5,Lundi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+395,2024-01-30,30,1,1,2024,5,5,Mardi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+396,2024-01-31,31,1,1,2024,5,5,Mercredi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+397,2024-02-01,1,2,1,2024,5,1,Jeudi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+398,2024-02-02,2,2,1,2024,5,1,Vendredi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+399,2024-02-03,3,2,1,2024,5,1,Samedi,Hiver,True,False,Rajab,7,1445,Période normale,normal
+400,2024-02-04,4,2,1,2024,5,1,Dimanche,Hiver,True,False,Rajab,7,1445,Période normale,normal
+401,2024-02-05,5,2,1,2024,6,1,Lundi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+402,2024-02-06,6,2,1,2024,6,1,Mardi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+403,2024-02-07,7,2,1,2024,6,1,Mercredi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+404,2024-02-08,8,2,1,2024,6,2,Jeudi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+405,2024-02-09,9,2,1,2024,6,2,Vendredi,Hiver,False,False,Rajab,7,1445,Période normale,normal
+406,2024-02-10,10,2,1,2024,6,2,Samedi,Hiver,True,False,Chaabane,8,1445,Période normale,normal
+407,2024-02-11,11,2,1,2024,6,2,Dimanche,Hiver,True,False,Chaabane,8,1445,Période normale,normal
+408,2024-02-12,12,2,1,2024,7,2,Lundi,Hiver,False,False,Chaabane,8,1445,Période normale,normal
+409,2024-02-13,13,2,1,2024,7,2,Mardi,Hiver,False,False,Chaabane,8,1445,Période normale,normal
+410,2024-02-14,14,2,1,2024,7,2,Mercredi,Hiver,False,False,Chaabane,8,1445,Période normale,normal
+411,2024-02-15,15,2,1,2024,7,3,Jeudi,Hiver,False,False,Chaabane,8,1445,Période normale,normal
+412,2024-02-16,16,2,1,2024,7,3,Vendredi,Hiver,False,False,Chaabane,8,1445,Période normale,normal
+413,2024-02-17,17,2,1,2024,7,3,Samedi,Hiver,True,False,Chaabane,8,1445,Période normale,normal
+414,2024-02-18,18,2,1,2024,7,3,Dimanche,Hiver,True,False,Chaabane,8,1445,Période normale,normal
+415,2024-02-19,19,2,1,2024,8,3,Lundi,Hiver,False,False,Chaabane,8,1445,Période normale,normal
+416,2024-02-20,20,2,1,2024,8,3,Mardi,Hiver,False,False,Chaabane,8,1445,Période normale,normal
+417,2024-02-21,21,2,1,2024,8,3,Mercredi,Hiver,False,False,Chaabane,8,1445,Période normale,normal
+418,2024-02-22,22,2,1,2024,8,4,Jeudi,Hiver,False,False,Chaabane,8,1445,Période normale,normal
+419,2024-02-23,23,2,1,2024,8,4,Vendredi,Hiver,False,False,Chaabane,8,1445,Période normale,normal
+420,2024-02-24,24,2,1,2024,8,4,Samedi,Hiver,True,False,Chaabane,8,1445,Période normale,normal
+421,2024-02-25,25,2,1,2024,8,4,Dimanche,Hiver,True,False,Chaabane,8,1445,Période normale,normal
+422,2024-02-26,26,2,1,2024,9,4,Lundi,Hiver,False,False,Chaabane,8,1445,Période normale,normal
+423,2024-02-27,27,2,1,2024,9,4,Mardi,Hiver,False,False,Chaabane,8,1445,Période normale,normal
+424,2024-02-28,28,2,1,2024,9,4,Mercredi,Hiver,False,False,Chaabane,8,1445,Période normale,normal
+425,2024-02-29,29,2,1,2024,9,5,Jeudi,Hiver,False,False,Chaabane,8,1445,Période normale,normal
+426,2024-03-01,1,3,1,2024,9,1,Vendredi,Printemps,False,False,Chaabane,8,1445,Période normale,normal
+427,2024-03-02,2,3,1,2024,9,1,Samedi,Printemps,True,False,Chaabane,8,1445,Période normale,normal
+428,2024-03-03,3,3,1,2024,9,1,Dimanche,Printemps,True,False,Chaabane,8,1445,Période normale,normal
+429,2024-03-04,4,3,1,2024,10,1,Lundi,Printemps,False,False,Chaabane,8,1445,Pré-Ramadan,fort
+430,2024-03-05,5,3,1,2024,10,1,Mardi,Printemps,False,False,Chaabane,8,1445,Pré-Ramadan,fort
+431,2024-03-06,6,3,1,2024,10,1,Mercredi,Printemps,False,False,Chaabane,8,1445,Pré-Ramadan,fort
+432,2024-03-07,7,3,1,2024,10,1,Jeudi,Printemps,False,False,Chaabane,8,1445,Pré-Ramadan,fort
+433,2024-03-08,8,3,1,2024,10,2,Vendredi,Printemps,False,False,Chaabane,8,1445,Pré-Ramadan,fort
+434,2024-03-09,9,3,1,2024,10,2,Samedi,Printemps,True,False,Chaabane,8,1445,Pré-Ramadan,fort
+435,2024-03-10,10,3,1,2024,10,2,Dimanche,Printemps,True,False,Chaabane,8,1445,Pré-Ramadan,fort
+436,2024-03-11,11,3,1,2024,11,2,Lundi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+437,2024-03-12,12,3,1,2024,11,2,Mardi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+438,2024-03-13,13,3,1,2024,11,2,Mercredi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+439,2024-03-14,14,3,1,2024,11,2,Jeudi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+440,2024-03-15,15,3,1,2024,11,3,Vendredi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+441,2024-03-16,16,3,1,2024,11,3,Samedi,Printemps,True,False,Ramadan,9,1445,Ramadan,moyen
+442,2024-03-17,17,3,1,2024,11,3,Dimanche,Printemps,True,False,Ramadan,9,1445,Ramadan,moyen
+443,2024-03-18,18,3,1,2024,12,3,Lundi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+444,2024-03-19,19,3,1,2024,12,3,Mardi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+445,2024-03-20,20,3,1,2024,12,3,Mercredi,Printemps,False,True,Ramadan,9,1445,Ramadan,moyen
+446,2024-03-21,21,3,1,2024,12,3,Jeudi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+447,2024-03-22,22,3,1,2024,12,4,Vendredi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+448,2024-03-23,23,3,1,2024,12,4,Samedi,Printemps,True,False,Ramadan,9,1445,Ramadan,moyen
+449,2024-03-24,24,3,1,2024,12,4,Dimanche,Printemps,True,False,Ramadan,9,1445,Ramadan,moyen
+450,2024-03-25,25,3,1,2024,13,4,Lundi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+451,2024-03-26,26,3,1,2024,13,4,Mardi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+452,2024-03-27,27,3,1,2024,13,4,Mercredi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+453,2024-03-28,28,3,1,2024,13,4,Jeudi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+454,2024-03-29,29,3,1,2024,13,5,Vendredi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+455,2024-03-30,30,3,1,2024,13,5,Samedi,Printemps,True,False,Ramadan,9,1445,Ramadan,moyen
+456,2024-03-31,31,3,1,2024,13,5,Dimanche,Printemps,True,False,Ramadan,9,1445,Ramadan,moyen
+457,2024-04-01,1,4,2,2024,14,1,Lundi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+458,2024-04-02,2,4,2,2024,14,1,Mardi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+459,2024-04-03,3,4,2,2024,14,1,Mercredi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+460,2024-04-04,4,4,2,2024,14,1,Jeudi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+461,2024-04-05,5,4,2,2024,14,1,Vendredi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+462,2024-04-06,6,4,2,2024,14,1,Samedi,Printemps,True,False,Ramadan,9,1445,Ramadan,moyen
+463,2024-04-07,7,4,2,2024,14,1,Dimanche,Printemps,True,False,Ramadan,9,1445,Ramadan,moyen
+464,2024-04-08,8,4,2,2024,15,2,Lundi,Printemps,False,False,Ramadan,9,1445,Ramadan,moyen
+465,2024-04-09,9,4,2,2024,15,2,Mardi,Printemps,False,True,Ramadan,9,1445,Aïd el-Fitr,très fort
+466,2024-04-10,10,4,2,2024,15,2,Mercredi,Printemps,False,False,Chawwal,10,1445,Aïd el-Fitr,très fort
+467,2024-04-11,11,4,2,2024,15,2,Jeudi,Printemps,False,False,Chawwal,10,1445,Aïd el-Fitr,très fort
+468,2024-04-12,12,4,2,2024,15,2,Vendredi,Printemps,False,False,Chawwal,10,1445,Aïd el-Fitr,très fort
+469,2024-04-13,13,4,2,2024,15,2,Samedi,Printemps,True,False,Chawwal,10,1445,Période normale,normal
+470,2024-04-14,14,4,2,2024,15,2,Dimanche,Printemps,True,False,Chawwal,10,1445,Période normale,normal
+471,2024-04-15,15,4,2,2024,16,3,Lundi,Printemps,False,False,Chawwal,10,1445,Période normale,normal
+472,2024-04-16,16,4,2,2024,16,3,Mardi,Printemps,False,False,Chawwal,10,1445,Période normale,normal
+473,2024-04-17,17,4,2,2024,16,3,Mercredi,Printemps,False,False,Chawwal,10,1445,Période normale,normal
+474,2024-04-18,18,4,2,2024,16,3,Jeudi,Printemps,False,False,Chawwal,10,1445,Période normale,normal
+475,2024-04-19,19,4,2,2024,16,3,Vendredi,Printemps,False,False,Chawwal,10,1445,Période normale,normal
+476,2024-04-20,20,4,2,2024,16,3,Samedi,Printemps,True,False,Chawwal,10,1445,Période normale,normal
+477,2024-04-21,21,4,2,2024,16,3,Dimanche,Printemps,True,False,Chawwal,10,1445,Période normale,normal
+478,2024-04-22,22,4,2,2024,17,4,Lundi,Printemps,False,False,Chawwal,10,1445,Période normale,normal
+479,2024-04-23,23,4,2,2024,17,4,Mardi,Printemps,False,False,Chawwal,10,1445,Période normale,normal
+480,2024-04-24,24,4,2,2024,17,4,Mercredi,Printemps,False,False,Chawwal,10,1445,Période normale,normal
+481,2024-04-25,25,4,2,2024,17,4,Jeudi,Printemps,False,False,Chawwal,10,1445,Période normale,normal
+482,2024-04-26,26,4,2,2024,17,4,Vendredi,Printemps,False,False,Chawwal,10,1445,Période normale,normal
+483,2024-04-27,27,4,2,2024,17,4,Samedi,Printemps,True,False,Chawwal,10,1445,Période normale,normal
+484,2024-04-28,28,4,2,2024,17,4,Dimanche,Printemps,True,False,Chawwal,10,1445,Période normale,normal
+485,2024-04-29,29,4,2,2024,18,5,Lundi,Printemps,False,False,Chawwal,10,1445,Période normale,normal
+486,2024-04-30,30,4,2,2024,18,5,Mardi,Printemps,False,False,Chawwal,10,1445,Période normale,normal
+487,2024-05-01,1,5,2,2024,18,1,Mercredi,Printemps,False,True,Chawwal,10,1445,Période normale,normal
+488,2024-05-02,2,5,2,2024,18,1,Jeudi,Printemps,False,False,Chawwal,10,1445,Période normale,normal
+489,2024-05-03,3,5,2,2024,18,1,Vendredi,Printemps,False,False,Chawwal,10,1445,Période normale,normal
+490,2024-05-04,4,5,2,2024,18,1,Samedi,Printemps,True,False,Chawwal,10,1445,Période normale,normal
+491,2024-05-05,5,5,2,2024,18,1,Dimanche,Printemps,True,False,Chawwal,10,1445,Période normale,normal
+492,2024-05-06,6,5,2,2024,19,1,Lundi,Printemps,False,False,Chawwal,10,1445,Période normale,normal
+493,2024-05-07,7,5,2,2024,19,1,Mardi,Printemps,False,False,Chawwal,10,1445,Période normale,normal
+494,2024-05-08,8,5,2,2024,19,2,Mercredi,Printemps,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+495,2024-05-09,9,5,2,2024,19,2,Jeudi,Printemps,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+496,2024-05-10,10,5,2,2024,19,2,Vendredi,Printemps,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+497,2024-05-11,11,5,2,2024,19,2,Samedi,Printemps,True,False,Dhou al-Qi'da,11,1445,Période normale,normal
+498,2024-05-12,12,5,2,2024,19,2,Dimanche,Printemps,True,False,Dhou al-Qi'da,11,1445,Période normale,normal
+499,2024-05-13,13,5,2,2024,20,2,Lundi,Printemps,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+500,2024-05-14,14,5,2,2024,20,2,Mardi,Printemps,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+501,2024-05-15,15,5,2,2024,20,3,Mercredi,Printemps,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+502,2024-05-16,16,5,2,2024,20,3,Jeudi,Printemps,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+503,2024-05-17,17,5,2,2024,20,3,Vendredi,Printemps,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+504,2024-05-18,18,5,2,2024,20,3,Samedi,Printemps,True,False,Dhou al-Qi'da,11,1445,Période normale,normal
+505,2024-05-19,19,5,2,2024,20,3,Dimanche,Printemps,True,False,Dhou al-Qi'da,11,1445,Période normale,normal
+506,2024-05-20,20,5,2,2024,21,3,Lundi,Printemps,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+507,2024-05-21,21,5,2,2024,21,3,Mardi,Printemps,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+508,2024-05-22,22,5,2,2024,21,4,Mercredi,Printemps,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+509,2024-05-23,23,5,2,2024,21,4,Jeudi,Printemps,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+510,2024-05-24,24,5,2,2024,21,4,Vendredi,Printemps,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+511,2024-05-25,25,5,2,2024,21,4,Samedi,Printemps,True,False,Dhou al-Qi'da,11,1445,Période normale,normal
+512,2024-05-26,26,5,2,2024,21,4,Dimanche,Printemps,True,False,Dhou al-Qi'da,11,1445,Période normale,normal
+513,2024-05-27,27,5,2,2024,22,4,Lundi,Printemps,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+514,2024-05-28,28,5,2,2024,22,4,Mardi,Printemps,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+515,2024-05-29,29,5,2,2024,22,5,Mercredi,Printemps,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+516,2024-05-30,30,5,2,2024,22,5,Jeudi,Printemps,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+517,2024-05-31,31,5,2,2024,22,5,Vendredi,Printemps,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+518,2024-06-01,1,6,2,2024,22,1,Samedi,Été,True,False,Dhou al-Qi'da,11,1445,Période normale,normal
+519,2024-06-02,2,6,2,2024,22,1,Dimanche,Été,True,False,Dhou al-Qi'da,11,1445,Période normale,normal
+520,2024-06-03,3,6,2,2024,23,1,Lundi,Été,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+521,2024-06-04,4,6,2,2024,23,1,Mardi,Été,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+522,2024-06-05,5,6,2,2024,23,1,Mercredi,Été,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+523,2024-06-06,6,6,2,2024,23,1,Jeudi,Été,False,False,Dhou al-Qi'da,11,1445,Période normale,normal
+524,2024-06-07,7,6,2,2024,23,1,Vendredi,Été,False,False,Dhou al-Hijja,12,1445,Période normale,normal
+525,2024-06-08,8,6,2,2024,23,2,Samedi,Été,True,False,Dhou al-Hijja,12,1445,Période normale,normal
+526,2024-06-09,9,6,2,2024,23,2,Dimanche,Été,True,False,Dhou al-Hijja,12,1445,Période normale,normal
+527,2024-06-10,10,6,2,2024,24,2,Lundi,Été,False,False,Dhou al-Hijja,12,1445,Aïd el-Adha,très fort
+528,2024-06-11,11,6,2,2024,24,2,Mardi,Été,False,False,Dhou al-Hijja,12,1445,Aïd el-Adha,très fort
+529,2024-06-12,12,6,2,2024,24,2,Mercredi,Été,False,False,Dhou al-Hijja,12,1445,Aïd el-Adha,très fort
+530,2024-06-13,13,6,2,2024,24,2,Jeudi,Été,False,False,Dhou al-Hijja,12,1445,Aïd el-Adha,très fort
+531,2024-06-14,14,6,2,2024,24,2,Vendredi,Été,False,False,Dhou al-Hijja,12,1445,Aïd el-Adha,très fort
+532,2024-06-15,15,6,2,2024,24,3,Samedi,Été,True,False,Dhou al-Hijja,12,1445,Aïd el-Adha,très fort
+533,2024-06-16,16,6,2,2024,24,3,Dimanche,Été,True,False,Dhou al-Hijja,12,1445,Aïd el-Adha,très fort
+534,2024-06-17,17,6,2,2024,25,3,Lundi,Été,False,False,Dhou al-Hijja,12,1445,Aïd el-Adha,très fort
+535,2024-06-18,18,6,2,2024,25,3,Mardi,Été,False,False,Dhou al-Hijja,12,1445,Aïd el-Adha,très fort
+536,2024-06-19,19,6,2,2024,25,3,Mercredi,Été,False,False,Dhou al-Hijja,12,1445,Aïd el-Adha,très fort
+537,2024-06-20,20,6,2,2024,25,3,Jeudi,Été,False,False,Dhou al-Hijja,12,1445,Période normale,normal
+538,2024-06-21,21,6,2,2024,25,3,Vendredi,Été,False,False,Dhou al-Hijja,12,1445,Période normale,normal
+539,2024-06-22,22,6,2,2024,25,4,Samedi,Été,True,False,Dhou al-Hijja,12,1445,Période normale,normal
+540,2024-06-23,23,6,2,2024,25,4,Dimanche,Été,True,False,Dhou al-Hijja,12,1445,Période normale,normal
+541,2024-06-24,24,6,2,2024,26,4,Lundi,Été,False,False,Dhou al-Hijja,12,1445,Période normale,normal
+542,2024-06-25,25,6,2,2024,26,4,Mardi,Été,False,False,Dhou al-Hijja,12,1445,Période normale,normal
+543,2024-06-26,26,6,2,2024,26,4,Mercredi,Été,False,False,Dhou al-Hijja,12,1445,Période normale,normal
+544,2024-06-27,27,6,2,2024,26,4,Jeudi,Été,False,False,Dhou al-Hijja,12,1445,Période normale,normal
+545,2024-06-28,28,6,2,2024,26,4,Vendredi,Été,False,False,Dhou al-Hijja,12,1445,Période normale,normal
+546,2024-06-29,29,6,2,2024,26,5,Samedi,Été,True,False,Dhou al-Hijja,12,1445,Période normale,normal
+547,2024-06-30,30,6,2,2024,26,5,Dimanche,Été,True,False,Dhou al-Hijja,12,1445,Période normale,normal
+548,2024-07-01,1,7,3,2024,27,1,Lundi,Été,False,False,Dhou al-Hijja,12,1445,Période normale,normal
+549,2024-07-02,2,7,3,2024,27,1,Mardi,Été,False,False,Dhou al-Hijja,12,1445,Période normale,normal
+550,2024-07-03,3,7,3,2024,27,1,Mercredi,Été,False,False,Dhou al-Hijja,12,1445,Période normale,normal
+551,2024-07-04,4,7,3,2024,27,1,Jeudi,Été,False,False,Dhou al-Hijja,12,1445,Période normale,normal
+552,2024-07-05,5,7,3,2024,27,1,Vendredi,Été,False,False,Dhou al-Hijja,12,1445,Période normale,normal
+553,2024-07-06,6,7,3,2024,27,1,Samedi,Été,True,False,Mouharram,1,1446,Période normale,normal
+554,2024-07-07,7,7,3,2024,27,1,Dimanche,Été,True,False,Mouharram,1,1446,Nouvel An Islamique,faible
+555,2024-07-08,8,7,3,2024,28,2,Lundi,Été,False,False,Mouharram,1,1446,Période normale,normal
+556,2024-07-09,9,7,3,2024,28,2,Mardi,Été,False,False,Mouharram,1,1446,Période normale,normal
+557,2024-07-10,10,7,3,2024,28,2,Mercredi,Été,False,False,Mouharram,1,1446,Période normale,normal
+558,2024-07-11,11,7,3,2024,28,2,Jeudi,Été,False,False,Mouharram,1,1446,Période normale,normal
+559,2024-07-12,12,7,3,2024,28,2,Vendredi,Été,False,False,Mouharram,1,1446,Période normale,normal
+560,2024-07-13,13,7,3,2024,28,2,Samedi,Été,True,False,Mouharram,1,1446,Période normale,normal
+561,2024-07-14,14,7,3,2024,28,2,Dimanche,Été,True,False,Mouharram,1,1446,Période normale,normal
+562,2024-07-15,15,7,3,2024,29,3,Lundi,Été,False,False,Mouharram,1,1446,Période normale,normal
+563,2024-07-16,16,7,3,2024,29,3,Mardi,Été,False,False,Mouharram,1,1446,Période normale,normal
+564,2024-07-17,17,7,3,2024,29,3,Mercredi,Été,False,False,Mouharram,1,1446,Période normale,normal
+565,2024-07-18,18,7,3,2024,29,3,Jeudi,Été,False,False,Mouharram,1,1446,Période normale,normal
+566,2024-07-19,19,7,3,2024,29,3,Vendredi,Été,False,False,Mouharram,1,1446,Période normale,normal
+567,2024-07-20,20,7,3,2024,29,3,Samedi,Été,True,False,Mouharram,1,1446,Période normale,normal
+568,2024-07-21,21,7,3,2024,29,3,Dimanche,Été,True,False,Mouharram,1,1446,Période normale,normal
+569,2024-07-22,22,7,3,2024,30,4,Lundi,Été,False,False,Mouharram,1,1446,Période normale,normal
+570,2024-07-23,23,7,3,2024,30,4,Mardi,Été,False,False,Mouharram,1,1446,Période normale,normal
+571,2024-07-24,24,7,3,2024,30,4,Mercredi,Été,False,False,Mouharram,1,1446,Période normale,normal
+572,2024-07-25,25,7,3,2024,30,4,Jeudi,Été,False,True,Mouharram,1,1446,Période normale,normal
+573,2024-07-26,26,7,3,2024,30,4,Vendredi,Été,False,False,Mouharram,1,1446,Période normale,normal
+574,2024-07-27,27,7,3,2024,30,4,Samedi,Été,True,False,Mouharram,1,1446,Période normale,normal
+575,2024-07-28,28,7,3,2024,30,4,Dimanche,Été,True,False,Mouharram,1,1446,Période normale,normal
+576,2024-07-29,29,7,3,2024,31,5,Lundi,Été,False,False,Mouharram,1,1446,Période normale,normal
+577,2024-07-30,30,7,3,2024,31,5,Mardi,Été,False,False,Mouharram,1,1446,Période normale,normal
+578,2024-07-31,31,7,3,2024,31,5,Mercredi,Été,False,False,Mouharram,1,1446,Période normale,normal
+579,2024-08-01,1,8,3,2024,31,1,Jeudi,Été,False,False,Mouharram,1,1446,Période normale,normal
+580,2024-08-02,2,8,3,2024,31,1,Vendredi,Été,False,False,Mouharram,1,1446,Période normale,normal
+581,2024-08-03,3,8,3,2024,31,1,Samedi,Été,True,False,Mouharram,1,1446,Période normale,normal
+582,2024-08-04,4,8,3,2024,31,1,Dimanche,Été,True,False,Mouharram,1,1446,Période normale,normal
+583,2024-08-05,5,8,3,2024,32,1,Lundi,Été,False,False,Safar,2,1446,Période normale,normal
+584,2024-08-06,6,8,3,2024,32,1,Mardi,Été,False,False,Safar,2,1446,Période normale,normal
+585,2024-08-07,7,8,3,2024,32,1,Mercredi,Été,False,False,Safar,2,1446,Période normale,normal
+586,2024-08-08,8,8,3,2024,32,2,Jeudi,Été,False,False,Safar,2,1446,Période normale,normal
+587,2024-08-09,9,8,3,2024,32,2,Vendredi,Été,False,False,Safar,2,1446,Période normale,normal
+588,2024-08-10,10,8,3,2024,32,2,Samedi,Été,True,False,Safar,2,1446,Période normale,normal
+589,2024-08-11,11,8,3,2024,32,2,Dimanche,Été,True,False,Safar,2,1446,Période normale,normal
+590,2024-08-12,12,8,3,2024,33,2,Lundi,Été,False,False,Safar,2,1446,Période normale,normal
+591,2024-08-13,13,8,3,2024,33,2,Mardi,Été,False,True,Safar,2,1446,Période normale,normal
+592,2024-08-14,14,8,3,2024,33,2,Mercredi,Été,False,False,Safar,2,1446,Période normale,normal
+593,2024-08-15,15,8,3,2024,33,3,Jeudi,Été,False,False,Safar,2,1446,Période normale,normal
+594,2024-08-16,16,8,3,2024,33,3,Vendredi,Été,False,False,Safar,2,1446,Période normale,normal
+595,2024-08-17,17,8,3,2024,33,3,Samedi,Été,True,False,Safar,2,1446,Période normale,normal
+596,2024-08-18,18,8,3,2024,33,3,Dimanche,Été,True,False,Safar,2,1446,Période normale,normal
+597,2024-08-19,19,8,3,2024,34,3,Lundi,Été,False,False,Safar,2,1446,Période normale,normal
+598,2024-08-20,20,8,3,2024,34,3,Mardi,Été,False,False,Safar,2,1446,Période normale,normal
+599,2024-08-21,21,8,3,2024,34,3,Mercredi,Été,False,False,Safar,2,1446,Période normale,normal
+600,2024-08-22,22,8,3,2024,34,4,Jeudi,Été,False,False,Safar,2,1446,Période normale,normal
+601,2024-08-23,23,8,3,2024,34,4,Vendredi,Été,False,False,Safar,2,1446,Période normale,normal
+602,2024-08-24,24,8,3,2024,34,4,Samedi,Été,True,False,Safar,2,1446,Période normale,normal
+603,2024-08-25,25,8,3,2024,34,4,Dimanche,Été,True,False,Safar,2,1446,Période normale,normal
+604,2024-08-26,26,8,3,2024,35,4,Lundi,Été,False,False,Safar,2,1446,Période normale,normal
+605,2024-08-27,27,8,3,2024,35,4,Mardi,Été,False,False,Safar,2,1446,Période normale,normal
+606,2024-08-28,28,8,3,2024,35,4,Mercredi,Été,False,False,Safar,2,1446,Période normale,normal
+607,2024-08-29,29,8,3,2024,35,5,Jeudi,Été,False,False,Safar,2,1446,Période normale,normal
+608,2024-08-30,30,8,3,2024,35,5,Vendredi,Été,False,False,Safar,2,1446,Période normale,normal
+609,2024-08-31,31,8,3,2024,35,5,Samedi,Été,True,False,Safar,2,1446,Période normale,normal
+610,2024-09-01,1,9,3,2024,35,1,Dimanche,Automne,True,False,Safar,2,1446,Période normale,normal
+611,2024-09-02,2,9,3,2024,36,1,Lundi,Automne,False,False,Safar,2,1446,Période normale,normal
+612,2024-09-03,3,9,3,2024,36,1,Mardi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+613,2024-09-04,4,9,3,2024,36,1,Mercredi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+614,2024-09-05,5,9,3,2024,36,1,Jeudi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+615,2024-09-06,6,9,3,2024,36,1,Vendredi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+616,2024-09-07,7,9,3,2024,36,1,Samedi,Automne,True,False,Rabi al-Awwal,3,1446,Période normale,normal
+617,2024-09-08,8,9,3,2024,36,2,Dimanche,Automne,True,False,Rabi al-Awwal,3,1446,Période normale,normal
+618,2024-09-09,9,9,3,2024,37,2,Lundi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+619,2024-09-10,10,9,3,2024,37,2,Mardi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+620,2024-09-11,11,9,3,2024,37,2,Mercredi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+621,2024-09-12,12,9,3,2024,37,2,Jeudi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+622,2024-09-13,13,9,3,2024,37,2,Vendredi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+623,2024-09-14,14,9,3,2024,37,2,Samedi,Automne,True,False,Rabi al-Awwal,3,1446,Période normale,normal
+624,2024-09-15,15,9,3,2024,37,3,Dimanche,Automne,True,False,Rabi al-Awwal,3,1446,Mawlid,faible
+625,2024-09-16,16,9,3,2024,38,3,Lundi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+626,2024-09-17,17,9,3,2024,38,3,Mardi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+627,2024-09-18,18,9,3,2024,38,3,Mercredi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+628,2024-09-19,19,9,3,2024,38,3,Jeudi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+629,2024-09-20,20,9,3,2024,38,3,Vendredi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+630,2024-09-21,21,9,3,2024,38,3,Samedi,Automne,True,False,Rabi al-Awwal,3,1446,Période normale,normal
+631,2024-09-22,22,9,3,2024,38,4,Dimanche,Automne,True,False,Rabi al-Awwal,3,1446,Période normale,normal
+632,2024-09-23,23,9,3,2024,39,4,Lundi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+633,2024-09-24,24,9,3,2024,39,4,Mardi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+634,2024-09-25,25,9,3,2024,39,4,Mercredi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+635,2024-09-26,26,9,3,2024,39,4,Jeudi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+636,2024-09-27,27,9,3,2024,39,4,Vendredi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+637,2024-09-28,28,9,3,2024,39,4,Samedi,Automne,True,False,Rabi al-Awwal,3,1446,Période normale,normal
+638,2024-09-29,29,9,3,2024,39,5,Dimanche,Automne,True,False,Rabi al-Awwal,3,1446,Période normale,normal
+639,2024-09-30,30,9,3,2024,40,5,Lundi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+640,2024-10-01,1,10,4,2024,40,1,Mardi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+641,2024-10-02,2,10,4,2024,40,1,Mercredi,Automne,False,False,Rabi al-Awwal,3,1446,Période normale,normal
+642,2024-10-03,3,10,4,2024,40,1,Jeudi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+643,2024-10-04,4,10,4,2024,40,1,Vendredi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+644,2024-10-05,5,10,4,2024,40,1,Samedi,Automne,True,False,Rabi al-Thani,4,1446,Période normale,normal
+645,2024-10-06,6,10,4,2024,40,1,Dimanche,Automne,True,False,Rabi al-Thani,4,1446,Période normale,normal
+646,2024-10-07,7,10,4,2024,41,1,Lundi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+647,2024-10-08,8,10,4,2024,41,2,Mardi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+648,2024-10-09,9,10,4,2024,41,2,Mercredi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+649,2024-10-10,10,10,4,2024,41,2,Jeudi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+650,2024-10-11,11,10,4,2024,41,2,Vendredi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+651,2024-10-12,12,10,4,2024,41,2,Samedi,Automne,True,False,Rabi al-Thani,4,1446,Période normale,normal
+652,2024-10-13,13,10,4,2024,41,2,Dimanche,Automne,True,False,Rabi al-Thani,4,1446,Période normale,normal
+653,2024-10-14,14,10,4,2024,42,2,Lundi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+654,2024-10-15,15,10,4,2024,42,3,Mardi,Automne,False,True,Rabi al-Thani,4,1446,Période normale,normal
+655,2024-10-16,16,10,4,2024,42,3,Mercredi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+656,2024-10-17,17,10,4,2024,42,3,Jeudi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+657,2024-10-18,18,10,4,2024,42,3,Vendredi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+658,2024-10-19,19,10,4,2024,42,3,Samedi,Automne,True,False,Rabi al-Thani,4,1446,Période normale,normal
+659,2024-10-20,20,10,4,2024,42,3,Dimanche,Automne,True,False,Rabi al-Thani,4,1446,Période normale,normal
+660,2024-10-21,21,10,4,2024,43,3,Lundi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+661,2024-10-22,22,10,4,2024,43,4,Mardi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+662,2024-10-23,23,10,4,2024,43,4,Mercredi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+663,2024-10-24,24,10,4,2024,43,4,Jeudi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+664,2024-10-25,25,10,4,2024,43,4,Vendredi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+665,2024-10-26,26,10,4,2024,43,4,Samedi,Automne,True,False,Rabi al-Thani,4,1446,Période normale,normal
+666,2024-10-27,27,10,4,2024,43,4,Dimanche,Automne,True,False,Rabi al-Thani,4,1446,Période normale,normal
+667,2024-10-28,28,10,4,2024,44,4,Lundi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+668,2024-10-29,29,10,4,2024,44,5,Mardi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+669,2024-10-30,30,10,4,2024,44,5,Mercredi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+670,2024-10-31,31,10,4,2024,44,5,Jeudi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+671,2024-11-01,1,11,4,2024,44,1,Vendredi,Automne,False,False,Rabi al-Thani,4,1446,Période normale,normal
+672,2024-11-02,2,11,4,2024,44,1,Samedi,Automne,True,False,Joumada al-Awwal,5,1446,Période normale,normal
+673,2024-11-03,3,11,4,2024,44,1,Dimanche,Automne,True,False,Joumada al-Awwal,5,1446,Période normale,normal
+674,2024-11-04,4,11,4,2024,45,1,Lundi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+675,2024-11-05,5,11,4,2024,45,1,Mardi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+676,2024-11-06,6,11,4,2024,45,1,Mercredi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+677,2024-11-07,7,11,4,2024,45,1,Jeudi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+678,2024-11-08,8,11,4,2024,45,2,Vendredi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+679,2024-11-09,9,11,4,2024,45,2,Samedi,Automne,True,False,Joumada al-Awwal,5,1446,Période normale,normal
+680,2024-11-10,10,11,4,2024,45,2,Dimanche,Automne,True,False,Joumada al-Awwal,5,1446,Période normale,normal
+681,2024-11-11,11,11,4,2024,46,2,Lundi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+682,2024-11-12,12,11,4,2024,46,2,Mardi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+683,2024-11-13,13,11,4,2024,46,2,Mercredi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+684,2024-11-14,14,11,4,2024,46,2,Jeudi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+685,2024-11-15,15,11,4,2024,46,3,Vendredi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+686,2024-11-16,16,11,4,2024,46,3,Samedi,Automne,True,False,Joumada al-Awwal,5,1446,Période normale,normal
+687,2024-11-17,17,11,4,2024,46,3,Dimanche,Automne,True,False,Joumada al-Awwal,5,1446,Période normale,normal
+688,2024-11-18,18,11,4,2024,47,3,Lundi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+689,2024-11-19,19,11,4,2024,47,3,Mardi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+690,2024-11-20,20,11,4,2024,47,3,Mercredi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+691,2024-11-21,21,11,4,2024,47,3,Jeudi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+692,2024-11-22,22,11,4,2024,47,4,Vendredi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+693,2024-11-23,23,11,4,2024,47,4,Samedi,Automne,True,False,Joumada al-Awwal,5,1446,Période normale,normal
+694,2024-11-24,24,11,4,2024,47,4,Dimanche,Automne,True,False,Joumada al-Awwal,5,1446,Période normale,normal
+695,2024-11-25,25,11,4,2024,48,4,Lundi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+696,2024-11-26,26,11,4,2024,48,4,Mardi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+697,2024-11-27,27,11,4,2024,48,4,Mercredi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+698,2024-11-28,28,11,4,2024,48,4,Jeudi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+699,2024-11-29,29,11,4,2024,48,5,Vendredi,Automne,False,False,Joumada al-Awwal,5,1446,Période normale,normal
+700,2024-11-30,30,11,4,2024,48,5,Samedi,Automne,True,False,Joumada al-Awwal,5,1446,Période normale,normal
+701,2024-12-01,1,12,4,2024,48,1,Dimanche,Hiver,True,False,Joumada al-Thani,6,1446,Période normale,normal
+702,2024-12-02,2,12,4,2024,49,1,Lundi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+703,2024-12-03,3,12,4,2024,49,1,Mardi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+704,2024-12-04,4,12,4,2024,49,1,Mercredi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+705,2024-12-05,5,12,4,2024,49,1,Jeudi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+706,2024-12-06,6,12,4,2024,49,1,Vendredi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+707,2024-12-07,7,12,4,2024,49,1,Samedi,Hiver,True,False,Joumada al-Thani,6,1446,Période normale,normal
+708,2024-12-08,8,12,4,2024,49,2,Dimanche,Hiver,True,False,Joumada al-Thani,6,1446,Période normale,normal
+709,2024-12-09,9,12,4,2024,50,2,Lundi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+710,2024-12-10,10,12,4,2024,50,2,Mardi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+711,2024-12-11,11,12,4,2024,50,2,Mercredi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+712,2024-12-12,12,12,4,2024,50,2,Jeudi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+713,2024-12-13,13,12,4,2024,50,2,Vendredi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+714,2024-12-14,14,12,4,2024,50,2,Samedi,Hiver,True,False,Joumada al-Thani,6,1446,Période normale,normal
+715,2024-12-15,15,12,4,2024,50,3,Dimanche,Hiver,True,False,Joumada al-Thani,6,1446,Période normale,normal
+716,2024-12-16,16,12,4,2024,51,3,Lundi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+717,2024-12-17,17,12,4,2024,51,3,Mardi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+718,2024-12-18,18,12,4,2024,51,3,Mercredi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+719,2024-12-19,19,12,4,2024,51,3,Jeudi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+720,2024-12-20,20,12,4,2024,51,3,Vendredi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+721,2024-12-21,21,12,4,2024,51,3,Samedi,Hiver,True,False,Joumada al-Thani,6,1446,Période normale,normal
+722,2024-12-22,22,12,4,2024,51,4,Dimanche,Hiver,True,False,Joumada al-Thani,6,1446,Période normale,normal
+723,2024-12-23,23,12,4,2024,52,4,Lundi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+724,2024-12-24,24,12,4,2024,52,4,Mardi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+725,2024-12-25,25,12,4,2024,52,4,Mercredi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+726,2024-12-26,26,12,4,2024,52,4,Jeudi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+727,2024-12-27,27,12,4,2024,52,4,Vendredi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+728,2024-12-28,28,12,4,2024,52,4,Samedi,Hiver,True,False,Joumada al-Thani,6,1446,Période normale,normal
+729,2024-12-29,29,12,4,2024,52,5,Dimanche,Hiver,True,False,Joumada al-Thani,6,1446,Période normale,normal
+730,2024-12-30,30,12,4,2024,1,5,Lundi,Hiver,False,False,Joumada al-Thani,6,1446,Période normale,normal
+731,2024-12-31,31,12,4,2024,1,5,Mardi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+732,2025-01-01,1,1,1,2025,1,1,Mercredi,Hiver,False,True,Rajab,7,1446,Période normale,normal
+733,2025-01-02,2,1,1,2025,1,1,Jeudi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+734,2025-01-03,3,1,1,2025,1,1,Vendredi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+735,2025-01-04,4,1,1,2025,1,1,Samedi,Hiver,True,False,Rajab,7,1446,Période normale,normal
+736,2025-01-05,5,1,1,2025,1,1,Dimanche,Hiver,True,False,Rajab,7,1446,Période normale,normal
+737,2025-01-06,6,1,1,2025,2,1,Lundi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+738,2025-01-07,7,1,1,2025,2,1,Mardi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+739,2025-01-08,8,1,1,2025,2,2,Mercredi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+740,2025-01-09,9,1,1,2025,2,2,Jeudi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+741,2025-01-10,10,1,1,2025,2,2,Vendredi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+742,2025-01-11,11,1,1,2025,2,2,Samedi,Hiver,True,False,Rajab,7,1446,Période normale,normal
+743,2025-01-12,12,1,1,2025,2,2,Dimanche,Hiver,True,False,Rajab,7,1446,Période normale,normal
+744,2025-01-13,13,1,1,2025,3,2,Lundi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+745,2025-01-14,14,1,1,2025,3,2,Mardi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+746,2025-01-15,15,1,1,2025,3,3,Mercredi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+747,2025-01-16,16,1,1,2025,3,3,Jeudi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+748,2025-01-17,17,1,1,2025,3,3,Vendredi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+749,2025-01-18,18,1,1,2025,3,3,Samedi,Hiver,True,False,Rajab,7,1446,Période normale,normal
+750,2025-01-19,19,1,1,2025,3,3,Dimanche,Hiver,True,False,Rajab,7,1446,Période normale,normal
+751,2025-01-20,20,1,1,2025,4,3,Lundi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+752,2025-01-21,21,1,1,2025,4,3,Mardi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+753,2025-01-22,22,1,1,2025,4,4,Mercredi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+754,2025-01-23,23,1,1,2025,4,4,Jeudi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+755,2025-01-24,24,1,1,2025,4,4,Vendredi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+756,2025-01-25,25,1,1,2025,4,4,Samedi,Hiver,True,False,Rajab,7,1446,Période normale,normal
+757,2025-01-26,26,1,1,2025,4,4,Dimanche,Hiver,True,False,Rajab,7,1446,Période normale,normal
+758,2025-01-27,27,1,1,2025,5,4,Lundi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+759,2025-01-28,28,1,1,2025,5,4,Mardi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+760,2025-01-29,29,1,1,2025,5,5,Mercredi,Hiver,False,False,Rajab,7,1446,Période normale,normal
+761,2025-01-30,30,1,1,2025,5,5,Jeudi,Hiver,False,False,Chaabane,8,1446,Période normale,normal
+762,2025-01-31,31,1,1,2025,5,5,Vendredi,Hiver,False,False,Chaabane,8,1446,Période normale,normal
+763,2025-02-01,1,2,1,2025,5,1,Samedi,Hiver,True,False,Chaabane,8,1446,Période normale,normal
+764,2025-02-02,2,2,1,2025,5,1,Dimanche,Hiver,True,False,Chaabane,8,1446,Période normale,normal
+765,2025-02-03,3,2,1,2025,6,1,Lundi,Hiver,False,False,Chaabane,8,1446,Période normale,normal
+766,2025-02-04,4,2,1,2025,6,1,Mardi,Hiver,False,False,Chaabane,8,1446,Période normale,normal
+767,2025-02-05,5,2,1,2025,6,1,Mercredi,Hiver,False,False,Chaabane,8,1446,Période normale,normal
+768,2025-02-06,6,2,1,2025,6,1,Jeudi,Hiver,False,False,Chaabane,8,1446,Période normale,normal
+769,2025-02-07,7,2,1,2025,6,1,Vendredi,Hiver,False,False,Chaabane,8,1446,Période normale,normal
+770,2025-02-08,8,2,1,2025,6,2,Samedi,Hiver,True,False,Chaabane,8,1446,Période normale,normal
+771,2025-02-09,9,2,1,2025,6,2,Dimanche,Hiver,True,False,Chaabane,8,1446,Période normale,normal
+772,2025-02-10,10,2,1,2025,7,2,Lundi,Hiver,False,False,Chaabane,8,1446,Période normale,normal
+773,2025-02-11,11,2,1,2025,7,2,Mardi,Hiver,False,False,Chaabane,8,1446,Période normale,normal
+774,2025-02-12,12,2,1,2025,7,2,Mercredi,Hiver,False,False,Chaabane,8,1446,Période normale,normal
+775,2025-02-13,13,2,1,2025,7,2,Jeudi,Hiver,False,False,Chaabane,8,1446,Période normale,normal
+776,2025-02-14,14,2,1,2025,7,2,Vendredi,Hiver,False,False,Chaabane,8,1446,Période normale,normal
+777,2025-02-15,15,2,1,2025,7,3,Samedi,Hiver,True,False,Chaabane,8,1446,Période normale,normal
+778,2025-02-16,16,2,1,2025,7,3,Dimanche,Hiver,True,False,Chaabane,8,1446,Période normale,normal
+779,2025-02-17,17,2,1,2025,8,3,Lundi,Hiver,False,False,Chaabane,8,1446,Période normale,normal
+780,2025-02-18,18,2,1,2025,8,3,Mardi,Hiver,False,False,Chaabane,8,1446,Période normale,normal
+781,2025-02-19,19,2,1,2025,8,3,Mercredi,Hiver,False,False,Chaabane,8,1446,Période normale,normal
+782,2025-02-20,20,2,1,2025,8,3,Jeudi,Hiver,False,False,Chaabane,8,1446,Période normale,normal
+783,2025-02-21,21,2,1,2025,8,3,Vendredi,Hiver,False,False,Chaabane,8,1446,Période normale,normal
+784,2025-02-22,22,2,1,2025,8,4,Samedi,Hiver,True,False,Chaabane,8,1446,Pré-Ramadan,fort
+785,2025-02-23,23,2,1,2025,8,4,Dimanche,Hiver,True,False,Chaabane,8,1446,Pré-Ramadan,fort
+786,2025-02-24,24,2,1,2025,9,4,Lundi,Hiver,False,False,Chaabane,8,1446,Pré-Ramadan,fort
+787,2025-02-25,25,2,1,2025,9,4,Mardi,Hiver,False,False,Chaabane,8,1446,Pré-Ramadan,fort
+788,2025-02-26,26,2,1,2025,9,4,Mercredi,Hiver,False,False,Chaabane,8,1446,Pré-Ramadan,fort
+789,2025-02-27,27,2,1,2025,9,4,Jeudi,Hiver,False,False,Chaabane,8,1446,Pré-Ramadan,fort
+790,2025-02-28,28,2,1,2025,9,4,Vendredi,Hiver,False,False,Inconnu,0,0,Pré-Ramadan,fort
+791,2025-03-01,1,3,1,2025,9,1,Samedi,Printemps,True,False,Ramadan,9,1446,Ramadan,moyen
+792,2025-03-02,2,3,1,2025,9,1,Dimanche,Printemps,True,False,Ramadan,9,1446,Ramadan,moyen
+793,2025-03-03,3,3,1,2025,10,1,Lundi,Printemps,False,False,Ramadan,9,1446,Ramadan,moyen
+794,2025-03-04,4,3,1,2025,10,1,Mardi,Printemps,False,False,Ramadan,9,1446,Ramadan,moyen
+795,2025-03-05,5,3,1,2025,10,1,Mercredi,Printemps,False,False,Ramadan,9,1446,Ramadan,moyen
+796,2025-03-06,6,3,1,2025,10,1,Jeudi,Printemps,False,False,Ramadan,9,1446,Ramadan,moyen
+797,2025-03-07,7,3,1,2025,10,1,Vendredi,Printemps,False,False,Ramadan,9,1446,Ramadan,moyen
+798,2025-03-08,8,3,1,2025,10,2,Samedi,Printemps,True,False,Ramadan,9,1446,Ramadan,moyen
+799,2025-03-09,9,3,1,2025,10,2,Dimanche,Printemps,True,False,Ramadan,9,1446,Ramadan,moyen
+800,2025-03-10,10,3,1,2025,11,2,Lundi,Printemps,False,False,Ramadan,9,1446,Ramadan,moyen
+801,2025-03-11,11,3,1,2025,11,2,Mardi,Printemps,False,False,Ramadan,9,1446,Ramadan,moyen
+802,2025-03-12,12,3,1,2025,11,2,Mercredi,Printemps,False,False,Ramadan,9,1446,Ramadan,moyen
+803,2025-03-13,13,3,1,2025,11,2,Jeudi,Printemps,False,False,Ramadan,9,1446,Ramadan,moyen
+804,2025-03-14,14,3,1,2025,11,2,Vendredi,Printemps,False,False,Ramadan,9,1446,Ramadan,moyen
+805,2025-03-15,15,3,1,2025,11,3,Samedi,Printemps,True,False,Ramadan,9,1446,Ramadan,moyen
+806,2025-03-16,16,3,1,2025,11,3,Dimanche,Printemps,True,False,Ramadan,9,1446,Ramadan,moyen
+807,2025-03-17,17,3,1,2025,12,3,Lundi,Printemps,False,False,Ramadan,9,1446,Ramadan,moyen
+808,2025-03-18,18,3,1,2025,12,3,Mardi,Printemps,False,False,Ramadan,9,1446,Ramadan,moyen
+809,2025-03-19,19,3,1,2025,12,3,Mercredi,Printemps,False,False,Ramadan,9,1446,Ramadan,moyen
+810,2025-03-20,20,3,1,2025,12,3,Jeudi,Printemps,False,True,Ramadan,9,1446,Ramadan,moyen
+811,2025-03-21,21,3,1,2025,12,3,Vendredi,Printemps,False,False,Ramadan,9,1446,Ramadan,moyen
+812,2025-03-22,22,3,1,2025,12,4,Samedi,Printemps,True,False,Ramadan,9,1446,Ramadan,moyen
+813,2025-03-23,23,3,1,2025,12,4,Dimanche,Printemps,True,False,Ramadan,9,1446,Ramadan,moyen
+814,2025-03-24,24,3,1,2025,13,4,Lundi,Printemps,False,False,Ramadan,9,1446,Ramadan,moyen
+815,2025-03-25,25,3,1,2025,13,4,Mardi,Printemps,False,False,Ramadan,9,1446,Ramadan,moyen
+816,2025-03-26,26,3,1,2025,13,4,Mercredi,Printemps,False,False,Ramadan,9,1446,Ramadan,moyen
+817,2025-03-27,27,3,1,2025,13,4,Jeudi,Printemps,False,False,Ramadan,9,1446,Ramadan,moyen
+818,2025-03-28,28,3,1,2025,13,4,Vendredi,Printemps,False,False,Ramadan,9,1446,Ramadan,moyen
+819,2025-03-29,29,3,1,2025,13,5,Samedi,Printemps,True,False,Ramadan,9,1446,Ramadan,moyen
+820,2025-03-30,30,3,1,2025,13,5,Dimanche,Printemps,True,False,Chawwal,10,1446,Aïd el-Fitr,très fort
+821,2025-03-31,31,3,1,2025,14,5,Lundi,Printemps,False,False,Chawwal,10,1446,Aïd el-Fitr,très fort
+822,2025-04-01,1,4,2,2025,14,1,Mardi,Printemps,False,False,Chawwal,10,1446,Aïd el-Fitr,très fort
+823,2025-04-02,2,4,2,2025,14,1,Mercredi,Printemps,False,False,Chawwal,10,1446,Période normale,normal
+824,2025-04-03,3,4,2,2025,14,1,Jeudi,Printemps,False,False,Chawwal,10,1446,Période normale,normal
+825,2025-04-04,4,4,2,2025,14,1,Vendredi,Printemps,False,False,Chawwal,10,1446,Période normale,normal
+826,2025-04-05,5,4,2,2025,14,1,Samedi,Printemps,True,False,Chawwal,10,1446,Période normale,normal
+827,2025-04-06,6,4,2,2025,14,1,Dimanche,Printemps,True,False,Chawwal,10,1446,Période normale,normal
+828,2025-04-07,7,4,2,2025,15,1,Lundi,Printemps,False,False,Chawwal,10,1446,Période normale,normal
+829,2025-04-08,8,4,2,2025,15,2,Mardi,Printemps,False,False,Chawwal,10,1446,Période normale,normal
+830,2025-04-09,9,4,2,2025,15,2,Mercredi,Printemps,False,True,Chawwal,10,1446,Période normale,normal
+831,2025-04-10,10,4,2,2025,15,2,Jeudi,Printemps,False,False,Chawwal,10,1446,Période normale,normal
+832,2025-04-11,11,4,2,2025,15,2,Vendredi,Printemps,False,False,Chawwal,10,1446,Période normale,normal
+833,2025-04-12,12,4,2,2025,15,2,Samedi,Printemps,True,False,Chawwal,10,1446,Période normale,normal
+834,2025-04-13,13,4,2,2025,15,2,Dimanche,Printemps,True,False,Chawwal,10,1446,Période normale,normal
+835,2025-04-14,14,4,2,2025,16,2,Lundi,Printemps,False,False,Chawwal,10,1446,Période normale,normal
+836,2025-04-15,15,4,2,2025,16,3,Mardi,Printemps,False,False,Chawwal,10,1446,Période normale,normal
+837,2025-04-16,16,4,2,2025,16,3,Mercredi,Printemps,False,False,Chawwal,10,1446,Période normale,normal
+838,2025-04-17,17,4,2,2025,16,3,Jeudi,Printemps,False,False,Chawwal,10,1446,Période normale,normal
+839,2025-04-18,18,4,2,2025,16,3,Vendredi,Printemps,False,False,Chawwal,10,1446,Période normale,normal
+840,2025-04-19,19,4,2,2025,16,3,Samedi,Printemps,True,False,Chawwal,10,1446,Période normale,normal
+841,2025-04-20,20,4,2,2025,16,3,Dimanche,Printemps,True,False,Chawwal,10,1446,Période normale,normal
+842,2025-04-21,21,4,2,2025,17,3,Lundi,Printemps,False,False,Chawwal,10,1446,Période normale,normal
+843,2025-04-22,22,4,2,2025,17,4,Mardi,Printemps,False,False,Chawwal,10,1446,Période normale,normal
+844,2025-04-23,23,4,2,2025,17,4,Mercredi,Printemps,False,False,Chawwal,10,1446,Période normale,normal
+845,2025-04-24,24,4,2,2025,17,4,Jeudi,Printemps,False,False,Chawwal,10,1446,Période normale,normal
+846,2025-04-25,25,4,2,2025,17,4,Vendredi,Printemps,False,False,Chawwal,10,1446,Période normale,normal
+847,2025-04-26,26,4,2,2025,17,4,Samedi,Printemps,True,False,Chawwal,10,1446,Période normale,normal
+848,2025-04-27,27,4,2,2025,17,4,Dimanche,Printemps,True,False,Chawwal,10,1446,Période normale,normal
+849,2025-04-28,28,4,2,2025,18,4,Lundi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+850,2025-04-29,29,4,2,2025,18,5,Mardi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+851,2025-04-30,30,4,2,2025,18,5,Mercredi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+852,2025-05-01,1,5,2,2025,18,1,Jeudi,Printemps,False,True,Dhou al-Qi'da,11,1446,Période normale,normal
+853,2025-05-02,2,5,2,2025,18,1,Vendredi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+854,2025-05-03,3,5,2,2025,18,1,Samedi,Printemps,True,False,Dhou al-Qi'da,11,1446,Période normale,normal
+855,2025-05-04,4,5,2,2025,18,1,Dimanche,Printemps,True,False,Dhou al-Qi'da,11,1446,Période normale,normal
+856,2025-05-05,5,5,2,2025,19,1,Lundi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+857,2025-05-06,6,5,2,2025,19,1,Mardi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+858,2025-05-07,7,5,2,2025,19,1,Mercredi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+859,2025-05-08,8,5,2,2025,19,2,Jeudi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+860,2025-05-09,9,5,2,2025,19,2,Vendredi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+861,2025-05-10,10,5,2,2025,19,2,Samedi,Printemps,True,False,Dhou al-Qi'da,11,1446,Période normale,normal
+862,2025-05-11,11,5,2,2025,19,2,Dimanche,Printemps,True,False,Dhou al-Qi'da,11,1446,Période normale,normal
+863,2025-05-12,12,5,2,2025,20,2,Lundi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+864,2025-05-13,13,5,2,2025,20,2,Mardi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+865,2025-05-14,14,5,2,2025,20,2,Mercredi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+866,2025-05-15,15,5,2,2025,20,3,Jeudi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+867,2025-05-16,16,5,2,2025,20,3,Vendredi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+868,2025-05-17,17,5,2,2025,20,3,Samedi,Printemps,True,False,Dhou al-Qi'da,11,1446,Période normale,normal
+869,2025-05-18,18,5,2,2025,20,3,Dimanche,Printemps,True,False,Dhou al-Qi'da,11,1446,Période normale,normal
+870,2025-05-19,19,5,2,2025,21,3,Lundi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+871,2025-05-20,20,5,2,2025,21,3,Mardi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+872,2025-05-21,21,5,2,2025,21,3,Mercredi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+873,2025-05-22,22,5,2,2025,21,4,Jeudi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+874,2025-05-23,23,5,2,2025,21,4,Vendredi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+875,2025-05-24,24,5,2,2025,21,4,Samedi,Printemps,True,False,Dhou al-Qi'da,11,1446,Période normale,normal
+876,2025-05-25,25,5,2,2025,21,4,Dimanche,Printemps,True,False,Dhou al-Qi'da,11,1446,Période normale,normal
+877,2025-05-26,26,5,2,2025,22,4,Lundi,Printemps,False,False,Dhou al-Qi'da,11,1446,Période normale,normal
+878,2025-05-27,27,5,2,2025,22,4,Mardi,Printemps,False,False,Dhou al-Hijja,12,1446,Période normale,normal
+879,2025-05-28,28,5,2,2025,22,4,Mercredi,Printemps,False,False,Dhou al-Hijja,12,1446,Période normale,normal
+880,2025-05-29,29,5,2,2025,22,5,Jeudi,Printemps,False,False,Dhou al-Hijja,12,1446,Période normale,normal
+881,2025-05-30,30,5,2,2025,22,5,Vendredi,Printemps,False,False,Dhou al-Hijja,12,1446,Période normale,normal
+882,2025-05-31,31,5,2,2025,22,5,Samedi,Printemps,True,False,Dhou al-Hijja,12,1446,Aïd el-Adha,très fort
+883,2025-06-01,1,6,2,2025,22,1,Dimanche,Été,True,False,Dhou al-Hijja,12,1446,Aïd el-Adha,très fort
+884,2025-06-02,2,6,2,2025,23,1,Lundi,Été,False,False,Dhou al-Hijja,12,1446,Aïd el-Adha,très fort
+885,2025-06-03,3,6,2,2025,23,1,Mardi,Été,False,False,Dhou al-Hijja,12,1446,Aïd el-Adha,très fort
+886,2025-06-04,4,6,2,2025,23,1,Mercredi,Été,False,False,Dhou al-Hijja,12,1446,Aïd el-Adha,très fort
+887,2025-06-05,5,6,2,2025,23,1,Jeudi,Été,False,False,Dhou al-Hijja,12,1446,Aïd el-Adha,très fort
+888,2025-06-06,6,6,2,2025,23,1,Vendredi,Été,False,False,Dhou al-Hijja,12,1446,Aïd el-Adha,très fort
+889,2025-06-07,7,6,2,2025,23,1,Samedi,Été,True,False,Dhou al-Hijja,12,1446,Aïd el-Adha,très fort
+890,2025-06-08,8,6,2,2025,23,2,Dimanche,Été,True,False,Dhou al-Hijja,12,1446,Aïd el-Adha,très fort
+891,2025-06-09,9,6,2,2025,24,2,Lundi,Été,False,False,Dhou al-Hijja,12,1446,Aïd el-Adha,très fort
+892,2025-06-10,10,6,2,2025,24,2,Mardi,Été,False,False,Dhou al-Hijja,12,1446,Période normale,normal
+893,2025-06-11,11,6,2,2025,24,2,Mercredi,Été,False,False,Dhou al-Hijja,12,1446,Période normale,normal
+894,2025-06-12,12,6,2,2025,24,2,Jeudi,Été,False,False,Dhou al-Hijja,12,1446,Période normale,normal
+895,2025-06-13,13,6,2,2025,24,2,Vendredi,Été,False,False,Dhou al-Hijja,12,1446,Période normale,normal
+896,2025-06-14,14,6,2,2025,24,2,Samedi,Été,True,False,Dhou al-Hijja,12,1446,Période normale,normal
+897,2025-06-15,15,6,2,2025,24,3,Dimanche,Été,True,False,Dhou al-Hijja,12,1446,Période normale,normal
+898,2025-06-16,16,6,2,2025,25,3,Lundi,Été,False,False,Dhou al-Hijja,12,1446,Période normale,normal
+899,2025-06-17,17,6,2,2025,25,3,Mardi,Été,False,False,Dhou al-Hijja,12,1446,Période normale,normal
+900,2025-06-18,18,6,2,2025,25,3,Mercredi,Été,False,False,Dhou al-Hijja,12,1446,Période normale,normal
+901,2025-06-19,19,6,2,2025,25,3,Jeudi,Été,False,False,Dhou al-Hijja,12,1446,Période normale,normal
+902,2025-06-20,20,6,2,2025,25,3,Vendredi,Été,False,False,Dhou al-Hijja,12,1446,Période normale,normal
+903,2025-06-21,21,6,2,2025,25,3,Samedi,Été,True,False,Dhou al-Hijja,12,1446,Période normale,normal
+904,2025-06-22,22,6,2,2025,25,4,Dimanche,Été,True,False,Dhou al-Hijja,12,1446,Période normale,normal
+905,2025-06-23,23,6,2,2025,26,4,Lundi,Été,False,False,Dhou al-Hijja,12,1446,Période normale,normal
+906,2025-06-24,24,6,2,2025,26,4,Mardi,Été,False,False,Dhou al-Hijja,12,1446,Période normale,normal
+907,2025-06-25,25,6,2,2025,26,4,Mercredi,Été,False,False,Dhou al-Hijja,12,1446,Période normale,normal
+908,2025-06-26,26,6,2,2025,26,4,Jeudi,Été,False,False,Mouharram,1,1447,Nouvel An Islamique,faible
+909,2025-06-27,27,6,2,2025,26,4,Vendredi,Été,False,False,Mouharram,1,1447,Période normale,normal
+910,2025-06-28,28,6,2,2025,26,4,Samedi,Été,True,False,Mouharram,1,1447,Période normale,normal
+911,2025-06-29,29,6,2,2025,26,5,Dimanche,Été,True,False,Mouharram,1,1447,Période normale,normal
+912,2025-06-30,30,6,2,2025,27,5,Lundi,Été,False,False,Mouharram,1,1447,Période normale,normal
+913,2025-07-01,1,7,3,2025,27,1,Mardi,Été,False,False,Mouharram,1,1447,Période normale,normal
+914,2025-07-02,2,7,3,2025,27,1,Mercredi,Été,False,False,Mouharram,1,1447,Période normale,normal
+915,2025-07-03,3,7,3,2025,27,1,Jeudi,Été,False,False,Mouharram,1,1447,Période normale,normal
+916,2025-07-04,4,7,3,2025,27,1,Vendredi,Été,False,False,Mouharram,1,1447,Période normale,normal
+917,2025-07-05,5,7,3,2025,27,1,Samedi,Été,True,False,Mouharram,1,1447,Période normale,normal
+918,2025-07-06,6,7,3,2025,27,1,Dimanche,Été,True,False,Mouharram,1,1447,Période normale,normal
+919,2025-07-07,7,7,3,2025,28,1,Lundi,Été,False,False,Mouharram,1,1447,Période normale,normal
+920,2025-07-08,8,7,3,2025,28,2,Mardi,Été,False,False,Mouharram,1,1447,Période normale,normal
+921,2025-07-09,9,7,3,2025,28,2,Mercredi,Été,False,False,Mouharram,1,1447,Période normale,normal
+922,2025-07-10,10,7,3,2025,28,2,Jeudi,Été,False,False,Mouharram,1,1447,Période normale,normal
+923,2025-07-11,11,7,3,2025,28,2,Vendredi,Été,False,False,Mouharram,1,1447,Période normale,normal
+924,2025-07-12,12,7,3,2025,28,2,Samedi,Été,True,False,Mouharram,1,1447,Période normale,normal
+925,2025-07-13,13,7,3,2025,28,2,Dimanche,Été,True,False,Mouharram,1,1447,Période normale,normal
+926,2025-07-14,14,7,3,2025,29,2,Lundi,Été,False,False,Mouharram,1,1447,Période normale,normal
+927,2025-07-15,15,7,3,2025,29,3,Mardi,Été,False,False,Mouharram,1,1447,Période normale,normal
+928,2025-07-16,16,7,3,2025,29,3,Mercredi,Été,False,False,Mouharram,1,1447,Période normale,normal
+929,2025-07-17,17,7,3,2025,29,3,Jeudi,Été,False,False,Mouharram,1,1447,Période normale,normal
+930,2025-07-18,18,7,3,2025,29,3,Vendredi,Été,False,False,Mouharram,1,1447,Période normale,normal
+931,2025-07-19,19,7,3,2025,29,3,Samedi,Été,True,False,Mouharram,1,1447,Période normale,normal
+932,2025-07-20,20,7,3,2025,29,3,Dimanche,Été,True,False,Mouharram,1,1447,Période normale,normal
+933,2025-07-21,21,7,3,2025,30,3,Lundi,Été,False,False,Mouharram,1,1447,Période normale,normal
+934,2025-07-22,22,7,3,2025,30,4,Mardi,Été,False,False,Mouharram,1,1447,Période normale,normal
+935,2025-07-23,23,7,3,2025,30,4,Mercredi,Été,False,False,Mouharram,1,1447,Période normale,normal
+936,2025-07-24,24,7,3,2025,30,4,Jeudi,Été,False,False,Mouharram,1,1447,Période normale,normal
+937,2025-07-25,25,7,3,2025,30,4,Vendredi,Été,False,True,Safar,2,1447,Période normale,normal
+938,2025-07-26,26,7,3,2025,30,4,Samedi,Été,True,False,Safar,2,1447,Période normale,normal
+939,2025-07-27,27,7,3,2025,30,4,Dimanche,Été,True,False,Safar,2,1447,Période normale,normal
+940,2025-07-28,28,7,3,2025,31,4,Lundi,Été,False,False,Safar,2,1447,Période normale,normal
+941,2025-07-29,29,7,3,2025,31,5,Mardi,Été,False,False,Safar,2,1447,Période normale,normal
+942,2025-07-30,30,7,3,2025,31,5,Mercredi,Été,False,False,Safar,2,1447,Période normale,normal
+943,2025-07-31,31,7,3,2025,31,5,Jeudi,Été,False,False,Safar,2,1447,Période normale,normal
+944,2025-08-01,1,8,3,2025,31,1,Vendredi,Été,False,False,Safar,2,1447,Période normale,normal
+945,2025-08-02,2,8,3,2025,31,1,Samedi,Été,True,False,Safar,2,1447,Période normale,normal
+946,2025-08-03,3,8,3,2025,31,1,Dimanche,Été,True,False,Safar,2,1447,Période normale,normal
+947,2025-08-04,4,8,3,2025,32,1,Lundi,Été,False,False,Safar,2,1447,Période normale,normal
+948,2025-08-05,5,8,3,2025,32,1,Mardi,Été,False,False,Safar,2,1447,Période normale,normal
+949,2025-08-06,6,8,3,2025,32,1,Mercredi,Été,False,False,Safar,2,1447,Période normale,normal
+950,2025-08-07,7,8,3,2025,32,1,Jeudi,Été,False,False,Safar,2,1447,Période normale,normal
+951,2025-08-08,8,8,3,2025,32,2,Vendredi,Été,False,False,Safar,2,1447,Période normale,normal
+952,2025-08-09,9,8,3,2025,32,2,Samedi,Été,True,False,Safar,2,1447,Période normale,normal
+953,2025-08-10,10,8,3,2025,32,2,Dimanche,Été,True,False,Safar,2,1447,Période normale,normal
+954,2025-08-11,11,8,3,2025,33,2,Lundi,Été,False,False,Safar,2,1447,Période normale,normal
+955,2025-08-12,12,8,3,2025,33,2,Mardi,Été,False,False,Safar,2,1447,Période normale,normal
+956,2025-08-13,13,8,3,2025,33,2,Mercredi,Été,False,True,Safar,2,1447,Période normale,normal
+957,2025-08-14,14,8,3,2025,33,2,Jeudi,Été,False,False,Safar,2,1447,Période normale,normal
+958,2025-08-15,15,8,3,2025,33,3,Vendredi,Été,False,False,Safar,2,1447,Période normale,normal
+959,2025-08-16,16,8,3,2025,33,3,Samedi,Été,True,False,Safar,2,1447,Période normale,normal
+960,2025-08-17,17,8,3,2025,33,3,Dimanche,Été,True,False,Safar,2,1447,Période normale,normal
+961,2025-08-18,18,8,3,2025,34,3,Lundi,Été,False,False,Safar,2,1447,Période normale,normal
+962,2025-08-19,19,8,3,2025,34,3,Mardi,Été,False,False,Safar,2,1447,Période normale,normal
+963,2025-08-20,20,8,3,2025,34,3,Mercredi,Été,False,False,Safar,2,1447,Période normale,normal
+964,2025-08-21,21,8,3,2025,34,3,Jeudi,Été,False,False,Safar,2,1447,Période normale,normal
+965,2025-08-22,22,8,3,2025,34,4,Vendredi,Été,False,False,Safar,2,1447,Période normale,normal
+966,2025-08-23,23,8,3,2025,34,4,Samedi,Été,True,False,Rabi al-Awwal,3,1447,Période normale,normal
+967,2025-08-24,24,8,3,2025,34,4,Dimanche,Été,True,False,Rabi al-Awwal,3,1447,Période normale,normal
+968,2025-08-25,25,8,3,2025,35,4,Lundi,Été,False,False,Rabi al-Awwal,3,1447,Période normale,normal
+969,2025-08-26,26,8,3,2025,35,4,Mardi,Été,False,False,Rabi al-Awwal,3,1447,Période normale,normal
+970,2025-08-27,27,8,3,2025,35,4,Mercredi,Été,False,False,Rabi al-Awwal,3,1447,Période normale,normal
+971,2025-08-28,28,8,3,2025,35,4,Jeudi,Été,False,False,Rabi al-Awwal,3,1447,Période normale,normal
+972,2025-08-29,29,8,3,2025,35,5,Vendredi,Été,False,False,Rabi al-Awwal,3,1447,Période normale,normal
+973,2025-08-30,30,8,3,2025,35,5,Samedi,Été,True,False,Rabi al-Awwal,3,1447,Période normale,normal
+974,2025-08-31,31,8,3,2025,35,5,Dimanche,Été,True,False,Rabi al-Awwal,3,1447,Période normale,normal
+975,2025-09-01,1,9,3,2025,36,1,Lundi,Automne,False,False,Rabi al-Awwal,3,1447,Période normale,normal
+976,2025-09-02,2,9,3,2025,36,1,Mardi,Automne,False,False,Rabi al-Awwal,3,1447,Période normale,normal
+977,2025-09-03,3,9,3,2025,36,1,Mercredi,Automne,False,False,Rabi al-Awwal,3,1447,Période normale,normal
+978,2025-09-04,4,9,3,2025,36,1,Jeudi,Automne,False,False,Rabi al-Awwal,3,1447,Mawlid,faible
+979,2025-09-05,5,9,3,2025,36,1,Vendredi,Automne,False,False,Rabi al-Awwal,3,1447,Période normale,normal
+980,2025-09-06,6,9,3,2025,36,1,Samedi,Automne,True,False,Rabi al-Awwal,3,1447,Période normale,normal
+981,2025-09-07,7,9,3,2025,36,1,Dimanche,Automne,True,False,Rabi al-Awwal,3,1447,Période normale,normal
+982,2025-09-08,8,9,3,2025,37,2,Lundi,Automne,False,False,Rabi al-Awwal,3,1447,Période normale,normal
+983,2025-09-09,9,9,3,2025,37,2,Mardi,Automne,False,False,Rabi al-Awwal,3,1447,Période normale,normal
+984,2025-09-10,10,9,3,2025,37,2,Mercredi,Automne,False,False,Rabi al-Awwal,3,1447,Période normale,normal
+985,2025-09-11,11,9,3,2025,37,2,Jeudi,Automne,False,False,Rabi al-Awwal,3,1447,Période normale,normal
+986,2025-09-12,12,9,3,2025,37,2,Vendredi,Automne,False,False,Rabi al-Awwal,3,1447,Période normale,normal
+987,2025-09-13,13,9,3,2025,37,2,Samedi,Automne,True,False,Rabi al-Awwal,3,1447,Période normale,normal
+988,2025-09-14,14,9,3,2025,37,2,Dimanche,Automne,True,False,Rabi al-Awwal,3,1447,Période normale,normal
+989,2025-09-15,15,9,3,2025,38,3,Lundi,Automne,False,False,Rabi al-Awwal,3,1447,Période normale,normal
+990,2025-09-16,16,9,3,2025,38,3,Mardi,Automne,False,False,Rabi al-Awwal,3,1447,Période normale,normal
+991,2025-09-17,17,9,3,2025,38,3,Mercredi,Automne,False,False,Rabi al-Awwal,3,1447,Période normale,normal
+992,2025-09-18,18,9,3,2025,38,3,Jeudi,Automne,False,False,Rabi al-Awwal,3,1447,Période normale,normal
+993,2025-09-19,19,9,3,2025,38,3,Vendredi,Automne,False,False,Rabi al-Awwal,3,1447,Période normale,normal
+994,2025-09-20,20,9,3,2025,38,3,Samedi,Automne,True,False,Rabi al-Awwal,3,1447,Période normale,normal
+995,2025-09-21,21,9,3,2025,38,3,Dimanche,Automne,True,False,Rabi al-Awwal,3,1447,Période normale,normal
+996,2025-09-22,22,9,3,2025,39,4,Lundi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+997,2025-09-23,23,9,3,2025,39,4,Mardi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+998,2025-09-24,24,9,3,2025,39,4,Mercredi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+999,2025-09-25,25,9,3,2025,39,4,Jeudi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+1000,2025-09-26,26,9,3,2025,39,4,Vendredi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+1001,2025-09-27,27,9,3,2025,39,4,Samedi,Automne,True,False,Rabi al-Thani,4,1447,Période normale,normal
+1002,2025-09-28,28,9,3,2025,39,4,Dimanche,Automne,True,False,Rabi al-Thani,4,1447,Période normale,normal
+1003,2025-09-29,29,9,3,2025,40,5,Lundi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+1004,2025-09-30,30,9,3,2025,40,5,Mardi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+1005,2025-10-01,1,10,4,2025,40,1,Mercredi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+1006,2025-10-02,2,10,4,2025,40,1,Jeudi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+1007,2025-10-03,3,10,4,2025,40,1,Vendredi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+1008,2025-10-04,4,10,4,2025,40,1,Samedi,Automne,True,False,Rabi al-Thani,4,1447,Période normale,normal
+1009,2025-10-05,5,10,4,2025,40,1,Dimanche,Automne,True,False,Rabi al-Thani,4,1447,Période normale,normal
+1010,2025-10-06,6,10,4,2025,41,1,Lundi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+1011,2025-10-07,7,10,4,2025,41,1,Mardi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+1012,2025-10-08,8,10,4,2025,41,2,Mercredi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+1013,2025-10-09,9,10,4,2025,41,2,Jeudi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+1014,2025-10-10,10,10,4,2025,41,2,Vendredi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+1015,2025-10-11,11,10,4,2025,41,2,Samedi,Automne,True,False,Rabi al-Thani,4,1447,Période normale,normal
+1016,2025-10-12,12,10,4,2025,41,2,Dimanche,Automne,True,False,Rabi al-Thani,4,1447,Période normale,normal
+1017,2025-10-13,13,10,4,2025,42,2,Lundi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+1018,2025-10-14,14,10,4,2025,42,2,Mardi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+1019,2025-10-15,15,10,4,2025,42,3,Mercredi,Automne,False,True,Rabi al-Thani,4,1447,Période normale,normal
+1020,2025-10-16,16,10,4,2025,42,3,Jeudi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+1021,2025-10-17,17,10,4,2025,42,3,Vendredi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+1022,2025-10-18,18,10,4,2025,42,3,Samedi,Automne,True,False,Rabi al-Thani,4,1447,Période normale,normal
+1023,2025-10-19,19,10,4,2025,42,3,Dimanche,Automne,True,False,Rabi al-Thani,4,1447,Période normale,normal
+1024,2025-10-20,20,10,4,2025,43,3,Lundi,Automne,False,False,Rabi al-Thani,4,1447,Période normale,normal
+1025,2025-10-21,21,10,4,2025,43,3,Mardi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1026,2025-10-22,22,10,4,2025,43,4,Mercredi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1027,2025-10-23,23,10,4,2025,43,4,Jeudi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1028,2025-10-24,24,10,4,2025,43,4,Vendredi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1029,2025-10-25,25,10,4,2025,43,4,Samedi,Automne,True,False,Joumada al-Awwal,5,1447,Période normale,normal
+1030,2025-10-26,26,10,4,2025,43,4,Dimanche,Automne,True,False,Joumada al-Awwal,5,1447,Période normale,normal
+1031,2025-10-27,27,10,4,2025,44,4,Lundi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1032,2025-10-28,28,10,4,2025,44,4,Mardi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1033,2025-10-29,29,10,4,2025,44,5,Mercredi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1034,2025-10-30,30,10,4,2025,44,5,Jeudi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1035,2025-10-31,31,10,4,2025,44,5,Vendredi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1036,2025-11-01,1,11,4,2025,44,1,Samedi,Automne,True,False,Joumada al-Awwal,5,1447,Période normale,normal
+1037,2025-11-02,2,11,4,2025,44,1,Dimanche,Automne,True,False,Joumada al-Awwal,5,1447,Période normale,normal
+1038,2025-11-03,3,11,4,2025,45,1,Lundi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1039,2025-11-04,4,11,4,2025,45,1,Mardi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1040,2025-11-05,5,11,4,2025,45,1,Mercredi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1041,2025-11-06,6,11,4,2025,45,1,Jeudi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1042,2025-11-07,7,11,4,2025,45,1,Vendredi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1043,2025-11-08,8,11,4,2025,45,2,Samedi,Automne,True,False,Joumada al-Awwal,5,1447,Période normale,normal
+1044,2025-11-09,9,11,4,2025,45,2,Dimanche,Automne,True,False,Joumada al-Awwal,5,1447,Période normale,normal
+1045,2025-11-10,10,11,4,2025,46,2,Lundi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1046,2025-11-11,11,11,4,2025,46,2,Mardi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1047,2025-11-12,12,11,4,2025,46,2,Mercredi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1048,2025-11-13,13,11,4,2025,46,2,Jeudi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1049,2025-11-14,14,11,4,2025,46,2,Vendredi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1050,2025-11-15,15,11,4,2025,46,3,Samedi,Automne,True,False,Joumada al-Awwal,5,1447,Période normale,normal
+1051,2025-11-16,16,11,4,2025,46,3,Dimanche,Automne,True,False,Joumada al-Awwal,5,1447,Période normale,normal
+1052,2025-11-17,17,11,4,2025,47,3,Lundi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1053,2025-11-18,18,11,4,2025,47,3,Mardi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1054,2025-11-19,19,11,4,2025,47,3,Mercredi,Automne,False,False,Joumada al-Awwal,5,1447,Période normale,normal
+1055,2025-11-20,20,11,4,2025,47,3,Jeudi,Automne,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1056,2025-11-21,21,11,4,2025,47,3,Vendredi,Automne,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1057,2025-11-22,22,11,4,2025,47,4,Samedi,Automne,True,False,Joumada al-Thani,6,1447,Période normale,normal
+1058,2025-11-23,23,11,4,2025,47,4,Dimanche,Automne,True,False,Joumada al-Thani,6,1447,Période normale,normal
+1059,2025-11-24,24,11,4,2025,48,4,Lundi,Automne,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1060,2025-11-25,25,11,4,2025,48,4,Mardi,Automne,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1061,2025-11-26,26,11,4,2025,48,4,Mercredi,Automne,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1062,2025-11-27,27,11,4,2025,48,4,Jeudi,Automne,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1063,2025-11-28,28,11,4,2025,48,4,Vendredi,Automne,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1064,2025-11-29,29,11,4,2025,48,5,Samedi,Automne,True,False,Joumada al-Thani,6,1447,Période normale,normal
+1065,2025-11-30,30,11,4,2025,48,5,Dimanche,Automne,True,False,Joumada al-Thani,6,1447,Période normale,normal
+1066,2025-12-01,1,12,4,2025,49,1,Lundi,Hiver,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1067,2025-12-02,2,12,4,2025,49,1,Mardi,Hiver,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1068,2025-12-03,3,12,4,2025,49,1,Mercredi,Hiver,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1069,2025-12-04,4,12,4,2025,49,1,Jeudi,Hiver,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1070,2025-12-05,5,12,4,2025,49,1,Vendredi,Hiver,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1071,2025-12-06,6,12,4,2025,49,1,Samedi,Hiver,True,False,Joumada al-Thani,6,1447,Période normale,normal
+1072,2025-12-07,7,12,4,2025,49,1,Dimanche,Hiver,True,False,Joumada al-Thani,6,1447,Période normale,normal
+1073,2025-12-08,8,12,4,2025,50,2,Lundi,Hiver,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1074,2025-12-09,9,12,4,2025,50,2,Mardi,Hiver,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1075,2025-12-10,10,12,4,2025,50,2,Mercredi,Hiver,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1076,2025-12-11,11,12,4,2025,50,2,Jeudi,Hiver,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1077,2025-12-12,12,12,4,2025,50,2,Vendredi,Hiver,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1078,2025-12-13,13,12,4,2025,50,2,Samedi,Hiver,True,False,Joumada al-Thani,6,1447,Période normale,normal
+1079,2025-12-14,14,12,4,2025,50,2,Dimanche,Hiver,True,False,Joumada al-Thani,6,1447,Période normale,normal
+1080,2025-12-15,15,12,4,2025,51,3,Lundi,Hiver,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1081,2025-12-16,16,12,4,2025,51,3,Mardi,Hiver,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1082,2025-12-17,17,12,4,2025,51,3,Mercredi,Hiver,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1083,2025-12-18,18,12,4,2025,51,3,Jeudi,Hiver,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1084,2025-12-19,19,12,4,2025,51,3,Vendredi,Hiver,False,False,Joumada al-Thani,6,1447,Période normale,normal
+1085,2025-12-20,20,12,4,2025,51,3,Samedi,Hiver,True,False,Rajab,7,1447,Période normale,normal
+1086,2025-12-21,21,12,4,2025,51,3,Dimanche,Hiver,True,False,Rajab,7,1447,Période normale,normal
+1087,2025-12-22,22,12,4,2025,52,4,Lundi,Hiver,False,False,Rajab,7,1447,Période normale,normal
+1088,2025-12-23,23,12,4,2025,52,4,Mardi,Hiver,False,False,Rajab,7,1447,Période normale,normal
+1089,2025-12-24,24,12,4,2025,52,4,Mercredi,Hiver,False,False,Rajab,7,1447,Période normale,normal
+1090,2025-12-25,25,12,4,2025,52,4,Jeudi,Hiver,False,False,Rajab,7,1447,Période normale,normal
+1091,2025-12-26,26,12,4,2025,52,4,Vendredi,Hiver,False,False,Rajab,7,1447,Période normale,normal
+1092,2025-12-27,27,12,4,2025,52,4,Samedi,Hiver,True,False,Rajab,7,1447,Période normale,normal
+1093,2025-12-28,28,12,4,2025,52,4,Dimanche,Hiver,True,False,Rajab,7,1447,Période normale,normal
+1094,2025-12-29,29,12,4,2025,1,5,Lundi,Hiver,False,False,Rajab,7,1447,Période normale,normal
+1095,2025-12-30,30,12,4,2025,1,5,Mardi,Hiver,False,False,Rajab,7,1447,Période normale,normal
+1096,2025-12-31,31,12,4,2025,1,5,Mercredi,Hiver,False,False,Rajab,7,1447,Période normale,normal
+1097,2026-01-01,1,1,1,2026,1,1,Jeudi,Hiver,False,True,Rajab,7,1447,Période normale,normal
+1098,2026-01-02,2,1,1,2026,1,1,Vendredi,Hiver,False,False,Rajab,7,1447,Période normale,normal
+1099,2026-01-03,3,1,1,2026,1,1,Samedi,Hiver,True,False,Rajab,7,1447,Période normale,normal
+1100,2026-01-04,4,1,1,2026,1,1,Dimanche,Hiver,True,False,Rajab,7,1447,Période normale,normal
+1101,2026-01-05,5,1,1,2026,2,1,Lundi,Hiver,False,False,Rajab,7,1447,Période normale,normal
+1102,2026-01-06,6,1,1,2026,2,1,Mardi,Hiver,False,False,Rajab,7,1447,Période normale,normal
+1103,2026-01-07,7,1,1,2026,2,1,Mercredi,Hiver,False,False,Rajab,7,1447,Période normale,normal
+1104,2026-01-08,8,1,1,2026,2,2,Jeudi,Hiver,False,False,Rajab,7,1447,Période normale,normal
+1105,2026-01-09,9,1,1,2026,2,2,Vendredi,Hiver,False,False,Rajab,7,1447,Période normale,normal
+1106,2026-01-10,10,1,1,2026,2,2,Samedi,Hiver,True,False,Rajab,7,1447,Période normale,normal
+1107,2026-01-11,11,1,1,2026,2,2,Dimanche,Hiver,True,False,Rajab,7,1447,Période normale,normal
+1108,2026-01-12,12,1,1,2026,3,2,Lundi,Hiver,False,False,Rajab,7,1447,Période normale,normal
+1109,2026-01-13,13,1,1,2026,3,2,Mardi,Hiver,False,False,Rajab,7,1447,Période normale,normal
+1110,2026-01-14,14,1,1,2026,3,2,Mercredi,Hiver,False,False,Rajab,7,1447,Période normale,normal
+1111,2026-01-15,15,1,1,2026,3,3,Jeudi,Hiver,False,False,Rajab,7,1447,Période normale,normal
+1112,2026-01-16,16,1,1,2026,3,3,Vendredi,Hiver,False,False,Rajab,7,1447,Période normale,normal
+1113,2026-01-17,17,1,1,2026,3,3,Samedi,Hiver,True,False,Rajab,7,1447,Période normale,normal
+1114,2026-01-18,18,1,1,2026,3,3,Dimanche,Hiver,True,False,Chaabane,8,1447,Période normale,normal
+1115,2026-01-19,19,1,1,2026,4,3,Lundi,Hiver,False,False,Chaabane,8,1447,Période normale,normal
+1116,2026-01-20,20,1,1,2026,4,3,Mardi,Hiver,False,False,Chaabane,8,1447,Période normale,normal
+1117,2026-01-21,21,1,1,2026,4,3,Mercredi,Hiver,False,False,Chaabane,8,1447,Période normale,normal
+1118,2026-01-22,22,1,1,2026,4,4,Jeudi,Hiver,False,False,Chaabane,8,1447,Période normale,normal
+1119,2026-01-23,23,1,1,2026,4,4,Vendredi,Hiver,False,False,Chaabane,8,1447,Période normale,normal
+1120,2026-01-24,24,1,1,2026,4,4,Samedi,Hiver,True,False,Chaabane,8,1447,Période normale,normal
+1121,2026-01-25,25,1,1,2026,4,4,Dimanche,Hiver,True,False,Chaabane,8,1447,Période normale,normal
+1122,2026-01-26,26,1,1,2026,5,4,Lundi,Hiver,False,False,Chaabane,8,1447,Période normale,normal
+1123,2026-01-27,27,1,1,2026,5,4,Mardi,Hiver,False,False,Chaabane,8,1447,Période normale,normal
+1124,2026-01-28,28,1,1,2026,5,4,Mercredi,Hiver,False,False,Chaabane,8,1447,Période normale,normal
+1125,2026-01-29,29,1,1,2026,5,5,Jeudi,Hiver,False,False,Chaabane,8,1447,Période normale,normal
+1126,2026-01-30,30,1,1,2026,5,5,Vendredi,Hiver,False,False,Chaabane,8,1447,Période normale,normal
+1127,2026-01-31,31,1,1,2026,5,5,Samedi,Hiver,True,False,Chaabane,8,1447,Période normale,normal
+1128,2026-02-01,1,2,1,2026,5,1,Dimanche,Hiver,True,False,Chaabane,8,1447,Période normale,normal
+1129,2026-02-02,2,2,1,2026,6,1,Lundi,Hiver,False,False,Chaabane,8,1447,Période normale,normal
+1130,2026-02-03,3,2,1,2026,6,1,Mardi,Hiver,False,False,Chaabane,8,1447,Période normale,normal
+1131,2026-02-04,4,2,1,2026,6,1,Mercredi,Hiver,False,False,Chaabane,8,1447,Période normale,normal
+1132,2026-02-05,5,2,1,2026,6,1,Jeudi,Hiver,False,False,Chaabane,8,1447,Période normale,normal
+1133,2026-02-06,6,2,1,2026,6,1,Vendredi,Hiver,False,False,Chaabane,8,1447,Période normale,normal
+1134,2026-02-07,7,2,1,2026,6,1,Samedi,Hiver,True,False,Chaabane,8,1447,Période normale,normal
+1135,2026-02-08,8,2,1,2026,6,2,Dimanche,Hiver,True,False,Chaabane,8,1447,Période normale,normal
+1136,2026-02-09,9,2,1,2026,7,2,Lundi,Hiver,False,False,Chaabane,8,1447,Période normale,normal
+1137,2026-02-10,10,2,1,2026,7,2,Mardi,Hiver,False,False,Chaabane,8,1447,Pré-Ramadan,fort
+1138,2026-02-11,11,2,1,2026,7,2,Mercredi,Hiver,False,False,Chaabane,8,1447,Pré-Ramadan,fort
+1139,2026-02-12,12,2,1,2026,7,2,Jeudi,Hiver,False,False,Chaabane,8,1447,Pré-Ramadan,fort
+1140,2026-02-13,13,2,1,2026,7,2,Vendredi,Hiver,False,False,Chaabane,8,1447,Pré-Ramadan,fort
+1141,2026-02-14,14,2,1,2026,7,2,Samedi,Hiver,True,False,Chaabane,8,1447,Pré-Ramadan,fort
+1142,2026-02-15,15,2,1,2026,7,3,Dimanche,Hiver,True,False,Chaabane,8,1447,Pré-Ramadan,fort
+1143,2026-02-16,16,2,1,2026,8,3,Lundi,Hiver,False,False,Chaabane,8,1447,Pré-Ramadan,fort
+1144,2026-02-17,17,2,1,2026,8,3,Mardi,Hiver,False,False,Ramadan,9,1447,Ramadan,moyen
+1145,2026-02-18,18,2,1,2026,8,3,Mercredi,Hiver,False,False,Ramadan,9,1447,Ramadan,moyen
+1146,2026-02-19,19,2,1,2026,8,3,Jeudi,Hiver,False,False,Ramadan,9,1447,Ramadan,moyen
+1147,2026-02-20,20,2,1,2026,8,3,Vendredi,Hiver,False,False,Ramadan,9,1447,Ramadan,moyen
+1148,2026-02-21,21,2,1,2026,8,3,Samedi,Hiver,True,False,Ramadan,9,1447,Ramadan,moyen
+1149,2026-02-22,22,2,1,2026,8,4,Dimanche,Hiver,True,False,Ramadan,9,1447,Ramadan,moyen
+1150,2026-02-23,23,2,1,2026,9,4,Lundi,Hiver,False,False,Ramadan,9,1447,Ramadan,moyen
+1151,2026-02-24,24,2,1,2026,9,4,Mardi,Hiver,False,False,Ramadan,9,1447,Ramadan,moyen
+1152,2026-02-25,25,2,1,2026,9,4,Mercredi,Hiver,False,False,Ramadan,9,1447,Ramadan,moyen
+1153,2026-02-26,26,2,1,2026,9,4,Jeudi,Hiver,False,False,Ramadan,9,1447,Ramadan,moyen
+1154,2026-02-27,27,2,1,2026,9,4,Vendredi,Hiver,False,False,Ramadan,9,1447,Ramadan,moyen
+1155,2026-02-28,28,2,1,2026,9,4,Samedi,Hiver,True,False,Ramadan,9,1447,Ramadan,moyen
+1156,2026-03-01,1,3,1,2026,9,1,Dimanche,Printemps,True,False,Ramadan,9,1447,Ramadan,moyen
+1157,2026-03-02,2,3,1,2026,10,1,Lundi,Printemps,False,False,Ramadan,9,1447,Ramadan,moyen
+1158,2026-03-03,3,3,1,2026,10,1,Mardi,Printemps,False,False,Ramadan,9,1447,Ramadan,moyen
+1159,2026-03-04,4,3,1,2026,10,1,Mercredi,Printemps,False,False,Ramadan,9,1447,Ramadan,moyen
+1160,2026-03-05,5,3,1,2026,10,1,Jeudi,Printemps,False,False,Ramadan,9,1447,Ramadan,moyen
+1161,2026-03-06,6,3,1,2026,10,1,Vendredi,Printemps,False,False,Ramadan,9,1447,Ramadan,moyen
+1162,2026-03-07,7,3,1,2026,10,1,Samedi,Printemps,True,False,Ramadan,9,1447,Ramadan,moyen
+1163,2026-03-08,8,3,1,2026,10,2,Dimanche,Printemps,True,False,Ramadan,9,1447,Ramadan,moyen
+1164,2026-03-09,9,3,1,2026,11,2,Lundi,Printemps,False,False,Ramadan,9,1447,Ramadan,moyen
+1165,2026-03-10,10,3,1,2026,11,2,Mardi,Printemps,False,False,Ramadan,9,1447,Ramadan,moyen
+1166,2026-03-11,11,3,1,2026,11,2,Mercredi,Printemps,False,False,Ramadan,9,1447,Ramadan,moyen
+1167,2026-03-12,12,3,1,2026,11,2,Jeudi,Printemps,False,False,Ramadan,9,1447,Ramadan,moyen
+1168,2026-03-13,13,3,1,2026,11,2,Vendredi,Printemps,False,False,Ramadan,9,1447,Ramadan,moyen
+1169,2026-03-14,14,3,1,2026,11,2,Samedi,Printemps,True,False,Ramadan,9,1447,Ramadan,moyen
+1170,2026-03-15,15,3,1,2026,11,3,Dimanche,Printemps,True,False,Ramadan,9,1447,Ramadan,moyen
+1171,2026-03-16,16,3,1,2026,12,3,Lundi,Printemps,False,False,Ramadan,9,1447,Ramadan,moyen
+1172,2026-03-17,17,3,1,2026,12,3,Mardi,Printemps,False,False,Ramadan,9,1447,Ramadan,moyen
+1173,2026-03-18,18,3,1,2026,12,3,Mercredi,Printemps,False,False,Chawwal,10,1447,Aïd el-Fitr,très fort
+1174,2026-03-19,19,3,1,2026,12,3,Jeudi,Printemps,False,False,Chawwal,10,1447,Aïd el-Fitr,très fort
+1175,2026-03-20,20,3,1,2026,12,3,Vendredi,Printemps,False,True,Chawwal,10,1447,Aïd el-Fitr,très fort
+1176,2026-03-21,21,3,1,2026,12,3,Samedi,Printemps,True,False,Chawwal,10,1447,Période normale,normal
+1177,2026-03-22,22,3,1,2026,12,4,Dimanche,Printemps,True,False,Chawwal,10,1447,Période normale,normal
+1178,2026-03-23,23,3,1,2026,13,4,Lundi,Printemps,False,False,Chawwal,10,1447,Période normale,normal
+1179,2026-03-24,24,3,1,2026,13,4,Mardi,Printemps,False,False,Chawwal,10,1447,Période normale,normal
+1180,2026-03-25,25,3,1,2026,13,4,Mercredi,Printemps,False,False,Chawwal,10,1447,Période normale,normal
+1181,2026-03-26,26,3,1,2026,13,4,Jeudi,Printemps,False,False,Chawwal,10,1447,Période normale,normal
+1182,2026-03-27,27,3,1,2026,13,4,Vendredi,Printemps,False,False,Chawwal,10,1447,Période normale,normal
+1183,2026-03-28,28,3,1,2026,13,4,Samedi,Printemps,True,False,Chawwal,10,1447,Période normale,normal
+1184,2026-03-29,29,3,1,2026,13,5,Dimanche,Printemps,True,False,Chawwal,10,1447,Période normale,normal
+1185,2026-03-30,30,3,1,2026,14,5,Lundi,Printemps,False,False,Chawwal,10,1447,Période normale,normal
+1186,2026-03-31,31,3,1,2026,14,5,Mardi,Printemps,False,False,Chawwal,10,1447,Période normale,normal
+1187,2026-04-01,1,4,2,2026,14,1,Mercredi,Printemps,False,False,Chawwal,10,1447,Période normale,normal
+1188,2026-04-02,2,4,2,2026,14,1,Jeudi,Printemps,False,False,Chawwal,10,1447,Période normale,normal
+1189,2026-04-03,3,4,2,2026,14,1,Vendredi,Printemps,False,False,Chawwal,10,1447,Période normale,normal
+1190,2026-04-04,4,4,2,2026,14,1,Samedi,Printemps,True,False,Chawwal,10,1447,Période normale,normal
+1191,2026-04-05,5,4,2,2026,14,1,Dimanche,Printemps,True,False,Chawwal,10,1447,Période normale,normal
+1192,2026-04-06,6,4,2,2026,15,1,Lundi,Printemps,False,False,Chawwal,10,1447,Période normale,normal
+1193,2026-04-07,7,4,2,2026,15,1,Mardi,Printemps,False,False,Chawwal,10,1447,Période normale,normal
+1194,2026-04-08,8,4,2,2026,15,2,Mercredi,Printemps,False,False,Chawwal,10,1447,Période normale,normal
+1195,2026-04-09,9,4,2,2026,15,2,Jeudi,Printemps,False,True,Chawwal,10,1447,Période normale,normal
+1196,2026-04-10,10,4,2,2026,15,2,Vendredi,Printemps,False,False,Chawwal,10,1447,Période normale,normal
+1197,2026-04-11,11,4,2,2026,15,2,Samedi,Printemps,True,False,Chawwal,10,1447,Période normale,normal
+1198,2026-04-12,12,4,2,2026,15,2,Dimanche,Printemps,True,False,Chawwal,10,1447,Période normale,normal
+1199,2026-04-13,13,4,2,2026,16,2,Lundi,Printemps,False,False,Chawwal,10,1447,Période normale,normal
+1200,2026-04-14,14,4,2,2026,16,2,Mardi,Printemps,False,False,Chawwal,10,1447,Période normale,normal
+1201,2026-04-15,15,4,2,2026,16,3,Mercredi,Printemps,False,False,Chawwal,10,1447,Période normale,normal
+1202,2026-04-16,16,4,2,2026,16,3,Jeudi,Printemps,False,False,Chawwal,10,1447,Période normale,normal
+1203,2026-04-17,17,4,2,2026,16,3,Vendredi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1204,2026-04-18,18,4,2,2026,16,3,Samedi,Printemps,True,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1205,2026-04-19,19,4,2,2026,16,3,Dimanche,Printemps,True,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1206,2026-04-20,20,4,2,2026,17,3,Lundi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1207,2026-04-21,21,4,2,2026,17,3,Mardi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1208,2026-04-22,22,4,2,2026,17,4,Mercredi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1209,2026-04-23,23,4,2,2026,17,4,Jeudi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1210,2026-04-24,24,4,2,2026,17,4,Vendredi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1211,2026-04-25,25,4,2,2026,17,4,Samedi,Printemps,True,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1212,2026-04-26,26,4,2,2026,17,4,Dimanche,Printemps,True,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1213,2026-04-27,27,4,2,2026,18,4,Lundi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1214,2026-04-28,28,4,2,2026,18,4,Mardi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1215,2026-04-29,29,4,2,2026,18,5,Mercredi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1216,2026-04-30,30,4,2,2026,18,5,Jeudi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1217,2026-05-01,1,5,2,2026,18,1,Vendredi,Printemps,False,True,Dhou al-Qi'da,11,1447,Période normale,normal
+1218,2026-05-02,2,5,2,2026,18,1,Samedi,Printemps,True,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1219,2026-05-03,3,5,2,2026,18,1,Dimanche,Printemps,True,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1220,2026-05-04,4,5,2,2026,19,1,Lundi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1221,2026-05-05,5,5,2,2026,19,1,Mardi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1222,2026-05-06,6,5,2,2026,19,1,Mercredi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1223,2026-05-07,7,5,2,2026,19,1,Jeudi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1224,2026-05-08,8,5,2,2026,19,2,Vendredi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1225,2026-05-09,9,5,2,2026,19,2,Samedi,Printemps,True,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1226,2026-05-10,10,5,2,2026,19,2,Dimanche,Printemps,True,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1227,2026-05-11,11,5,2,2026,20,2,Lundi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1228,2026-05-12,12,5,2,2026,20,2,Mardi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1229,2026-05-13,13,5,2,2026,20,2,Mercredi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1230,2026-05-14,14,5,2,2026,20,2,Jeudi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1231,2026-05-15,15,5,2,2026,20,3,Vendredi,Printemps,False,False,Dhou al-Qi'da,11,1447,Période normale,normal
+1232,2026-05-16,16,5,2,2026,20,3,Samedi,Printemps,True,False,Dhou al-Hijja,12,1447,Période normale,normal
+1233,2026-05-17,17,5,2,2026,20,3,Dimanche,Printemps,True,False,Dhou al-Hijja,12,1447,Période normale,normal
+1234,2026-05-18,18,5,2,2026,21,3,Lundi,Printemps,False,False,Dhou al-Hijja,12,1447,Période normale,normal
+1235,2026-05-19,19,5,2,2026,21,3,Mardi,Printemps,False,False,Dhou al-Hijja,12,1447,Aïd el-Adha,très fort
+1236,2026-05-20,20,5,2,2026,21,3,Mercredi,Printemps,False,False,Dhou al-Hijja,12,1447,Aïd el-Adha,très fort
+1237,2026-05-21,21,5,2,2026,21,3,Jeudi,Printemps,False,False,Dhou al-Hijja,12,1447,Aïd el-Adha,très fort
+1238,2026-05-22,22,5,2,2026,21,4,Vendredi,Printemps,False,False,Dhou al-Hijja,12,1447,Aïd el-Adha,très fort
+1239,2026-05-23,23,5,2,2026,21,4,Samedi,Printemps,True,False,Dhou al-Hijja,12,1447,Aïd el-Adha,très fort
+1240,2026-05-24,24,5,2,2026,21,4,Dimanche,Printemps,True,False,Dhou al-Hijja,12,1447,Aïd el-Adha,très fort
+1241,2026-05-25,25,5,2,2026,22,4,Lundi,Printemps,False,False,Dhou al-Hijja,12,1447,Aïd el-Adha,très fort
+1242,2026-05-26,26,5,2,2026,22,4,Mardi,Printemps,False,False,Dhou al-Hijja,12,1447,Aïd el-Adha,très fort
+1243,2026-05-27,27,5,2,2026,22,4,Mercredi,Printemps,False,False,Dhou al-Hijja,12,1447,Aïd el-Adha,très fort
+1244,2026-05-28,28,5,2,2026,22,4,Jeudi,Printemps,False,False,Dhou al-Hijja,12,1447,Aïd el-Adha,très fort
+1245,2026-05-29,29,5,2,2026,22,5,Vendredi,Printemps,False,False,Dhou al-Hijja,12,1447,Période normale,normal
+1246,2026-05-30,30,5,2,2026,22,5,Samedi,Printemps,True,False,Dhou al-Hijja,12,1447,Période normale,normal
+1247,2026-05-31,31,5,2,2026,22,5,Dimanche,Printemps,True,False,Dhou al-Hijja,12,1447,Période normale,normal
+1248,2026-06-01,1,6,2,2026,23,1,Lundi,Été,False,False,Dhou al-Hijja,12,1447,Période normale,normal
+1249,2026-06-02,2,6,2,2026,23,1,Mardi,Été,False,False,Dhou al-Hijja,12,1447,Période normale,normal
+1250,2026-06-03,3,6,2,2026,23,1,Mercredi,Été,False,False,Dhou al-Hijja,12,1447,Période normale,normal
+1251,2026-06-04,4,6,2,2026,23,1,Jeudi,Été,False,False,Dhou al-Hijja,12,1447,Période normale,normal
+1252,2026-06-05,5,6,2,2026,23,1,Vendredi,Été,False,False,Dhou al-Hijja,12,1447,Période normale,normal
+1253,2026-06-06,6,6,2,2026,23,1,Samedi,Été,True,False,Dhou al-Hijja,12,1447,Période normale,normal
+1254,2026-06-07,7,6,2,2026,23,1,Dimanche,Été,True,False,Dhou al-Hijja,12,1447,Période normale,normal
+1255,2026-06-08,8,6,2,2026,24,2,Lundi,Été,False,False,Dhou al-Hijja,12,1447,Période normale,normal
+1256,2026-06-09,9,6,2,2026,24,2,Mardi,Été,False,False,Dhou al-Hijja,12,1447,Période normale,normal
+1257,2026-06-10,10,6,2,2026,24,2,Mercredi,Été,False,False,Dhou al-Hijja,12,1447,Période normale,normal
+1258,2026-06-11,11,6,2,2026,24,2,Jeudi,Été,False,False,Dhou al-Hijja,12,1447,Période normale,normal
+1259,2026-06-12,12,6,2,2026,24,2,Vendredi,Été,False,False,Dhou al-Hijja,12,1447,Période normale,normal
+1260,2026-06-13,13,6,2,2026,24,2,Samedi,Été,True,False,Dhou al-Hijja,12,1447,Période normale,normal
+1261,2026-06-14,14,6,2,2026,24,2,Dimanche,Été,True,False,Dhou al-Hijja,12,1447,Période normale,normal
+1262,2026-06-15,15,6,2,2026,25,3,Lundi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1263,2026-06-16,16,6,2,2026,25,3,Mardi,Été,False,False,Mouharram,1,1448,Nouvel An Islamique,faible
+1264,2026-06-17,17,6,2,2026,25,3,Mercredi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1265,2026-06-18,18,6,2,2026,25,3,Jeudi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1266,2026-06-19,19,6,2,2026,25,3,Vendredi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1267,2026-06-20,20,6,2,2026,25,3,Samedi,Été,True,False,Mouharram,1,1448,Période normale,normal
+1268,2026-06-21,21,6,2,2026,25,3,Dimanche,Été,True,False,Mouharram,1,1448,Période normale,normal
+1269,2026-06-22,22,6,2,2026,26,4,Lundi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1270,2026-06-23,23,6,2,2026,26,4,Mardi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1271,2026-06-24,24,6,2,2026,26,4,Mercredi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1272,2026-06-25,25,6,2,2026,26,4,Jeudi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1273,2026-06-26,26,6,2,2026,26,4,Vendredi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1274,2026-06-27,27,6,2,2026,26,4,Samedi,Été,True,False,Mouharram,1,1448,Période normale,normal
+1275,2026-06-28,28,6,2,2026,26,4,Dimanche,Été,True,False,Mouharram,1,1448,Période normale,normal
+1276,2026-06-29,29,6,2,2026,27,5,Lundi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1277,2026-06-30,30,6,2,2026,27,5,Mardi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1278,2026-07-01,1,7,3,2026,27,1,Mercredi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1279,2026-07-02,2,7,3,2026,27,1,Jeudi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1280,2026-07-03,3,7,3,2026,27,1,Vendredi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1281,2026-07-04,4,7,3,2026,27,1,Samedi,Été,True,False,Mouharram,1,1448,Période normale,normal
+1282,2026-07-05,5,7,3,2026,27,1,Dimanche,Été,True,False,Mouharram,1,1448,Période normale,normal
+1283,2026-07-06,6,7,3,2026,28,1,Lundi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1284,2026-07-07,7,7,3,2026,28,1,Mardi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1285,2026-07-08,8,7,3,2026,28,2,Mercredi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1286,2026-07-09,9,7,3,2026,28,2,Jeudi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1287,2026-07-10,10,7,3,2026,28,2,Vendredi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1288,2026-07-11,11,7,3,2026,28,2,Samedi,Été,True,False,Mouharram,1,1448,Période normale,normal
+1289,2026-07-12,12,7,3,2026,28,2,Dimanche,Été,True,False,Mouharram,1,1448,Période normale,normal
+1290,2026-07-13,13,7,3,2026,29,2,Lundi,Été,False,False,Mouharram,1,1448,Période normale,normal
+1291,2026-07-14,14,7,3,2026,29,2,Mardi,Été,False,False,Inconnu,0,0,Période normale,normal
+1292,2026-07-15,15,7,3,2026,29,3,Mercredi,Été,False,False,Inconnu,0,0,Période normale,normal
+1293,2026-07-16,16,7,3,2026,29,3,Jeudi,Été,False,False,Inconnu,0,0,Période normale,normal
+1294,2026-07-17,17,7,3,2026,29,3,Vendredi,Été,False,False,Inconnu,0,0,Période normale,normal
+1295,2026-07-18,18,7,3,2026,29,3,Samedi,Été,True,False,Inconnu,0,0,Période normale,normal
+1296,2026-07-19,19,7,3,2026,29,3,Dimanche,Été,True,False,Inconnu,0,0,Période normale,normal
+1297,2026-07-20,20,7,3,2026,30,3,Lundi,Été,False,False,Inconnu,0,0,Période normale,normal
+1298,2026-07-21,21,7,3,2026,30,3,Mardi,Été,False,False,Inconnu,0,0,Période normale,normal
+1299,2026-07-22,22,7,3,2026,30,4,Mercredi,Été,False,False,Inconnu,0,0,Période normale,normal
+1300,2026-07-23,23,7,3,2026,30,4,Jeudi,Été,False,False,Inconnu,0,0,Période normale,normal
+1301,2026-07-24,24,7,3,2026,30,4,Vendredi,Été,False,False,Inconnu,0,0,Période normale,normal
+1302,2026-07-25,25,7,3,2026,30,4,Samedi,Été,True,True,Inconnu,0,0,Période normale,normal
+1303,2026-07-26,26,7,3,2026,30,4,Dimanche,Été,True,False,Inconnu,0,0,Période normale,normal
+1304,2026-07-27,27,7,3,2026,31,4,Lundi,Été,False,False,Inconnu,0,0,Période normale,normal
+1305,2026-07-28,28,7,3,2026,31,4,Mardi,Été,False,False,Inconnu,0,0,Période normale,normal
+1306,2026-07-29,29,7,3,2026,31,5,Mercredi,Été,False,False,Inconnu,0,0,Période normale,normal
+1307,2026-07-30,30,7,3,2026,31,5,Jeudi,Été,False,False,Inconnu,0,0,Période normale,normal
+1308,2026-07-31,31,7,3,2026,31,5,Vendredi,Été,False,False,Inconnu,0,0,Période normale,normal
+1309,2026-08-01,1,8,3,2026,31,1,Samedi,Été,True,False,Inconnu,0,0,Période normale,normal
+1310,2026-08-02,2,8,3,2026,31,1,Dimanche,Été,True,False,Inconnu,0,0,Période normale,normal
+1311,2026-08-03,3,8,3,2026,32,1,Lundi,Été,False,False,Inconnu,0,0,Période normale,normal
+1312,2026-08-04,4,8,3,2026,32,1,Mardi,Été,False,False,Inconnu,0,0,Période normale,normal
+1313,2026-08-05,5,8,3,2026,32,1,Mercredi,Été,False,False,Inconnu,0,0,Période normale,normal
+1314,2026-08-06,6,8,3,2026,32,1,Jeudi,Été,False,False,Inconnu,0,0,Période normale,normal
+1315,2026-08-07,7,8,3,2026,32,1,Vendredi,Été,False,False,Inconnu,0,0,Période normale,normal
+1316,2026-08-08,8,8,3,2026,32,2,Samedi,Été,True,False,Inconnu,0,0,Période normale,normal
+1317,2026-08-09,9,8,3,2026,32,2,Dimanche,Été,True,False,Inconnu,0,0,Période normale,normal
+1318,2026-08-10,10,8,3,2026,33,2,Lundi,Été,False,False,Inconnu,0,0,Période normale,normal
+1319,2026-08-11,11,8,3,2026,33,2,Mardi,Été,False,False,Inconnu,0,0,Période normale,normal
+1320,2026-08-12,12,8,3,2026,33,2,Mercredi,Été,False,False,Inconnu,0,0,Période normale,normal
+1321,2026-08-13,13,8,3,2026,33,2,Jeudi,Été,False,True,Inconnu,0,0,Période normale,normal
+1322,2026-08-14,14,8,3,2026,33,2,Vendredi,Été,False,False,Inconnu,0,0,Période normale,normal
+1323,2026-08-15,15,8,3,2026,33,3,Samedi,Été,True,False,Inconnu,0,0,Période normale,normal
+1324,2026-08-16,16,8,3,2026,33,3,Dimanche,Été,True,False,Inconnu,0,0,Période normale,normal
+1325,2026-08-17,17,8,3,2026,34,3,Lundi,Été,False,False,Inconnu,0,0,Période normale,normal
+1326,2026-08-18,18,8,3,2026,34,3,Mardi,Été,False,False,Inconnu,0,0,Période normale,normal
+1327,2026-08-19,19,8,3,2026,34,3,Mercredi,Été,False,False,Inconnu,0,0,Période normale,normal
+1328,2026-08-20,20,8,3,2026,34,3,Jeudi,Été,False,False,Inconnu,0,0,Période normale,normal
+1329,2026-08-21,21,8,3,2026,34,3,Vendredi,Été,False,False,Inconnu,0,0,Période normale,normal
+1330,2026-08-22,22,8,3,2026,34,4,Samedi,Été,True,False,Inconnu,0,0,Période normale,normal
+1331,2026-08-23,23,8,3,2026,34,4,Dimanche,Été,True,False,Inconnu,0,0,Période normale,normal
+1332,2026-08-24,24,8,3,2026,35,4,Lundi,Été,False,False,Inconnu,0,0,Période normale,normal
+1333,2026-08-25,25,8,3,2026,35,4,Mardi,Été,False,False,Inconnu,0,0,Période normale,normal
+1334,2026-08-26,26,8,3,2026,35,4,Mercredi,Été,False,False,Inconnu,0,0,Période normale,normal
+1335,2026-08-27,27,8,3,2026,35,4,Jeudi,Été,False,False,Inconnu,0,0,Période normale,normal
+1336,2026-08-28,28,8,3,2026,35,4,Vendredi,Été,False,False,Inconnu,0,0,Période normale,normal
+1337,2026-08-29,29,8,3,2026,35,5,Samedi,Été,True,False,Inconnu,0,0,Période normale,normal
+1338,2026-08-30,30,8,3,2026,35,5,Dimanche,Été,True,False,Inconnu,0,0,Période normale,normal
+1339,2026-08-31,31,8,3,2026,36,5,Lundi,Été,False,False,Inconnu,0,0,Période normale,normal
+1340,2026-09-01,1,9,3,2026,36,1,Mardi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1341,2026-09-02,2,9,3,2026,36,1,Mercredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1342,2026-09-03,3,9,3,2026,36,1,Jeudi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1343,2026-09-04,4,9,3,2026,36,1,Vendredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1344,2026-09-05,5,9,3,2026,36,1,Samedi,Automne,True,False,Inconnu,0,0,Période normale,normal
+1345,2026-09-06,6,9,3,2026,36,1,Dimanche,Automne,True,False,Inconnu,0,0,Période normale,normal
+1346,2026-09-07,7,9,3,2026,37,1,Lundi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1347,2026-09-08,8,9,3,2026,37,2,Mardi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1348,2026-09-09,9,9,3,2026,37,2,Mercredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1349,2026-09-10,10,9,3,2026,37,2,Jeudi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1350,2026-09-11,11,9,3,2026,37,2,Vendredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1351,2026-09-12,12,9,3,2026,37,2,Samedi,Automne,True,False,Inconnu,0,0,Période normale,normal
+1352,2026-09-13,13,9,3,2026,37,2,Dimanche,Automne,True,False,Inconnu,0,0,Période normale,normal
+1353,2026-09-14,14,9,3,2026,38,2,Lundi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1354,2026-09-15,15,9,3,2026,38,3,Mardi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1355,2026-09-16,16,9,3,2026,38,3,Mercredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1356,2026-09-17,17,9,3,2026,38,3,Jeudi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1357,2026-09-18,18,9,3,2026,38,3,Vendredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1358,2026-09-19,19,9,3,2026,38,3,Samedi,Automne,True,False,Inconnu,0,0,Période normale,normal
+1359,2026-09-20,20,9,3,2026,38,3,Dimanche,Automne,True,False,Inconnu,0,0,Période normale,normal
+1360,2026-09-21,21,9,3,2026,39,3,Lundi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1361,2026-09-22,22,9,3,2026,39,4,Mardi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1362,2026-09-23,23,9,3,2026,39,4,Mercredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1363,2026-09-24,24,9,3,2026,39,4,Jeudi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1364,2026-09-25,25,9,3,2026,39,4,Vendredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1365,2026-09-26,26,9,3,2026,39,4,Samedi,Automne,True,False,Inconnu,0,0,Période normale,normal
+1366,2026-09-27,27,9,3,2026,39,4,Dimanche,Automne,True,False,Inconnu,0,0,Période normale,normal
+1367,2026-09-28,28,9,3,2026,40,4,Lundi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1368,2026-09-29,29,9,3,2026,40,5,Mardi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1369,2026-09-30,30,9,3,2026,40,5,Mercredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1370,2026-10-01,1,10,4,2026,40,1,Jeudi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1371,2026-10-02,2,10,4,2026,40,1,Vendredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1372,2026-10-03,3,10,4,2026,40,1,Samedi,Automne,True,False,Inconnu,0,0,Période normale,normal
+1373,2026-10-04,4,10,4,2026,40,1,Dimanche,Automne,True,False,Inconnu,0,0,Période normale,normal
+1374,2026-10-05,5,10,4,2026,41,1,Lundi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1375,2026-10-06,6,10,4,2026,41,1,Mardi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1376,2026-10-07,7,10,4,2026,41,1,Mercredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1377,2026-10-08,8,10,4,2026,41,2,Jeudi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1378,2026-10-09,9,10,4,2026,41,2,Vendredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1379,2026-10-10,10,10,4,2026,41,2,Samedi,Automne,True,False,Inconnu,0,0,Période normale,normal
+1380,2026-10-11,11,10,4,2026,41,2,Dimanche,Automne,True,False,Inconnu,0,0,Période normale,normal
+1381,2026-10-12,12,10,4,2026,42,2,Lundi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1382,2026-10-13,13,10,4,2026,42,2,Mardi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1383,2026-10-14,14,10,4,2026,42,2,Mercredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1384,2026-10-15,15,10,4,2026,42,3,Jeudi,Automne,False,True,Inconnu,0,0,Période normale,normal
+1385,2026-10-16,16,10,4,2026,42,3,Vendredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1386,2026-10-17,17,10,4,2026,42,3,Samedi,Automne,True,False,Inconnu,0,0,Période normale,normal
+1387,2026-10-18,18,10,4,2026,42,3,Dimanche,Automne,True,False,Inconnu,0,0,Période normale,normal
+1388,2026-10-19,19,10,4,2026,43,3,Lundi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1389,2026-10-20,20,10,4,2026,43,3,Mardi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1390,2026-10-21,21,10,4,2026,43,3,Mercredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1391,2026-10-22,22,10,4,2026,43,4,Jeudi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1392,2026-10-23,23,10,4,2026,43,4,Vendredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1393,2026-10-24,24,10,4,2026,43,4,Samedi,Automne,True,False,Inconnu,0,0,Période normale,normal
+1394,2026-10-25,25,10,4,2026,43,4,Dimanche,Automne,True,False,Inconnu,0,0,Période normale,normal
+1395,2026-10-26,26,10,4,2026,44,4,Lundi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1396,2026-10-27,27,10,4,2026,44,4,Mardi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1397,2026-10-28,28,10,4,2026,44,4,Mercredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1398,2026-10-29,29,10,4,2026,44,5,Jeudi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1399,2026-10-30,30,10,4,2026,44,5,Vendredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1400,2026-10-31,31,10,4,2026,44,5,Samedi,Automne,True,False,Inconnu,0,0,Période normale,normal
+1401,2026-11-01,1,11,4,2026,44,1,Dimanche,Automne,True,False,Inconnu,0,0,Période normale,normal
+1402,2026-11-02,2,11,4,2026,45,1,Lundi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1403,2026-11-03,3,11,4,2026,45,1,Mardi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1404,2026-11-04,4,11,4,2026,45,1,Mercredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1405,2026-11-05,5,11,4,2026,45,1,Jeudi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1406,2026-11-06,6,11,4,2026,45,1,Vendredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1407,2026-11-07,7,11,4,2026,45,1,Samedi,Automne,True,False,Inconnu,0,0,Période normale,normal
+1408,2026-11-08,8,11,4,2026,45,2,Dimanche,Automne,True,False,Inconnu,0,0,Période normale,normal
+1409,2026-11-09,9,11,4,2026,46,2,Lundi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1410,2026-11-10,10,11,4,2026,46,2,Mardi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1411,2026-11-11,11,11,4,2026,46,2,Mercredi,Automne,False,False,Inconnu,0,0,Période normale,normal
+1412,2026-11-12,12,11,4,2026,46,2,Jeudi,Automne,False,False,Inconnu,0,0,Période normale,normal

@@ -34,20 +34,7 @@ from app.models.models import (
 fake = Faker("fr_FR")
 random.seed(42)
 
-# ── Référentiels fixes ────────────────────────────────────────────────────────
-
-GOUVERNORATS = [
-    "Tunis",
-    "Sfax",
-    "Sousse",
-    "Bizerte",
-    "Gabès",
-    "Ariana",
-    "Gafsa",
-    "Kairouan",
-    "Monastir",
-    "Nabeul",
-]
+# ── Référentiels ──────────────────────────────────────────────────────────────
 
 VILLES_PAR_GOUVERNORAT = {
     "Tunis": ["Tunis", "La Marsa", "Le Bardo"],
@@ -77,13 +64,13 @@ DESTINATIONS_INTL = [
     {"pays_dest": "Sénégal", "ville_dest": "Dakar", "code_iso_pays": "SN"},
 ]
 
-# Mapping CodeService → TypeService (correspond aux vraies données)
 SERVICES = [
     {
         "code_service": "NOR",
         "type_service": TypeService.NORMAL,
         "portee": Portee.NATIONAL,
         "label": "Normal",
+        "description": "Colis normal",
         "tarif_base": 3.5,
         "delai_standard": 5,
     },
@@ -92,6 +79,7 @@ SERVICES = [
         "type_service": TypeService.EXPRESS_NORMAL,
         "portee": Portee.NATIONAL,
         "label": "Express normal",
+        "description": "Express Mail Service National",
         "tarif_base": 7.0,
         "delai_standard": 2,
     },
@@ -100,6 +88,7 @@ SERVICES = [
         "type_service": TypeService.EXPRESS_PERSONNALISE,
         "portee": Portee.INTERNATIONAL,
         "label": "Express personnalisé international",
+        "description": "Express Mail Service International",
         "tarif_base": 12.0,
         "delai_standard": 3,
     },
@@ -108,13 +97,65 @@ SERVICES = [
         "type_service": TypeService.EXPRESS_PERSONNALISE,
         "portee": Portee.INTERNATIONAL,
         "label": "Remise contre preuve international",
+        "description": "Livré par DHL Express",
         "tarif_base": 10.0,
         "delai_standard": 4,
     },
 ]
 
+# Jours fériés tunisiens (MM-DD)
+JOURS_FERIES = [
+    "01-01",
+    "03-20",
+    "04-09",
+    "05-01",
+    "07-25",
+    "08-13",
+    "10-15",
+]
+
+JOURS_FR = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
+
+
+def _get_saison(mois: int) -> str:
+    if mois in (3, 4, 5):
+        return "Printemps"
+    elif mois in (6, 7, 8):
+        return "Été"
+    elif mois in (9, 10, 11):
+        return "Automne"
+    else:
+        return "Hiver"
+
+
+def _get_tranche(heure_int: int) -> str:
+    h = heure_int // 100
+    if 6 <= h < 10:
+        return "Matin (6h-10h)"
+    elif 10 <= h < 13:
+        return "Milieu matin (10h-13h)"
+    elif 13 <= h < 15:
+        return "Après-midi (13h-15h)"
+    elif 15 <= h < 18:
+        return "Fin après-midi (15h-18h)"
+    elif 18 <= h < 21:
+        return "Soir (18h-21h)"
+    else:
+        return "Hors horaires"
+
+
+def _format_heure(heure_int: int) -> str:
+    h = heure_int // 100
+    m = heure_int % 100
+    if h < 12:
+        return f"{h:02d}:{m:02d} AM"
+    elif h == 12:
+        return f"12:{m:02d} PM"
+    else:
+        return f"{h - 12:02d}:{m:02d} PM"
 
 
 def _montant_from_service(type_service: TypeService, poids: float) -> float:
@@ -133,20 +174,6 @@ def _date_range(start: date, end: date):
         current += timedelta(days=1)
 
 
-def _get_saison(mois: int) -> str:
-    if mois in (3, 4, 5):
-        return "Printemps"
-    elif mois in (6, 7, 8):
-        return "Été"
-    elif mois in (9, 10, 11):
-        return "Automne"
-    else:
-        return "Hiver"
-
-
-JOURS_FR = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
-
-
 # ── Seed principal ────────────────────────────────────────────────────────────
 
 
@@ -156,26 +183,38 @@ def seed_mock_data(n_colis: int = 3000):
         print("Création du schéma…")
         Base.metadata.create_all(bind=engine)
 
-        print("Aucune donnée de test ajoutée.")
-        db.commit()
+        if db.query(FaitColis).count() > 0:
+            print("Base déjà initialisée — seed ignoré.")
+            return
+
+        # ── 1. Services ───────────────────────────────────────────────────────
+        services = []
+        for s in SERVICES:
+            svc = DimService(**s)
+            db.add(svc)
+            services.append(svc)
+        db.flush()
+
+        # ── 2. Bureaux ────────────────────────────────────────────────────────
         bureaux = []
-        compteur_bureau = 1
+        compteur = 1
         for gouvernorat, villes in VILLES_PAR_GOUVERNORAT.items():
             for ville in villes:
                 bureau = DimBureau(
-                    id_bureau_src=f"BUR{str(compteur_bureau).zfill(3)}",
+                    id_bureau_src=f"BUR{str(compteur).zfill(3)}",
                     code_postal=f"{random.randint(1000, 9999)}",
                     cite=ville,
                     ville=ville,
                     gouvernorat=gouvernorat,
+                    type_bureau="Bureau",  # ← AJOUT
                 )
                 db.add(bureau)
                 bureaux.append(bureau)
-                compteur_bureau += 1
+                compteur += 1
         db.flush()
 
         # ── 3. Destinations ───────────────────────────────────────────────────
-        destinations_nationales = []
+        destinations = []
         for gouvernorat, villes in VILLES_PAR_GOUVERNORAT.items():
             for ville in villes:
                 dest = DimDestination(
@@ -187,9 +226,8 @@ def seed_mock_data(n_colis: int = 3000):
                     portee=Portee.NATIONAL,
                 )
                 db.add(dest)
-                destinations_nationales.append(dest)
+                destinations.append(dest)
 
-        destinations_intl = []
         for d in DESTINATIONS_INTL:
             dest = DimDestination(
                 code_iso_pays=d["code_iso_pays"],
@@ -200,13 +238,11 @@ def seed_mock_data(n_colis: int = 3000):
                 portee=Portee.INTERNATIONAL,
             )
             db.add(dest)
-            destinations_intl.append(dest)
+            destinations.append(dest)
         db.flush()
 
-        all_destinations = destinations_nationales + destinations_intl
-
-        # ── 4. Dimension Temps (3 ans — 2024, 2025, 2026) ────────────────────
-        start_date = date(2024, 1, 1)
+        # ── 4. Dimension Temps (2023-2026) ────────────────────────────────────
+        start_date = date(2023, 1, 1)
         end_date = date(2026, 6, 30)
         temps_map: dict[date, DimTemps] = {}
 
@@ -218,9 +254,16 @@ def seed_mock_data(n_colis: int = 3000):
                 trimestre=(d.month - 1) // 3 + 1,
                 annee=d.year,
                 semaine=d.isocalendar()[1],
+                num_semaine_mois=(d.day - 1) // 7 + 1,  # ← AJOUT
                 jour_semaine=JOURS_FR[d.weekday()],
                 saison=_get_saison(d.month),
                 est_weekend=d.weekday() >= 5,
+                est_ferie=d.strftime("%m-%d") in JOURS_FERIES,  # ← AJOUT
+                mois_islamique=None,  # ← AJOUT (simplifié pour mock)
+                num_mois_islamique=None,  # ← AJOUT
+                annee_hijri=None,  # ← AJOUT
+                evenement_islamique=None,  # ← AJOUT
+                impact_islamique=None,  # ← AJOUT
             )
             db.add(t)
             temps_map[d] = t
@@ -228,8 +271,6 @@ def seed_mock_data(n_colis: int = 3000):
 
         # ── 5. Faits Colis ────────────────────────────────────────────────────
         all_dates = list(temps_map.keys())
-
-        # Saisonnalité : plus de colis en nov-déc et en été
         weights = [
             3.0
             if d.month in (11, 12, 7, 8)
@@ -238,44 +279,50 @@ def seed_mock_data(n_colis: int = 3000):
             else 1.0
             for d in all_dates
         ]
-
-        # 70% national, 30% international
+        dest_nationales = [d for d in destinations if d.portee == Portee.NATIONAL]
+        dest_intl = [d for d in destinations if d.portee == Portee.INTERNATIONAL]
         dest_weights = [
-            0.7 / len(destinations_nationales)
+            0.7 / len(dest_nationales)
             if d.portee == Portee.NATIONAL
-            else 0.3 / len(destinations_intl)
-            for d in all_destinations
+            else 0.3 / len(dest_intl)
+            for d in destinations
         ]
 
         for i in range(n_colis):
             chosen_date = random.choices(all_dates, weights=weights, k=1)[0]
             service = random.choices(
                 services,
-                weights=[0.5, 0.2, 0.2, 0.1],  # NOR > EMS-N > EMS-I > RPP-I
+                weights=[0.5, 0.2, 0.2, 0.1],
                 k=1,
             )[0]
-            destination = random.choices(all_destinations, weights=dest_weights, k=1)[0]
+            destination = random.choices(destinations, weights=dest_weights, k=1)[0]
             poids = round(random.uniform(0.1, 25.0), 2)
+
+            # Heure mock entre 6h00 et 18h00
+            heure_int = random.choice(
+                [h * 100 + m for h in range(6, 19) for m in [0, 15, 30, 45]]
+            )
 
             colis = FaitColis(
                 num_colis=f"TN{str(i + 1).zfill(7)}",
                 id_bordereau=random.randint(100000, 999999),
                 poids=poids,
                 montant=_montant_from_service(service.type_service, poids),
-                nature=None,  # absent des vraies données
+                nature=None,
                 ref_paiement=random.choice(["C", "P", None]),
                 type_source="normal" if service.code_service == "NOR" else "express",
-                est_anomalie=None,  # rempli par ML Phase 3
+                heure_formatee=_format_heure(heure_int),  # ← AJOUT
+                tranche_horaire=_get_tranche(heure_int),  # ← AJOUT
+                est_anomalie=None,
                 temps_id=temps_map[chosen_date].id,
                 service_id=service.id,
                 bureau_id=random.choice(bureaux).id,
                 destination_id=destination.id,
             )
             db.add(colis)
-
         db.flush()
 
-        # ── 6. Utilisateurs applicatifs ───────────────────────────────────────
+        # ── 6. Utilisateurs ───────────────────────────────────────────────────
         seed_users = [
             User(
                 username="admin",
