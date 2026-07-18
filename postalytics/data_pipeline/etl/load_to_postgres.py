@@ -84,7 +84,7 @@ def create_schema():
     print("\n[0/6] Création du schéma PostgreSQL...")
     Base.metadata.drop_all(bind=engine)  # reset complet
     Base.metadata.create_all(bind=engine)
-    log("✅ Schéma créé")
+    log(" Schéma créé")
 
 
 # ── Étape 1 — dim_temps ───────────────────────────────────────────────────────
@@ -133,7 +133,7 @@ def load_dim_temps(db: Session):
         )
 
     insert_batch(db, objects, "dim_temps")
-    log(f"✅ {len(objects):,} dates chargées")
+    log(f" {len(objects):,} dates chargées")
 
 
 # ── Étape 2 — dim_bureau ─────────────────────────────────────────────────────
@@ -164,7 +164,7 @@ def load_dim_bureau(db: Session):
         )
 
     insert_batch(db, objects, "dim_bureau")
-    log(f"✅ {len(objects):,} bureaux chargés")
+    log(f" {len(objects):,} bureaux chargés")
 
 
 # ── Étape 3 — dim_service ────────────────────────────────────────────────────
@@ -214,7 +214,7 @@ def load_dim_service(db: Session):
         )
 
     insert_batch(db, objects, "dim_service")
-    log(f"✅ {len(objects):,} services chargés")
+    log(f" {len(objects):,} services chargés")
 
 
 # ── Étape 4 — dim_destination ────────────────────────────────────────────────
@@ -252,7 +252,7 @@ def load_dim_destination(db: Session):
         )
 
     insert_batch(db, objects, "dim_destination")
-    log(f"✅ {len(objects):,} destinations chargées")
+    log(f" {len(objects):,} destinations chargées")
 
 
 # ── Étape 5 — fait_colis ─────────────────────────────────────────────────────
@@ -320,7 +320,7 @@ def load_fait_colis(db: Session):
         )
 
     print()
-    log(f"✅ {total - nb_erreurs:,} colis chargés | {nb_erreurs} erreurs ignorées")
+    log(f" {total - nb_erreurs:,} colis chargés | {nb_erreurs} erreurs ignorées")
 
 
 # ── Étape 6 — Utilisateurs ───────────────────────────────────────────────────
@@ -362,7 +362,7 @@ def load_users(db: Session):
     for u in users:
         db.add(u)
     db.flush()
-    log(f"✅ {len(users)} comptes créés")
+    log(f" {len(users)} comptes créés")
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -386,7 +386,7 @@ def main():
             db.commit()
 
             print("\n" + "=" * 60)
-            print("  ✅ ETL terminé avec succès !")
+            print("   ETL terminé avec succès !")
             print("=" * 60)
             print("\nRésumé :")
 
@@ -399,7 +399,7 @@ def main():
 
         except Exception as e:
             db.rollback()
-            print(f"\n❌ Erreur ETL : {e}")
+            print(f"\n Erreur ETL : {e}")
             raise
 
 
