@@ -1,163 +1,387 @@
-import { TrendingUp, FlaskConical } from "lucide-react";
+import { useState, useEffect } from "react";
 import {
-  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip,
-  Legend, ResponsiveContainer, ReferenceLine,
+  ComposedChart,
+  Bar,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+  ReferenceLine,
+  Area,
 } from "recharts";
+import { TrendingUp, AlertCircle, CheckCircle, Calendar } from "lucide-react";
+import api from "../services/api";
 
-// Données mock de prévision (seront remplacées par les sorties Prophet/statsmodels)
-const MOCK_DATA = [
-  { label: "Jan 2024", volume: 220, est_prevision: false },
-  { label: "Fév 2024", volume: 195, est_prevision: false },
-  { label: "Mar 2024", volume: 260, est_prevision: false },
-  { label: "Avr 2024", volume: 240, est_prevision: false },
-  { label: "Mai 2024", volume: 275, est_prevision: false },
-  { label: "Jun 2024", volume: 310, est_prevision: false },
-  { label: "Jul 2024", volume: 350, est_prevision: false },
-  { label: "Aoû 2024", volume: 345, est_prevision: false },
-  { label: "Sep 2024", volume: 290, est_prevision: false },
-  { label: "Oct 2024", volume: 305, est_prevision: false },
-  { label: "Nov 2024", volume: 410, est_prevision: false },
-  { label: "Déc 2024", volume: 480, est_prevision: false },
-  // Prévisions (en pointillés visuellement)
-  { label: "Jan 2025", volume_prevu: 340, borne_inf: 295, borne_sup: 385, est_prevision: true },
-  { label: "Fév 2025", volume_prevu: 310, borne_inf: 265, borne_sup: 355, est_prevision: true },
-  { label: "Mar 2025", volume_prevu: 375, borne_inf: 320, borne_sup: 430, est_prevision: true },
-  { label: "Avr 2025", volume_prevu: 350, borne_inf: 295, borne_sup: 405, est_prevision: true },
-  { label: "Mai 2025", volume_prevu: 395, borne_inf: 335, borne_sup: 455, est_prevision: true },
-  { label: "Jun 2025", volume_prevu: 430, borne_inf: 365, borne_sup: 495, est_prevision: true },
-];
+const fmt = (n: number | null | undefined) => {
+  if (n == null) return "—";
+  if (n >= 1000) return `${(n / 1000).toFixed(1)}k`;
+  return `${n}`;
+};
+
+function Card({
+  children,
+  className = "",
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <div
+      className={`bg-white rounded-xl shadow-sm border border-surface-muted p-5 ${className}`}
+    >
+      {children}
+    </div>
+  );
+}
 
 export default function PrevisionsPage() {
-  const pivot = MOCK_DATA.findIndex((d) => d.est_prevision);
-  const pivotLabel = pivot >= 0 ? MOCK_DATA[pivot].label : null;
+  const [data, setData] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    api
+      .get("/dashboard/previsions")
+      .then((r) => {
+        if (r.data.error) {
+          setError(r.data.error);
+        } else {
+          setData(r.data);
+        }
+      })
+      .catch(() => setError("Erreur de chargement des prévisions"))
+      .finally(() => setLoading(false));
+  }, []);
+
+  // Séparer historique et prévisions
+  const historique = data.filter((d) => !d.est_prevision);
+  const previsions = data.filter((d) => d.est_prevision);
+
+  // Trouver le pivot (premier mois de prévision)
+  const pivotLabel = previsions[0]?.label || null;
+
+  // KPIs prévisions
+  const prevMax = previsions.reduce(
+    (a, b) => ((b.volume_prevu || 0) > (a.volume_prevu || 0) ? b : a),
+    {},
+  );
+  const prevMin = previsions.reduce(
+    (a, b) =>
+      (b.volume_prevu || Infinity) < (a.volume_prevu || Infinity) ? b : a,
+    {},
+  );
+  const totalPrevu = previsions.reduce((s, d) => s + (d.volume_prevu || 0), 0);
+
+  // Données graphique — derniers 12 mois + 6 prévisions
+  const derniers12 = historique.slice(-12);
+  const chartData = [
+    ...derniers12.map((d) => ({
+      label: d.label,
+      volume_reel: d.volume_reel,
+      volume_prevu: null,
+      borne_inf: null,
+      borne_sup: null,
+      est_prevision: false,
+    })),
+    ...previsions.map((d) => ({
+      label: d.label,
+      volume_reel: null,
+      volume_prevu: d.volume_prevu,
+      borne_inf: d.borne_inf,
+      borne_sup: d.borne_sup,
+      est_prevision: true,
+    })),
+  ];
+
+  if (loading)
+    return (
+      <div className="flex items-center justify-center h-full">
+        <p className="text-gray-400 text-sm">Chargement des prévisions…</p>
+      </div>
+    );
 
   return (
     <div className="p-6 space-y-6">
+      {/* En-tête */}
       <div>
-        <h1 className="font-display text-2xl font-bold text-navy-900">Prévisions de volume</h1>
-        <p className="text-sm text-gray-400 mt-0.5">Phase 3 — Modèles Prophet / statsmodels</p>
+        <h1 className="font-display text-2xl font-bold text-navy-900">
+          Prévisions de volumes
+        </h1>
+        <p className="text-sm text-gray-400 mt-0.5">
+          Modèle Prophet — saisonnalité islamique et grégoriennes intégrées
+        </p>
       </div>
 
-      {/* Bannière Phase 3 */}
-      <div className="flex items-start gap-3 bg-amber-50 border border-amber-200 rounded-xl px-5 py-4">
-        <FlaskConical className="w-5 h-5 text-amber-postal flex-shrink-0 mt-0.5" />
-        <div>
-          <p className="text-sm font-medium text-amber-800">Données de démonstration</p>
-          <p className="text-xs text-amber-700 mt-0.5">
-            Les prévisions affichées sont générées à partir de données fictives.
-            Une fois les modèles ML entraînés sur les vraies données (Phase 3),
-            cet endpoint sera mis à jour — aucune modification côté frontend nécessaire.
-          </p>
+      {/* Erreur */}
+      {error && (
+        <div
+          className="flex items-center gap-3 bg-amber-50 border border-amber-200
+                        rounded-xl px-5 py-4"
+        >
+          <AlertCircle className="w-5 h-5 text-amber-500 flex-shrink-0" />
+          <p className="text-sm text-amber-800">{error}</p>
         </div>
-      </div>
+      )}
 
-      {/* Graphique prévisions */}
-      <div className="bg-white rounded-xl p-5 shadow-sm border border-surface-muted">
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="font-display font-semibold text-navy-900">Évolution et prévisions 6 mois</h2>
-          <div className="flex items-center gap-4 text-xs text-gray-400">
-            <span className="flex items-center gap-1.5">
-              <span className="w-6 h-0.5 bg-postal inline-block" />
-              Historique réel
-            </span>
-            <span className="flex items-center gap-1.5">
-              <span className="w-6 border-t-2 border-dashed border-amber-postal inline-block" />
-              Prévision
-            </span>
+      {!error && (
+        <>
+          {/* KPIs */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              {
+                icon: TrendingUp,
+                label: "Total prévu (6 mois)",
+                value: fmt(totalPrevu),
+                color: "#2E86AB",
+              },
+              {
+                icon: Calendar,
+                label: "Mois le plus chargé",
+                value: prevMax.label || "—",
+                sub: fmt(prevMax.volume_prevu) + " colis",
+                color: "#F0A500",
+              },
+              {
+                icon: Calendar,
+                label: "Mois le plus creux",
+                value: prevMin.label || "—",
+                sub: fmt(prevMin.volume_prevu) + " colis",
+                color: "#8B5CF6",
+              },
+              {
+                icon: CheckCircle,
+                label: "MAE modèle",
+                value: "430 colis/j",
+                sub: "MAPE : 39.4%",
+                color: "#10B981",
+              },
+            ].map((k, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-xl border border-surface-muted overflow-hidden"
+              >
+                <div className="h-1" style={{ backgroundColor: k.color }} />
+                <div className="p-4 flex items-start gap-3">
+                  <div
+                    className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
+                    style={{ backgroundColor: `${k.color}15` }}
+                  >
+                    <k.icon className="w-4 h-4" style={{ color: k.color }} />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-400 uppercase tracking-wide">
+                      {k.label}
+                    </p>
+                    <p className="font-display text-lg font-bold text-navy-900">
+                      {k.value}
+                    </p>
+                    {k.sub && <p className="text-xs text-gray-400">{k.sub}</p>}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-        </div>
-        <ResponsiveContainer width="100%" height={320}>
-          <LineChart data={MOCK_DATA} margin={{ top: 5, right: 30, bottom: 5, left: 0 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#E8EDF4" />
-            <XAxis dataKey="label" tick={{ fontSize: 10 }} />
-            <YAxis tick={{ fontSize: 11 }} />
-            <Tooltip />
-            {pivotLabel && (
-              <ReferenceLine
-                x={pivotLabel}
-                stroke="#F0A500"
-                strokeDasharray="4 4"
-                label={{ value: "Prévisions →", position: "top", fontSize: 10, fill: "#C88400" }}
-              />
-            )}
-            <Line
-              type="monotone"
-              dataKey="volume"
-              stroke="#2E86AB"
-              strokeWidth={2}
-              dot={false}
-              name="Volume réel"
-              connectNulls
-            />
-            <Line
-              type="monotone"
-              dataKey="volume_prevu"
-              stroke="#F0A500"
-              strokeWidth={2}
-              strokeDasharray="5 5"
-              dot={false}
-              name="Volume prévu"
-              connectNulls
-            />
-            <Line
-              type="monotone"
-              dataKey="borne_sup"
-              stroke="#F0A500"
-              strokeWidth={1}
-              strokeDasharray="2 4"
-              dot={false}
-              name="Borne sup."
-              opacity={0.5}
-              connectNulls
-            />
-            <Line
-              type="monotone"
-              dataKey="borne_inf"
-              stroke="#F0A500"
-              strokeWidth={1}
-              strokeDasharray="2 4"
-              dot={false}
-              name="Borne inf."
-              opacity={0.5}
-              connectNulls
-            />
-            <Legend />
-          </LineChart>
-        </ResponsiveContainer>
-      </div>
 
-      {/* Table des prévisions */}
-      <div className="bg-white rounded-xl shadow-sm border border-surface-muted overflow-hidden">
-        <div className="px-5 py-4 border-b border-surface-muted">
-          <h2 className="font-display font-semibold text-navy-900">Détail des prévisions</h2>
-        </div>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead className="bg-surface">
-              <tr>
-                {["Période", "Volume prévu", "Borne inférieure", "Borne supérieure", "Intervalle"].map((h) => (
-                  <th key={h} className="text-left px-5 py-3 text-xs font-medium text-gray-400 uppercase tracking-wide">
-                    {h}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-surface-muted">
-              {MOCK_DATA.filter((d) => d.est_prevision).map((d) => (
-                <tr key={d.label} className="hover:bg-surface transition-colors">
-                  <td className="px-5 py-3 font-medium text-navy-900">{d.label}</td>
-                  <td className="px-5 py-3 text-postal font-semibold">{d.volume_prevu}</td>
-                  <td className="px-5 py-3 text-gray-500">{d.borne_inf}</td>
-                  <td className="px-5 py-3 text-gray-500">{d.borne_sup}</td>
-                  <td className="px-5 py-3 text-gray-400">
-                    ± {Math.round(((d.borne_sup! - d.borne_inf!) / 2))}
-                  </td>
-                </tr>
+          {/* Graphique principal */}
+          <Card>
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="font-display font-semibold text-navy-900">
+                Historique (12 mois) + Prévisions Prophet (6 mois)
+              </h2>
+              <div className="flex items-center gap-4 text-xs text-gray-400">
+                <span className="flex items-center gap-1.5">
+                  <div className="w-4 h-3 bg-postal rounded" />
+                  Réel
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <div className="w-4 h-3 bg-amber-postal rounded" />
+                  Prévision
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <div className="w-4 h-2 bg-amber-postal opacity-30 rounded" />
+                  Intervalle 95%
+                </span>
+              </div>
+            </div>
+            <ResponsiveContainer width="100%" height={340}>
+              <ComposedChart data={chartData}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#E8EDF4" />
+                <XAxis
+                  dataKey="label"
+                  tick={{ fontSize: 10 }}
+                  angle={-30}
+                  textAnchor="end"
+                  height={50}
+                />
+                <YAxis tick={{ fontSize: 11 }} tickFormatter={fmt} />
+                <Tooltip
+                  formatter={(v: any, name: string) => {
+                    if (v == null) return [null, name];
+                    const labels: Record<string, string> = {
+                      volume_reel: "Volume réel",
+                      volume_prevu: "Volume prévu",
+                      borne_sup: "Borne supérieure",
+                      borne_inf: "Borne inférieure",
+                    };
+                    return [fmt(v), labels[name] || name];
+                  }}
+                />
+                {pivotLabel && (
+                  <ReferenceLine
+                    x={pivotLabel}
+                    stroke="#EF4444"
+                    strokeDasharray="4 4"
+                    label={{
+                      value: "→ Prévisions",
+                      position: "top",
+                      fontSize: 10,
+                      fill: "#EF4444",
+                    }}
+                  />
+                )}
+                {/* Intervalle confiance */}
+                <Area
+                  type="monotone"
+                  dataKey="borne_sup"
+                  fill="#F0A500"
+                  stroke="none"
+                  fillOpacity={0.15}
+                  connectNulls
+                />
+                <Area
+                  type="monotone"
+                  dataKey="borne_inf"
+                  fill="#ffffff"
+                  stroke="none"
+                  fillOpacity={1}
+                  connectNulls
+                />
+                {/* Barres historique */}
+                <Bar
+                  dataKey="volume_reel"
+                  fill="#2E86AB"
+                  name="volume_reel"
+                  radius={[3, 3, 0, 0]}
+                />
+                {/* Barres prévisions */}
+                <Bar
+                  dataKey="volume_prevu"
+                  fill="#F0A500"
+                  name="volume_prevu"
+                  radius={[3, 3, 0, 0]}
+                  opacity={0.85}
+                />
+                {/* Lignes bornes */}
+                <Line
+                  type="monotone"
+                  dataKey="borne_sup"
+                  stroke="#F0A500"
+                  strokeWidth={1}
+                  strokeDasharray="3 3"
+                  dot={false}
+                  connectNulls
+                  name="borne_sup"
+                />
+                <Line
+                  type="monotone"
+                  dataKey="borne_inf"
+                  stroke="#F0A500"
+                  strokeWidth={1}
+                  strokeDasharray="3 3"
+                  dot={false}
+                  connectNulls
+                  name="borne_inf"
+                />
+              </ComposedChart>
+            </ResponsiveContainer>
+          </Card>
+
+          {/* Tableau des prévisions */}
+          <Card>
+            <h2 className="font-display font-semibold text-navy-900 mb-4">
+              Détail des prévisions mensuelles
+            </h2>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead className="bg-surface">
+                  <tr>
+                    {[
+                      "Période",
+                      "Volume prévu",
+                      "Borne inférieure",
+                      "Borne supérieure",
+                      "Intervalle ±",
+                    ].map((h) => (
+                      <th
+                        key={h}
+                        className="text-left px-4 py-3 text-xs font-medium text-gray-400 uppercase"
+                      >
+                        {h}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-surface-muted">
+                  {previsions.map((d, i) => (
+                    <tr key={i} className="hover:bg-surface">
+                      <td className="px-4 py-3 font-medium text-navy-900">
+                        {d.label}
+                      </td>
+                      <td className="px-4 py-3 font-bold text-amber-postal">
+                        {fmt(d.volume_prevu)}
+                      </td>
+                      <td className="px-4 py-3 text-gray-500">
+                        {fmt(d.borne_inf)}
+                      </td>
+                      <td className="px-4 py-3 text-gray-500">
+                        {fmt(d.borne_sup)}
+                      </td>
+                      <td className="px-4 py-3 text-gray-400">
+                        ±{" "}
+                        {fmt(
+                          Math.round(
+                            ((d.borne_sup || 0) - (d.borne_inf || 0)) / 2,
+                          ),
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </Card>
+
+          {/* Infos modèle */}
+          <Card>
+            <h2 className="font-display font-semibold text-navy-900 mb-3">
+              À propos du modèle
+            </h2>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+              {[
+                { label: "Algorithme", value: "Facebook Prophet" },
+                { label: "Données", value: "2023 → 2026" },
+                {
+                  label: "Saisonnalités",
+                  value: "Annuelle + Hebdo + Mensuelle",
+                },
+                { label: "Événements", value: "Islamiques + Fériés TN" },
+                { label: "Mode", value: "Multiplicatif" },
+                { label: "Horizon", value: "6 mois" },
+                { label: "Intervalle conf.", value: "95%" },
+                { label: "Validation", value: "Cross-validation 90j" },
+              ].map((item, i) => (
+                <div key={i} className="bg-surface rounded-lg p-3">
+                  <p className="text-xs text-gray-400 mb-1">{item.label}</p>
+                  <p className="font-medium text-navy-900">{item.value}</p>
+                </div>
               ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
+            </div>
+          </Card>
+        </>
+      )}
     </div>
   );
 }
