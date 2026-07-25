@@ -752,3 +752,87 @@ def flux_national_gouvernorat(
         .all()
     )
     return [{"ville": r.ville_dest, "volume": r.volume} for r in rows]
+
+
+# ── Prévisions Prophet ────────────────────────────────────────────────────────
+
+
+@router.get("/previsions")
+def get_previsions(
+    current_user: User = Depends(require_any_dashboard),
+    db: Session = Depends(get_db),
+):
+    """Retourne l'historique mensuel + prévisions Prophet depuis PostgreSQL."""
+    from sqlalchemy import text
+
+    rows = db.execute(
+        text("""
+        SELECT label, annee, mois, volume_reel, volume_prevu,
+               borne_inf, borne_sup, est_prevision
+        FROM previsions_mensuelles
+        ORDER BY annee, mois
+    """)
+    ).fetchall()
+
+    return [
+        {
+            "label": r[0],
+            "annee": r[1],
+            "mois": r[2],
+            "volume_reel": int(r[3]) if r[3] is not None else None,
+            "volume_prevu": int(r[4]) if r[4] is not None else None,
+            "borne_inf": int(r[5]) if r[5] is not None else None,
+            "borne_sup": int(r[6]) if r[6] is not None else None,
+            "est_prevision": bool(r[7]),
+        }
+        for r in rows
+    ]
+
+
+@router.get("/segmentation-bureaux")
+def segmentation_bureaux(
+    current_user: User = Depends(require_any_dashboard),
+    db: Session = Depends(get_db),
+):
+    """Résultats de la segmentation K-Means des bureaux."""
+    import os
+    import pandas as pd
+
+    chemin = "/app/../data_pipeline/data/processed/bureaux_segmentes.csv"
+
+    if not os.path.exists(chemin):
+        return {
+            "error": "Segmentation non disponible — lancer 04_ml_segmentation.ipynb"
+        }
+
+    df = pd.read_csv(chemin)
+
+    # Profil par cluster
+    profil = (
+        df.groupby("segment")
+        .agg(
+            nb_bureaux=("bureau_id", "count"),
+            nb_colis_moy=("nb_colis", "mean"),
+            ca_par_colis=("ca_par_colis", "mean"),
+            taux_intl=("taux_intl", "mean"),
+            taux_ems_n=("taux_ems_n", "mean"),
+            taux_rpp_i=("taux_rpp_i", "mean"),
+            taux_normal=("taux_normal", "mean"),
+        )
+        .round(3)
+        .reset_index()
+    )
+
+    # Top bureaux par segment
+    top_bureaux = (
+        df.sort_values("nb_colis", ascending=False)
+        .groupby("segment")
+        .head(3)[["segment", "bureau_id", "gouvernorat", "nb_colis", "ca_total"]]
+        .to_dict(orient="records")
+    )
+
+    return {
+        "profil": profil.to_dict(orient="records"),
+        "top_bureaux": top_bureaux,
+        "total_bureaux": int(len(df)),
+    }
