@@ -18,10 +18,9 @@ class Settings(BaseSettings):
     # ── CORS ────────────────────────────────────────────────────────────────────
     BACKEND_CORS_ORIGINS: List[str] = ["http://localhost:3000", "http://localhost:5173"]
 
-    # ── LLM (Phase 4) ───────────────────────────────────────────────────────────
-    OPENAI_API_KEY: str = ""
-    MISTRAL_API_KEY: str = ""
-    LLM_PROVIDER: str = "openai"  # "openai" | "mistral" | "mock"
+    GROQ_API_KEY: str = ""
+    GROQ_MODEL: str = "llama-3.3-70b-versatile"
+    LLM_PROVIDER: str = "groq"
 
     # ── App ─────────────────────────────────────────────────────────────────────
     APP_ENV: str = "development"
