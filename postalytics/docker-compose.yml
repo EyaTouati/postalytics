@@ -33,9 +33,9 @@ services:
     environment:
       DATABASE_URL: postgresql://postalytics:postalytics@db:5432/postalytics_db
       SECRET_KEY: ${SECRET_KEY:-dev-secret-change-in-production}
-      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
-      MISTRAL_API_KEY: ${MISTRAL_API_KEY:-}
-      LLM_PROVIDER: ${LLM_PROVIDER:-mock}
+      GROQ_API_KEY: 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
+      GROQ_MODEL: llama-3.3-70b-versatile
+      LLM_PROVIDER: groq
       APP_ENV: ${APP_ENV:-development}
       BACKEND_CORS_ORIGINS: '["http://localhost:3000","http://localhost:5173"]'
     ports:
