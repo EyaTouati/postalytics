@@ -4,6 +4,8 @@ __pycache__/
 .venv/
 *.egg-info/
 .env
+.env.*
+!.env.example
 
 # Node
 node_modules/
@@ -19,3 +21,8 @@ dist/
 
 # Données sensibles
 *.key
+*.pem
+
+# Données brutes ou exportées
+postalytics/data_pipeline/data/raw/
+postalytics/data_pipeline/data/processed/*.csv

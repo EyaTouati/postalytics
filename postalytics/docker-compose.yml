@@ -7,9 +7,9 @@ services:
     container_name: postalytics_db
     restart: unless-stopped
     environment:
-      POSTGRES_USER: postalytics
-      POSTGRES_PASSWORD: postalytics
-      POSTGRES_DB: postalytics_db
+      POSTGRES_USER: ${POSTGRES_USER:-postalytics}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD must be set}
+      POSTGRES_DB: ${POSTGRES_DB:-postalytics_db}
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
@@ -31,11 +31,11 @@ services:
       db:
         condition: service_healthy
     environment:
-      DATABASE_URL: postgresql://USER:PASSWORD@HOST:5432/DATABASE
-      SECRET_KEY: ${SECRET_KEY:-***REDACTED_SECRET_DEFAULT***}
-      GROQ_API_KEY: ***REVOKED_GROQ_KEY***
-      GROQ_MODEL: llama-3.3-70b-versatile
-      LLM_PROVIDER: groq
+      DATABASE_URL: ${DATABASE_URL:?DATABASE_URL must be set}
+      SECRET_KEY: ${SECRET_KEY:?SECRET_KEY must be set}
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      GROQ_MODEL: ${GROQ_MODEL:-llama-3.3-70b-versatile}
+      LLM_PROVIDER: ${LLM_PROVIDER:-mock}
       APP_ENV: ${APP_ENV:-development}
       BACKEND_CORS_ORIGINS: '["http://localhost:3000","http://localhost:5173"]'
     ports:
