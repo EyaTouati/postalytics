@@ -20,6 +20,7 @@ Prérequis :
 
 import sys
 import os
+import secrets
 import pandas as pd
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import Session
@@ -329,32 +330,40 @@ def load_fait_colis(db: Session):
 def load_users(db: Session):
     print("\n[6/6] Création des comptes utilisateurs...")
 
+    seed_password = lambda role: os.getenv(
+        f"SEED_{role.upper()}_PASSWORD", secrets.token_urlsafe(18)
+    )
+    passwords = {
+        role: seed_password(role)
+        for role in ["admin", "responsable", "agent_tunis", "agent_sfax"]
+    }
+
     users = [
         User(
             username="admin",
             email="admin@poste.tn",
-            hashed_password=get_password_hash("***REDACTED_DEMO_PASSWORD***"),
+            hashed_password=get_password_hash(passwords["admin"]),
             role=UserRole.ADMIN,
             region_assignee=None,
         ),
         User(
             username="responsable",
             email="responsable@poste.tn",
-            hashed_password=get_password_hash("***REDACTED_DEMO_PASSWORD***"),
+            hashed_password=get_password_hash(passwords["responsable"]),
             role=UserRole.RESPONSABLE,
             region_assignee=None,
         ),
         User(
             username="agent_tunis",
             email="agent.tunis@poste.tn",
-            hashed_password=get_password_hash("***REDACTED_DEMO_PASSWORD***"),
+            hashed_password=get_password_hash(passwords["agent_tunis"]),
             role=UserRole.AGENT_REGIONAL,
             region_assignee="Tunis",
         ),
         User(
             username="agent_sfax",
             email="agent.sfax@poste.tn",
-            hashed_password=get_password_hash("***REDACTED_DEMO_PASSWORD***"),
+            hashed_password=get_password_hash(passwords["agent_sfax"]),
             role=UserRole.AGENT_REGIONAL,
             region_assignee="Sfax",
         ),

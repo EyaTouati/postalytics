@@ -2,16 +2,17 @@
 Configuration centrale de l'application.
 Toutes les variables d'environnement sont lues ici — jamais en dur dans le code.
 """
+
 from pydantic_settings import BaseSettings
 from typing import List
 
 
 class Settings(BaseSettings):
     # ── Base de données ─────────────────────────────────────────────────────────
-    DATABASE_URL: str = "postgresql://USER:PASSWORD@HOST:5432/DATABASE"
+    DATABASE_URL: str
 
     # ── JWT ─────────────────────────────────────────────────────────────────────
-    SECRET_KEY: str = "***REDACTED_SECRET_DEFAULT***"
+    SECRET_KEY: str
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 480
 
@@ -20,7 +21,7 @@ class Settings(BaseSettings):
 
     GROQ_API_KEY: str = ""
     GROQ_MODEL: str = "llama-3.3-70b-versatile"
-    LLM_PROVIDER: str = "groq"
+    LLM_PROVIDER: str = "mock"
 
     # ── App ─────────────────────────────────────────────────────────────────────
     APP_ENV: str = "development"

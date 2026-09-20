@@ -38,7 +38,10 @@ export default function LoginPage() {
           <h1 className="font-display text-3xl font-bold text-white tracking-tight">
             PostalBI
           </h1>
-          <p className="mt-1 text-navy-700 text-sm font-body" style={{ color: "#8BA3C4" }}>
+          <p
+            className="mt-1 text-navy-700 text-sm font-body"
+            style={{ color: "#8BA3C4" }}
+          >
             La Poste Tunisienne — Plateforme décisionnelle
           </p>
         </div>
@@ -105,31 +108,6 @@ export default function LoginPage() {
               {isLoading ? "Connexion…" : "Se connecter"}
             </button>
           </form>
-
-          {/* Comptes de test en développement */}
-          <div className="mt-6 pt-5 border-t border-surface-muted">
-            <p className="text-xs text-gray-400 mb-3 font-medium uppercase tracking-wide">
-              Comptes de test
-            </p>
-            <div className="grid grid-cols-2 gap-2">
-              {[
-                { label: "Admin", username: "admin", password: "***REDACTED_DEMO_PASSWORD***" },
-                { label: "Responsable", username: "responsable", password: "***REDACTED_DEMO_PASSWORD***" },
-                { label: "Agent Tunis", username: "agent_tunis", password: "***REDACTED_DEMO_PASSWORD***" },
-                { label: "Agent Sfax", username: "agent_sfax", password: "***REDACTED_DEMO_PASSWORD***" },
-              ].map((c) => (
-                <button
-                  key={c.username}
-                  onClick={() => { setUsername(c.username); setPassword(c.password); }}
-                  className="text-left px-3 py-2 bg-surface rounded-lg hover:bg-surface-muted
-                             transition-colors text-xs text-navy-700"
-                >
-                  <span className="font-medium block">{c.label}</span>
-                  <span className="text-gray-400">{c.username}</span>
-                </button>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </div>
