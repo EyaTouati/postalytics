@@ -10,6 +10,8 @@ Usage :
 """
 
 import random
+import os
+import secrets
 from datetime import date, timedelta
 
 from faker import Faker
@@ -115,6 +117,10 @@ JOURS_FERIES = [
 ]
 
 JOURS_FR = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+
+
+def _seed_password(role: str) -> str:
+    return os.getenv(f"SEED_{role.upper()}_PASSWORD") or secrets.token_urlsafe(18)
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -323,32 +329,36 @@ def seed_mock_data(n_colis: int = 3000):
         db.flush()
 
         # ── 6. Utilisateurs ───────────────────────────────────────────────────
+        seed_passwords = {
+            role: _seed_password(role)
+            for role in ["admin", "responsable", "agent_tunis", "agent_sfax"]
+        }
         seed_users = [
             User(
                 username="admin",
                 email="admin@poste.tn",
-                hashed_password=get_password_hash("***REDACTED_DEMO_PASSWORD***"),
+                hashed_password=get_password_hash(seed_passwords["admin"]),
                 role=UserRole.ADMIN,
                 region_assignee=None,
             ),
             User(
                 username="responsable",
                 email="responsable@poste.tn",
-                hashed_password=get_password_hash("***REDACTED_DEMO_PASSWORD***"),
+                hashed_password=get_password_hash(seed_passwords["responsable"]),
                 role=UserRole.RESPONSABLE,
                 region_assignee=None,
             ),
             User(
                 username="agent_tunis",
                 email="agent.tunis@poste.tn",
-                hashed_password=get_password_hash("***REDACTED_DEMO_PASSWORD***"),
+                hashed_password=get_password_hash(seed_passwords["agent_tunis"]),
                 role=UserRole.AGENT_REGIONAL,
                 region_assignee="Tunis",
             ),
             User(
                 username="agent_sfax",
                 email="agent.sfax@poste.tn",
-                hashed_password=get_password_hash("***REDACTED_DEMO_PASSWORD***"),
+                hashed_password=get_password_hash(seed_passwords["agent_sfax"]),
                 role=UserRole.AGENT_REGIONAL,
                 region_assignee="Sfax",
             ),
@@ -361,10 +371,8 @@ def seed_mock_data(n_colis: int = 3000):
             f"✅ Seed terminé — {n_colis} colis + {len(seed_users)} utilisateurs créés."
         )
         print("\nComptes de test :")
-        print("  admin        / ***REDACTED_DEMO_PASSWORD***")
-        print("  responsable  / ***REDACTED_DEMO_PASSWORD***")
-        print("  agent_tunis  / ***REDACTED_DEMO_PASSWORD***  (gouvernorat : Tunis)")
-        print("  agent_sfax   / ***REDACTED_DEMO_PASSWORD***  (gouvernorat : Sfax)")
+        for username, password in seed_passwords.items():
+            print(f"  {username} / {password}")
 
     except Exception as e:
         db.rollback()
