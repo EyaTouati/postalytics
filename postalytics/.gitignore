@@ -24,5 +24,6 @@ dist/
 *.pem
 
 # Données brutes ou exportées
-postalytics/data_pipeline/data/raw/
-postalytics/data_pipeline/data/processed/*.csv
+data_pipeline/data/raw/
+data_pipeline/data/processed/
+etl-run.log

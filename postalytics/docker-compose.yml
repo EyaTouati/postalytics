@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   # ── Base de données PostgreSQL ─────────────────────────────────────────────────
   db:
@@ -42,9 +40,10 @@ services:
       - "8000:8000"
     volumes:
       - ./backend:/app # hot reload en développement
+      - ./data_pipeline:/data_pipeline # données locales ignorées par Git
     command: >
       sh -c "
-        python -m app.db.seed &&
+        if [ \"$APP_ENV\" = \"development\" ]; then python -m app.db.seed; fi &&
         uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
       "
 

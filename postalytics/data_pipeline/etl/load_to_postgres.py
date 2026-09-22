@@ -43,7 +43,7 @@ from app.models.models import (
 from app.core.security import get_password_hash
 
 # ── Configuration ─────────────────────────────────────────────────────────────
-DATABASE_URL = "postgresql://USER:PASSWORD@HOST:5432/DATABASE"
+DATABASE_URL = os.environ["DATABASE_URL"]
 PATH_CSV = os.path.join(os.path.dirname(__file__), "../data/processed/")
 
 # Taille des lots pour l'insertion (évite les timeouts sur 1.2M lignes)
