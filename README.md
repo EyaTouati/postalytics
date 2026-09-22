@@ -1,121 +1,198 @@
-# 📮 Postalytics — La Poste Tunisienne
+# Postalytics — Intelligent Postal Data Analytics
 
-**Postalytics** est une plateforme d'analyse décisionnelle des flux de colis de
-La Poste Tunisienne.
+**Postalytics** est une plateforme décisionnelle intelligente dédiée à l’analyse des flux d’envois postaux de **La Poste Tunisienne**.
 
-Le projet combine **Data Engineering, Data Warehousing, développement web et
-intelligence artificielle** afin de centraliser, analyser et explorer les
-données de colis à travers une interface web interactive.
+Le projet transforme des données brutes de colis en informations exploitables à travers un pipeline combinant **Data Engineering, Data Warehousing, Data Analytics, Machine Learning et Intelligence Artificielle**.
 
-L'application permet notamment de consulter les indicateurs liés aux flux de
-colis et d'interagir avec les données en langage naturel grâce à un assistant
-basé sur un Large Language Model (LLM).
+L'objectif est de permettre aux utilisateurs d'explorer les flux postaux, suivre les indicateurs clés et interroger les données en langage naturel à travers une interface web interactive.
 
 ---
 
-## 🎯 Objectifs
+## 🎯 Problem & Solution
 
-Les principaux objectifs du projet sont :
+Les données de flux postaux proviennent de différentes sources et nécessitent plusieurs étapes avant de pouvoir être exploitées pour l'analyse décisionnelle.
 
-- Centraliser les données de colis dans une base PostgreSQL
-- Explorer, nettoyer et transformer les données sources
-- Construire un Data Warehouse selon un schéma en étoile
-- Analyser les flux de colis nationaux et internationaux
-- Fournir des tableaux de bord décisionnels
-- Permettre l'interrogation des données en langage naturel
-- Intégrer un Large Language Model (LLM) pour assister l'utilisateur
-- Fournir une architecture modulaire et facilement maintenable
+Postalytics met en place une chaîne complète :
+
+```text
+Raw Data
+   ↓
+Exploration & Cleaning
+   ↓
+Transformation & ETL
+   ↓
+PostgreSQL Data Warehouse
+   ↓
+Analytics & Machine Learning
+   ↓
+FastAPI
+   ↓
+React Dashboard
+   ↓
+AI Assistant
+```
+
+La plateforme permet ainsi de passer de **données brutes à des indicateurs, analyses et prédictions accessibles aux utilisateurs**.
 
 ---
 
-## ✨ Fonctionnalités
+## ✨ Key Features
 
-- 📊 Dashboard décisionnel
-- 📦 Analyse des flux de colis
-- 🏢 Gestion des bureaux et services
-- 🗄️ Data Warehouse PostgreSQL
-- 🔐 Authentification JWT
-- 👥 Gestion des rôles et permissions (RBAC)
-- 💬 Assistant conversationnel pour interroger les données
-- 🤖 Intégration de GPT-OSS-120B via Groq
-- 📈 Visualisation interactive des données
-- 🐳 Conteneurisation avec Docker Compose
+### 📊 Decision Support
+
+* Interactive dashboards
+* KPI monitoring
+* Analysis of postal flows
+* National / international analysis
+* Analysis by time, bureau, service and destination
+* Interactive visualizations
+
+### 🔄 Data Engineering
+
+* Data exploration
+* Data cleaning
+* Data transformation
+* ETL pipeline
+* Data Warehouse construction
+* Star Schema modelling
+
+### 🤖 Machine Learning
+
+Postalytics intègre plusieurs approches de Machine Learning pour l'analyse des flux :
+
+* **K-Means** — segmentation des données
+* **Prophet** — prévision des séries temporelles
+* **Isolation Forest** — détection d'anomalies
+
+### 💬 AI Assistant
+
+Un assistant conversationnel permet d'interroger les données en langage naturel.
+
+Exemple :
+
+```text
+"Combien de colis ont été envoyés en 2025 ?"
+```
+
+Le système traite la question, exploite le contexte des données et retourne une réponse à l'utilisateur.
+
+### 🔐 Security & Access Control
+
+* JWT authentication
+* Password hashing with bcrypt
+* Role-Based Access Control (RBAC)
+* Environment-based configuration
+* Sensitive credentials excluded from Git
+
+### 🐳 Deployment
+
+* Docker
+* Docker Compose
+* Containerized backend, frontend and PostgreSQL services
 
 ---
 
 # 🏗️ Architecture
 
 ```text
-                         ┌──────────────────────┐
-                         │    React Frontend    │
-                         │   TypeScript / Vite  │
-                         └───────────┬──────────┘
-                                     │
-                                     │ HTTP / REST
-                                     ▼
-                         ┌──────────────────────┐
-                         │    FastAPI Backend   │
-                         │       Python         │
-                         └───────┬────────┬─────┘
-                                 │        │
-                    ┌────────────┘        └────────────┐
-                    ▼                                 ▼
-           ┌─────────────────┐              ┌──────────────────┐
-           │   PostgreSQL    │              │       LLM        │
-           │  Data Warehouse │              │  GPT-OSS-120B    │
-           │   Star Schema   │              │      Groq        │
-           └─────────────────┘              └──────────────────┘
-                    ▲
-                    │
-                    │ ETL
-                    │
-           ┌─────────────────┐
-           │   Source Data   │
-           │      CSV        │
-           └─────────────────┘
+                         ┌─────────────────────────┐
+                         │     React Frontend      │
+                         │   TypeScript / Vite     │
+                         └────────────┬────────────┘
+                                      │
+                                  HTTP / REST
+                                      │
+                                      ▼
+                         ┌─────────────────────────┐
+                         │      FastAPI Backend    │
+                         │        Python 3.12      │
+                         └───────┬─────────┬───────┘
+                                 │         │
+                                 │         │
+                                 ▼         ▼
+                    ┌────────────────┐  ┌───────────────┐
+                    │   PostgreSQL   │  │  AI Assistant │
+                    │ Data Warehouse │  │      LLM      │
+                    │  Star Schema   │  │    via Groq   │
+                    └───────▲────────┘  └───────────────┘
+                            │
+                            │ ETL
+                            │
+                    ┌───────┴────────┐
+                    │   Source Data  │
+                    │      CSV       │
+                    └────────────────┘
 ```
 
 ---
 
-# 🧰 Technologies
+# 🔄 Data Pipeline
 
-| Domaine | Technologie |
-|---|---|
-| Backend / API | FastAPI |
-| Langage backend | Python 3.12 |
-| Frontend | React 18 |
-| Langage frontend | TypeScript |
-| Build tool | Vite |
-| CSS | Tailwind CSS |
-| Visualisation | Recharts |
-| Base de données | PostgreSQL 16 |
-| ORM | SQLAlchemy |
-| Validation | Pydantic |
-| Authentification | JWT + bcrypt |
-| Data Processing | Pandas / NumPy |
-| Data Warehouse | PostgreSQL — Star Schema |
-| LLM | OpenAI GPT-OSS-120B |
-| LLM Provider | Groq |
-| Conteneurisation | Docker / Docker Compose |
-| Version Control | Git / GitHub |
+The data pipeline is organized into four main stages:
+
+```text
+CSV Sources
+    │
+    ▼
+Exploration
+    │
+    ▼
+Cleaning
+    │
+    ▼
+Transformation
+    │
+    ▼
+ETL
+    │
+    ▼
+PostgreSQL Data Warehouse
+```
+
+### 1. Exploration
+
+Initial analysis of the source datasets to identify:
+
+* Missing values
+* Duplicates
+* Inconsistent values
+* Incorrect formats
+* Outliers
+* Identifier inconsistencies
+
+### 2. Cleaning
+
+Standardization and preparation of the data before loading it into the analytical model.
+
+### 3. Transformation
+
+Transformation of the cleaned data into structures compatible with the Data Warehouse.
+
+### 4. ETL
+
+Loading the transformed data into PostgreSQL.
+
+The data-processing work is documented through notebooks located in:
+
+```text
+data_pipeline/notebooks/
+```
 
 ---
 
-# 📊 Data Warehouse
+# 🗄️ Data Warehouse
 
-Le projet utilise un **Data Warehouse PostgreSQL** organisé selon un
-**schéma en étoile (Star Schema)**.
+Postalytics uses **PostgreSQL** as its analytical database and implements a **Star Schema**.
 
-## Table de faits
+### Fact Table
 
 ```text
 fait_colis
 ```
 
-La table de faits contient les informations et mesures principales liées aux
-colis.
+The fact table contains the main measures and references associated with postal shipments.
 
-## Dimensions
+### Dimensions
 
 ```text
 dim_temps
@@ -124,7 +201,7 @@ dim_service
 dim_destination
 ```
 
-Architecture simplifiée :
+Simplified model:
 
 ```text
                     dim_temps
@@ -138,324 +215,93 @@ dim_bureau ─────── fait_colis ─────── dim_service
                 dim_destination
 ```
 
-Cette architecture permet d'analyser les flux de colis selon différents axes :
+This structure allows analysis by:
 
-- Temps
-- Bureau
-- Service
-- Destination
-- Type de colis
-- Flux national / international
-
----
-
-# 🔄 Pipeline de données
-
-Les données suivent un pipeline de traitement en plusieurs étapes.
-
-```text
-                  CSV Sources
-                      │
-                      ▼
-                 Exploration
-                      │
-                      ▼
-                   Cleaning
-                      │
-                      ▼
-                Transformation
-                      │
-                      ▼
-                     ETL
-                      │
-                      ▼
-              PostgreSQL DWH
-                      │
-                      ▼
-                  FastAPI
-                      │
-                      ▼
-                React Frontend
-```
-
-## Notebooks
-
-Les notebooks sont organisés selon les différentes étapes du pipeline :
-
-```text
-notebooks/
-├── 01_exploration.ipynb
-├── 02_cleaning.ipynb
-├── 03_transformation.ipynb
-└── 04_etl_postgresql.ipynb
-```
-
-### 1. Exploration
-
-Analyse initiale des données afin d'identifier notamment :
-
-- Valeurs manquantes
-- Doublons
-- Valeurs incohérentes
-- Formats incorrects
-- Valeurs aberrantes
-- Incohérences dans les identifiants
-
-### 2. Cleaning
-
-Nettoyage et standardisation des données.
-
-### 3. Transformation
-
-Transformation des données nettoyées afin de les adapter au modèle
-analytique du Data Warehouse.
-
-### 4. ETL
-
-Chargement des données transformées dans PostgreSQL.
+* Time
+* Bureau
+* Service
+* Destination
+* Shipment type
+* National / international flow
 
 ---
 
-# 🤖 Assistant IA
+# 🤖 Machine Learning
 
-Postalytics intègre un assistant permettant aux utilisateurs de poser des
-questions sur les données en langage naturel.
+Postalytics integrates Machine Learning into the analytical workflow.
 
-### Exemple
+### K-Means
+
+Used to identify groups or segments within the postal data.
+
+### Prophet
+
+Used for time-series forecasting of postal flows.
+
+### Isolation Forest
+
+Used to identify potentially abnormal observations in the data.
+
+The ML components are designed to complement the BI layer by moving from descriptive analysis toward **segmentation, forecasting and anomaly detection**.
+
+---
+
+# 💬 AI Assistant
+
+The platform includes a conversational interface for querying postal data using natural language.
+
+Simplified workflow:
 
 ```text
-Utilisateur :
-
-Combien de colis ont été envoyés en 2025 ?
-```
-
-Le système suit le processus suivant :
-
-```text
-Question utilisateur
-        │
-        ▼
+User Question
+      │
+      ▼
 FastAPI
-        │
-        ▼
-GPT-OSS-120B
-        │
-        ▼
-Interprétation / génération de requête
-        │
-        ▼
+      │
+      ▼
+LLM
+      │
+      ▼
+Query / Data Processing
+      │
+      ▼
 PostgreSQL
-        │
-        ▼
-Résultat
-        │
-        ▼
-Réponse utilisateur
+      │
+      ▼
+Result
+      │
+      ▼
+User Response
 ```
 
-## Modèle utilisé
+The project uses **GPT-OSS-120B through Groq** for the LLM component.
 
-```text
-OpenAI GPT-OSS-120B
-```
-
-Le modèle est utilisé via l'API **Groq**.
-
-Cette architecture permet de conserver le LLM séparé de la logique métier
-du backend.
+The LLM remains separated from the main business logic through the backend service layer.
 
 ---
 
-# 🔐 Configuration
+# 🛠️ Technology Stack
 
-Les variables sensibles sont stockées dans un fichier `.env` et ne doivent
-jamais être publiées dans le repository.
-
-Créer :
-
-```text
-backend/.env
-```
-
-à partir de :
-
-```text
-backend/.env.example
-```
-
-Exemple :
-
-```env
-DATABASE_URL=postgresql://user:password@db:5432/database
-
-SECRET_KEY=your_secret_key
-
-GROQ_API_KEY=your_groq_api_key
-```
-
-> ⚠️ Ne jamais commit le fichier `.env`.
->
-> ⚠️ Ne jamais publier une clé API, un token ou un mot de passe dans GitHub.
+| Area             | Technologies               |
+| ---------------- | -------------------------- |
+| Backend          | FastAPI, Python 3.12       |
+| Frontend         | React 18, TypeScript, Vite |
+| Styling          | Tailwind CSS               |
+| Visualization    | Recharts                   |
+| Database         | PostgreSQL 16              |
+| ORM              | SQLAlchemy                 |
+| Validation       | Pydantic                   |
+| Authentication   | JWT, bcrypt                |
+| Data Processing  | Pandas, NumPy              |
+| Machine Learning | Scikit-learn, Prophet      |
+| LLM              | GPT-OSS-120B               |
+| LLM Provider     | Groq                       |
+| Containers       | Docker, Docker Compose     |
+| Version Control  | Git, GitHub                |
 
 ---
 
-# 🚀 Installation
-
-## Prérequis
-
-Avant de commencer, installer :
-
-- Git
-- Docker
-- Docker Compose
-- Node.js
-- Python 3.12
-
----
-
-# 🐳 Démarrage avec Docker
-
-## 1. Cloner le repository
-
-```bash
-git clone <repository-url>
-cd postalytics
-```
-
-## 2. Configurer l'environnement
-
-Créer le fichier :
-
-```bash
-cp backend/.env.example backend/.env
-```
-
-Puis renseigner les variables nécessaires dans :
-
-```text
-backend/.env
-```
-
-## 3. Construire et démarrer les services
-
-```bash
-docker compose up --build
-```
-
-## 4. Initialiser les données fictives
-
-Pour initialiser la base avec les données mock :
-
-```bash
-docker compose exec backend python -m app.db.seed
-```
-
-> ⚠️ Le script `seed` est utilisé uniquement pour les données fictives de
-> développement et de démonstration.
-
----
-
-# 🌐 Accès à l'application
-
-Une fois les services démarrés :
-
-### Frontend
-
-```text
-http://localhost:5173
-```
-
-### Backend API
-
-```text
-http://localhost:8000
-```
-
-### Documentation Swagger
-
-```text
-http://localhost:8000/docs
-```
-
----
-
-# 💻 Développement local
-
-## Backend
-
-Accéder au dossier backend :
-
-```bash
-cd backend
-```
-
-Créer un environnement virtuel :
-
-```bash
-python -m venv .venv
-```
-
-### Windows
-
-```bash
-.venv\Scripts\activate
-```
-
-### Linux / macOS
-
-```bash
-source .venv/bin/activate
-```
-
-Installer les dépendances :
-
-```bash
-pip install -r requirements.txt
-```
-
-Créer le fichier d'environnement :
-
-```bash
-cp .env.example .env
-```
-
-Lancer le serveur FastAPI :
-
-```bash
-uvicorn app.main:app --reload
-```
-
-Initialiser les données mock :
-
-```bash
-python -m app.db.seed
-```
-
----
-
-## Frontend
-
-Accéder au dossier frontend :
-
-```bash
-cd frontend
-```
-
-Installer les dépendances :
-
-```bash
-npm install
-```
-
-Lancer le serveur de développement :
-
-```bash
-npm run dev
-```
-
----
-
-# 📁 Structure du projet
+# 📁 Project Structure
 
 ```text
 postalytics/
@@ -463,26 +309,11 @@ postalytics/
 ├── backend/
 │   ├── app/
 │   │   ├── api/
-│   │   │   └── routes/
-│   │   │       ├── auth.py
-│   │   │       ├── dashboard.py
-│   │   │       ├── users.py
-│   │   │       └── chatbot.py
-│   │   │
 │   │   ├── core/
-│   │   │   ├── config.py
-│   │   │   ├── security.py
-│   │   │   └── deps.py
-│   │   │
 │   │   ├── db/
-│   │   │   ├── database.py
-│   │   │   └── seed.py
-│   │   │
 │   │   ├── models/
 │   │   ├── schemas/
 │   │   ├── services/
-│   │   │   └── llm.py
-│   │   │
 │   │   └── main.py
 │   │
 │   ├── requirements.txt
@@ -497,19 +328,13 @@ postalytics/
 │   │   └── types/
 │   │
 │   ├── package.json
-│   └── Dockerfile
+│   └── Dockerfile.dev
 │
-├── notebooks/
-│   ├── 01_exploration.ipynb
-│   ├── 02_cleaning.ipynb
-│   ├── 03_transformation.ipynb
-│   └── 04_etl_postgresql.ipynb
-│
-├── data/
-│
-├── docs/
-│
-├── tests/
+├── data_pipeline/
+│   ├── data/
+│   ├── etl/
+│   ├── notebooks/
+│   └── requirements_datascience.txt
 │
 ├── docker-compose.yml
 ├── .env.example
@@ -519,85 +344,109 @@ postalytics/
 
 ---
 
-# 🔌 API
+# 🚀 Getting Started
 
-Le backend est développé avec FastAPI.
+## Prerequisites
 
-La documentation interactive est disponible à :
+* Git
+* Docker Desktop
+* Docker Compose
+
+## 1. Clone the repository
+
+```bash
+git clone https://github.com/EyaTouati/postalytics.git
+cd postalytics
+```
+
+## 2. Configure environment variables
+
+Create your local environment file from the provided template:
+
+```bash
+cp .env.example .env
+```
+
+Then configure the required variables locally.
+
+> Never commit `.env` or expose API keys, passwords or secret keys.
+
+## 3. Start the application
+
+```bash
+docker compose up --build
+```
+
+The application starts the main services:
+
+```text
+PostgreSQL
+FastAPI Backend
+React Frontend
+```
+
+---
+
+# 🌐 Application
+
+Once the containers are running:
+
+**Frontend**
+
+```text
+http://localhost:5173
+```
+
+**Backend API**
+
+```text
+http://localhost:8000
+```
+
+**Swagger API Documentation**
 
 ```text
 http://localhost:8000/docs
 ```
 
-## Exemple de requête
-
-Endpoint :
-
-```http
-POST /query
-```
-
-Exemple :
-
-```json
-{
-  "query": "Combien de colis ont été envoyés en 2025 ?"
-}
-```
-
-Le backend traite la question, interagit avec le LLM et utilise les données
-PostgreSQL pour produire la réponse.
-
 ---
 
-# 🧪 Tests
+# 📊 Data & Analytics
 
-Les tests backend peuvent être exécutés avec :
+The project works with postal shipment datasets covering national and international flows.
 
-```bash
-pytest
-```
-
----
-
-# 📦 Données
-
-Les données sources utilisées pour le projet peuvent être volumineuses ou
-confidentielles et ne sont donc pas nécessairement incluses dans le repository.
-
-Le dossier `data/` est destiné à organiser les données utilisées pendant le
-pipeline :
+The pipeline is designed to support:
 
 ```text
-data/
-├── raw/
-└── processed/
+Data Collection
+      ↓
+Data Quality
+      ↓
+Data Warehouse
+      ↓
+Descriptive Analytics
+      ↓
+Machine Learning
+      ↓
+Decision Support
 ```
 
-Les données brutes et transformées peuvent être exclues du versionnement
-Git selon leur taille et leur nature.
+This architecture separates the different stages of the data lifecycle while keeping them connected through the analytical database.
 
 ---
 
-# 🔒 Sécurité
+# 🔐 Security
 
-Les informations sensibles ne doivent jamais être ajoutées au repository.
+Sensitive configuration is handled through environment variables.
 
-Les éléments suivants doivent rester dans les variables d'environnement :
+The repository does **not** contain:
 
-- Clés API
-- Tokens
-- Mots de passe
-- Clés secrètes
-- Identifiants de base de données
+* API keys
+* Passwords
+* Database credentials
+* Secret keys
 
-Le fichier suivant doit rester local :
-
-```text
-.env
-```
-
-Le repository contient uniquement un modèle de configuration :
+Only the configuration template is versioned:
 
 ```text
 .env.example
@@ -605,78 +454,56 @@ Le repository contient uniquement un modèle de configuration :
 
 ---
 
-# 🚧 État du projet
+# 🚧 Project Status
 
-Le projet est actuellement en développement.
+The main application architecture is implemented and running locally through Docker Compose.
 
-## Data Engineering
+### Implemented
 
-- [x] Exploration des données
-- [x] Nettoyage des données
-- [x] Transformation des données
-- [x] Conception du Data Warehouse
-- [x] Modélisation en schéma en étoile
-- [x] ETL vers PostgreSQL
+* Data exploration and preprocessing
+* ETL pipeline
+* PostgreSQL Data Warehouse
+* Star Schema
+* FastAPI backend
+* React frontend
+* Interactive dashboards
+* JWT authentication
+* RBAC
+* Machine Learning components
+* AI assistant
+* Dockerized development environment
 
-## Backend
+### Possible Future Improvements
 
-- [x] API FastAPI
-- [x] Connexion PostgreSQL
-- [x] Authentification JWT
-- [x] Gestion des rôles
-- [x] Endpoints API
-- [x] Intégration du LLM
-
-## Frontend
-
-- [x] Interface React
-- [x] Authentification
-- [x] Dashboard
-- [x] Visualisation des données
-- [x] Interface chatbot
-
-## Intelligence artificielle
-
-- [x] Intégration d'un LLM
-- [x] Intégration de GPT-OSS-120B via Groq
-- [ ] Optimisation des prompts
-- [ ] Amélioration de la génération des requêtes
-- [ ] Tests approfondis du chatbot
-
-## À venir
-
-- [ ] Tests complets de l'application
-- [ ] Optimisation des performances
-- [ ] Amélioration du système de requêtes en langage naturel
-- [ ] Déploiement
+* Automated data ingestion
+* Advanced forecasting
+* More anomaly detection scenarios
+* Geographic analytics
+* Semantic search
+* Performance optimization
+* Cloud deployment
 
 ---
 
-# 🔮 Évolutions possibles
+# 🎓 Academic Context
 
-Les évolutions futures du projet peuvent inclure :
+Postalytics was developed as an academic project around the analysis of postal shipment flows, with the objective of applying an end-to-end data architecture combining:
 
-- 📈 Prévision des flux de colis
-- 🚨 Détection automatique des anomalies
-- 🌍 Analyse géographique avancée
-- 📊 Nouveaux indicateurs décisionnels
-- 🤖 Amélioration du système de questions en langage naturel
-- 🔎 Recherche sémantique dans les données
-- ⚡ Optimisation des performances
-- ☁️ Déploiement dans le cloud
+**Data Engineering → Data Warehousing → Analytics → Machine Learning → AI**
 
 ---
 
-# 👩‍💻 Auteur
+# 👩‍💻 Author
 
 **Eya Touati**
 
-Étudiante en Big Data & Data Analytics
+Licence Sciences Informatiques — Big Data & Data Analytics
+ISAMM — Tunisia
 
-Tunisie
+[GitHub](https://github.com/EyaTouati) · [LinkedIn](https://linkedin.com/in/eya-touati-6777a531)
 
 ---
 
-# 📄 Licence
+## 📄 License
 
-Ce projet est développé dans un cadre académique.
+This project was developed in an academic context.
