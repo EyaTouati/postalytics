@@ -7,6 +7,10 @@ Le projet transforme des données brutes de colis en informations exploitables �
 L'objectif est de permettre aux utilisateurs d'explorer les flux postaux, suivre les indicateurs clés et interroger les données en langage naturel à travers une interface web interactive.
 
 ---
+## Demo
+
+- [Video demonstration](https://youtu.be/upP9PvegiZg)
+- [GitHub repository](https://github.com/EyaTouati/postalytics)
 
 ## 🎯 Problem & Solution
 
