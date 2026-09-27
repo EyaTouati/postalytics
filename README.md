@@ -40,29 +40,29 @@ La plateforme permet ainsi de passer de **données brutes à des indicateurs, an
 
 ### 📊 Decision Support
 
-* Interactive dashboards
-* KPI monitoring
-* Analysis of postal flows
-* National / international analysis
-* Analysis by time, bureau, service and destination
-* Interactive visualizations
+- Interactive dashboards
+- KPI monitoring
+- Analysis of postal flows
+- National / international analysis
+- Analysis by time, bureau, service and destination
+- Interactive visualizations
 
 ### 🔄 Data Engineering
 
-* Data exploration
-* Data cleaning
-* Data transformation
-* ETL pipeline
-* Data Warehouse construction
-* Star Schema modelling
+- Data exploration
+- Data cleaning
+- Data transformation
+- ETL pipeline
+- Data Warehouse construction
+- Star Schema modelling
 
 ### 🤖 Machine Learning
 
 Postalytics intègre plusieurs approches de Machine Learning pour l'analyse des flux :
 
-* **K-Means** — segmentation des données
-* **Prophet** — prévision des séries temporelles
-* **Isolation Forest** — détection d'anomalies
+- **K-Means** — segmentation des données
+- **Prophet** — prévision des séries temporelles
+- **Isolation Forest** — détection d'anomalies
 
 ### 💬 AI Assistant
 
@@ -78,17 +78,17 @@ Le système traite la question, exploite le contexte des données et retourne un
 
 ### 🔐 Security & Access Control
 
-* JWT authentication
-* Password hashing with bcrypt
-* Role-Based Access Control (RBAC)
-* Environment-based configuration
-* Sensitive credentials excluded from Git
+- JWT authentication
+- Password hashing with bcrypt
+- Role-Based Access Control (RBAC)
+- Environment-based configuration
+- Sensitive credentials excluded from Git
 
 ### 🐳 Deployment
 
-* Docker
-* Docker Compose
-* Containerized backend, frontend and PostgreSQL services
+- Docker
+- Docker Compose
+- Containerized backend, frontend and PostgreSQL services
 
 ---
 
@@ -153,12 +153,12 @@ PostgreSQL Data Warehouse
 
 Initial analysis of the source datasets to identify:
 
-* Missing values
-* Duplicates
-* Inconsistent values
-* Incorrect formats
-* Outliers
-* Identifier inconsistencies
+- Missing values
+- Duplicates
+- Inconsistent values
+- Incorrect formats
+- Outliers
+- Identifier inconsistencies
 
 ### 2. Cleaning
 
@@ -217,12 +217,12 @@ dim_bureau ─────── fait_colis ─────── dim_service
 
 This structure allows analysis by:
 
-* Time
-* Bureau
-* Service
-* Destination
-* Shipment type
-* National / international flow
+- Time
+- Bureau
+- Service
+- Destination
+- Shipment type
+- National / international flow
 
 ---
 
@@ -348,9 +348,9 @@ postalytics/
 
 ## Prerequisites
 
-* Git
-* Docker Desktop
-* Docker Compose
+- Git
+- Docker Desktop
+- Docker Compose
 
 ## 1. Clone the repository
 
@@ -411,6 +411,39 @@ http://localhost:8000/docs
 
 ---
 
+# 🖼️ Screenshots
+
+### Dashboard décisionnel
+
+![Dashboard PostalBI](docs/screenshots/dashboard.png)
+
+### Assistant analytique LLM
+
+![Assistant IA PostalBI](docs/screenshots/chatbot.png)
+
+### Prévisions de volumes
+
+![Prévisions PostalBI](docs/screenshots/previsions.png)
+
+---
+
+# 👥 Demo Accounts
+
+The local application includes role-based accounts for demonstration:
+
+| Username      | Role             | Data scope               |
+| ------------- | ---------------- | ------------------------ |
+| `admin`       | Administrator    | All features and regions |
+| `responsable` | Decision manager | National scope           |
+| `agent_tunis` | Regional agent   | Tunis                    |
+| `agent_sfax`  | Regional agent   | Sfax                     |
+
+Passwords are intentionally not stored in this public repository. Define local
+passwords through the seed environment variables or reset them directly in the
+local database before using the accounts.
+
+---
+
 # 📊 Data & Analytics
 
 The project works with postal shipment datasets covering national and international flows.
@@ -435,16 +468,37 @@ This architecture separates the different stages of the data lifecycle while kee
 
 ---
 
+# ✅ Validation Results
+
+The local stack has been validated with real data:
+
+- `1,247,651` shipments loaded in `fait_colis`
+- `1,412` dates in `dim_temps`
+- `678` postal offices in `dim_bureau`
+- `27,920` destinations in `dim_destination`
+- Dashboard KPI and regional filtering validated through the API
+- Forecast endpoint validated with historical and predicted monthly records
+- LLM assistant validated through Groq with SQL generation and PostgreSQL execution
+- Backend unit tests: `6 passed`
+
+Run the backend tests with:
+
+```bash
+docker compose exec backend pytest tests -q
+```
+
+---
+
 # 🔐 Security
 
 Sensitive configuration is handled through environment variables.
 
 The repository does **not** contain:
 
-* API keys
-* Passwords
-* Database credentials
-* Secret keys
+- API keys
+- Passwords
+- Database credentials
+- Secret keys
 
 Only the configuration template is versioned:
 
@@ -460,28 +514,28 @@ The main application architecture is implemented and running locally through Doc
 
 ### Implemented
 
-* Data exploration and preprocessing
-* ETL pipeline
-* PostgreSQL Data Warehouse
-* Star Schema
-* FastAPI backend
-* React frontend
-* Interactive dashboards
-* JWT authentication
-* RBAC
-* Machine Learning components
-* AI assistant
-* Dockerized development environment
+- Data exploration and preprocessing
+- ETL pipeline
+- PostgreSQL Data Warehouse
+- Star Schema
+- FastAPI backend
+- React frontend
+- Interactive dashboards
+- JWT authentication
+- RBAC
+- Machine Learning components
+- AI assistant
+- Dockerized development environment
 
 ### Possible Future Improvements
 
-* Automated data ingestion
-* Advanced forecasting
-* More anomaly detection scenarios
-* Geographic analytics
-* Semantic search
-* Performance optimization
-* Cloud deployment
+- Automated data ingestion
+- Advanced forecasting
+- More anomaly detection scenarios
+- Geographic analytics
+- Semantic search
+- Performance optimization
+- Cloud deployment
 
 ---
 
