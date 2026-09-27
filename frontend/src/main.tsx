@@ -24,6 +24,10 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route element={<ProtectedRoute />}>
           <Route element={<AppLayout />}>
             <Route path="/dashboard" element={<DashboardPage />} />
+            <Route path="/temporelle" element={<TemporellePage />} />
+            <Route path="/geographique" element={<GeographiquePage />} />
+            <Route path="/croisees" element={<CroiséesPage />} />
+            <Route path="/destinations" element={<DestinationsPage />} />
             <Route path="/previsions" element={<PrevisionsPage />} />
             <Route path="/chatbot" element={<ChatbotPage />} />
             <Route path="/admin/users" element={<AdminUsersPage />} />
@@ -33,11 +37,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         {/* Redirection racine */}
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
-
-        <Route path="/temporelle" element={<TemporellePage />} />
-        <Route path="/geographique" element={<GeographiquePage />} />
-        <Route path="/croisees" element={<CroiséesPage />} />
-        <Route path="/destinations" element={<DestinationsPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

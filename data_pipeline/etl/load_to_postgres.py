@@ -22,7 +22,7 @@ import sys
 import os
 import secrets
 import pandas as pd
-from sqlalchemy import create_engine, text
+from sqlalchemy import Boolean, Integer, String, create_engine, text
 from sqlalchemy.orm import Session
 
 # ── Ajouter le backend au path pour utiliser les modèles ─────────────────────
@@ -324,7 +324,44 @@ def load_fait_colis(db: Session):
     log(f" {total - nb_erreurs:,} colis chargés | {nb_erreurs} erreurs ignorées")
 
 
-# ── Étape 6 — Utilisateurs ───────────────────────────────────────────────────
+# ── Étape 6 — Prévisions mensuelles ──────────────────────────────────────────
+
+
+def load_previsions_mensuelles(db: Session):
+    print("\n[6/7] Chargement previsions_mensuelles...")
+    df = load_csv("previsions_mensuelles")
+    df = df[
+        [
+            "label",
+            "annee",
+            "mois",
+            "volume_reel",
+            "volume_prevu",
+            "borne_inf",
+            "borne_sup",
+            "est_prevision",
+        ]
+    ]
+    df.to_sql(
+        "previsions_mensuelles",
+        con=engine,
+        if_exists="replace",
+        index=False,
+        dtype={
+            "label": String(30),
+            "annee": Integer(),
+            "mois": Integer(),
+            "volume_reel": Integer(),
+            "volume_prevu": Integer(),
+            "borne_inf": Integer(),
+            "borne_sup": Integer(),
+            "est_prevision": Boolean(),
+        },
+    )
+    log(f" {len(df):,} lignes de prévisions chargées")
+
+
+# ── Étape 7 — Utilisateurs ───────────────────────────────────────────────────
 
 
 def load_users(db: Session):
@@ -390,6 +427,7 @@ def main():
             load_dim_service(db)
             load_dim_destination(db)
             load_fait_colis(db)
+            load_previsions_mensuelles(db)
             load_users(db)
 
             db.commit()

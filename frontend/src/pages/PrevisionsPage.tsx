@@ -133,7 +133,7 @@ export default function PrevisionsPage() {
             {[
               {
                 icon: TrendingUp,
-                label: "Total prévu (6 mois)",
+                label: `Total prévu (${previsions.length} mois)`,
                 value: fmt(totalPrevu),
                 color: "#2E86AB",
               },
@@ -189,7 +189,8 @@ export default function PrevisionsPage() {
           <Card>
             <div className="flex items-center justify-between mb-4">
               <h2 className="font-display font-semibold text-navy-900">
-                Historique (12 mois) + Prévisions Prophet (6 mois)
+                Historique (12 mois) + Prévisions Prophet ({previsions.length}{" "}
+                mois)
               </h2>
               <div className="flex items-center gap-4 text-xs text-gray-400">
                 <span className="flex items-center gap-1.5">

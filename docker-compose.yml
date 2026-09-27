@@ -32,7 +32,7 @@ services:
       DATABASE_URL: ${DATABASE_URL:?DATABASE_URL must be set}
       SECRET_KEY: ${SECRET_KEY:?SECRET_KEY must be set}
       GROQ_API_KEY: ${GROQ_API_KEY:-}
-      GROQ_MODEL: ${GROQ_MODEL:-llama-3.3-70b-versatile}
+      GROQ_MODEL: ${GROQ_MODEL:-openai/gpt-oss-120b}
       LLM_PROVIDER: ${LLM_PROVIDER:-mock}
       APP_ENV: ${APP_ENV:-development}
       BACKEND_CORS_ORIGINS: '["http://localhost:3000","http://localhost:5173"]'

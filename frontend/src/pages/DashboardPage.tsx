@@ -23,6 +23,7 @@ import {
   ArrowUpRight,
   ArrowDownRight,
   Minus,
+  UserCircle,
 } from "lucide-react";
 import api from "../services/api";
 import { useAuthStore } from "../store/authStore";
@@ -48,6 +49,12 @@ const SERVICE_COLORS: Record<string, string> = {
   RR: COLORS.teal,
   "EMS-I": COLORS.orange,
   NOR: COLORS.green,
+};
+
+const ROLE_LABELS: Record<string, string> = {
+  admin: "Administrateur",
+  responsable: "Responsable",
+  agent_regional: "Agent régional",
 };
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -243,21 +250,34 @@ export default function DashboardPage() {
               : "Vue nationale — toutes régions"}
           </p>
         </div>
-        <select
-          value={annee}
-          onChange={(e) =>
-            setAnnee(e.target.value ? parseInt(e.target.value) : "")
-          }
-          className="text-sm border border-surface-muted rounded-lg px-3 py-2 bg-white
-                     text-navy-900 focus:outline-none focus:ring-2 focus:ring-postal"
-        >
-          <option value="">Toutes les années</option>
-          {[2023, 2024, 2025, 2026].map((a) => (
-            <option key={a} value={a}>
-              {a}
-            </option>
-          ))}
-        </select>
+        <div className="flex items-center gap-3">
+          <div className="hidden sm:flex items-center gap-2 rounded-lg border border-surface-muted bg-white px-3 py-2">
+            <UserCircle className="h-4 w-4 text-postal" />
+            <div className="text-right leading-tight">
+              <p className="text-sm font-medium text-navy-900">
+                {user?.username}
+              </p>
+              <p className="text-xs text-gray-400">
+                {ROLE_LABELS[user?.role ?? ""] ?? user?.role}
+              </p>
+            </div>
+          </div>
+          <select
+            value={annee}
+            onChange={(e) =>
+              setAnnee(e.target.value ? parseInt(e.target.value) : "")
+            }
+            className="text-sm border border-surface-muted rounded-lg px-3 py-2 bg-white
+                       text-navy-900 focus:outline-none focus:ring-2 focus:ring-postal"
+          >
+            <option value="">Toutes les années</option>
+            {[2023, 2024, 2025, 2026].map((a) => (
+              <option key={a} value={a}>
+                {a}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
 
       {/* ── KPI Cards ── */}

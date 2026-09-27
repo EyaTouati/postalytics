@@ -14,7 +14,7 @@ export default function LoginPage() {
     e.preventDefault();
     setError("");
     try {
-      await login(username, password);
+      await login(username.trim(), password);
       navigate("/dashboard");
     } catch {
       setError("Identifiant ou mot de passe incorrect.");
@@ -73,10 +73,14 @@ export default function LoginPage() {
                   className="w-full pl-10 pr-4 py-2.5 border border-surface-muted rounded-lg
                              focus:outline-none focus:ring-2 focus:ring-postal focus:border-transparent
                              text-navy-900 text-sm"
-                  placeholder="admin"
+                  placeholder="Votre identifiant"
                   required
                 />
               </div>
+              <p className="mt-1.5 text-xs text-gray-500">
+                Utilisez votre compte administrateur, responsable ou agent
+                régional.
+              </p>
             </div>
 
             <div>
